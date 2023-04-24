@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Quick_AI.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>hype</title>
+   <!--Bootstrap css-->
+    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
+    <!--Datatables css-->
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--Fontawesome css-->
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+      <!--Jquery Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
+      <!--bootstrapmin Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
+      <!--poppers Js-->
+    <script src="Bootstarp/Css/JS/popper.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <nav>
+                <div class="section paddding-top-65 padding-bottom-65">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="images/980385239.png" href="https://localhost:44364/Adminlogin.aspx#!"/>
+                    </div>
+                    <div class="col-sm-7"></div>
+                    <div class="col-sm-1">
+                        <a class="btn btn-primary ripple-effect button-sliding-icon" href="https://localhost:44364/Adminlogin.aspx#!" >Join Now</a>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="col-lg-1">
+                             <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                          </div>
+                        </div>
+                        </div>             
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                </div> 
+                  
+                <div id="navbar" class=" navbar">
+                </div>
+                    
+   
+               
+            </nav>
+            <hr />
+         </div>
+        
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row"></div>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>

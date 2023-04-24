@@ -1,0 +1,904 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B8AB889-7F0C-467D-AFCD-B637609DE3F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quick_AI</RootNamespace>
+    <AssemblyName>Quick AI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44364</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adminlogin.aspx" />
+    <Content Include="Bootstarp\Css\bootstrap.min.css" />
+    <Content Include="Bootstarp\Css\JS\bootstrap.bundle.min.js" />
+    <Content Include="Bootstarp\Css\JS\bootstrap.min.js" />
+    <Content Include="Bootstarp\Css\JS\popper.min.js" />
+    <Content Include="contant.aspx" />
+    <Content Include="Data Tables\Css\jquery.dataTables.min.css" />
+    <Content Include="Data Tables\Js\jquery.dataTables.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\all.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\all.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\brands.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\brands.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\fontawesome.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\fontawesome.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\regular.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\regular.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\solid.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\solid.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\svg-with-js.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\svg-with-js.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\v4-font-face.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\v4-font-face.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\v4-shims.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\v4-shims.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\v5-font-face.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\v5-font-face.min.css" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\all.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\all.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\brands.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\brands.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\conflict-detection.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\conflict-detection.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\fontawesome.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\fontawesome.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\regular.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\regular.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\solid.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\solid.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\v4-shims.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\js\v4-shims.min.js" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\LICENSE.txt" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\42-group.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\500px.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\accessible-icon.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\accusoft.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\adn.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\adversal.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\affiliatetheme.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\airbnb.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\algolia.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\alipay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\amazon-pay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\amazon.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\amilia.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\android.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\angellist.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\angrycreative.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\angular.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\app-store-ios.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\app-store.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\apper.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\apple-pay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\apple.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\artstation.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\asymmetrik.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\atlassian.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\audible.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\autoprefixer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\avianex.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\aviato.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\aws.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bandcamp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\battle-net.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\behance.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bilibili.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bimobject.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bitbucket.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bitcoin.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bity.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\black-tie.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\blackberry.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\blogger-b.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\blogger.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bluetooth-b.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bluetooth.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bootstrap.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\bots.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\btc.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\buffer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\buromobelexperte.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\buy-n-large.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\buysellads.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\canadian-maple-leaf.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-amazon-pay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-amex.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-apple-pay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-diners-club.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-discover.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-jcb.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-mastercard.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-paypal.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-stripe.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cc-visa.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\centercode.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\centos.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\chrome.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\chromecast.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cloudflare.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cloudscale.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cloudsmith.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cloudversify.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cmplid.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\codepen.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\codiepie.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\confluence.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\connectdevelop.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\contao.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cotton-bureau.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cpanel.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-by.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-nc-eu.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-nc-jp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-nc.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-nd.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-pd-alt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-pd.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-remix.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-sa.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-sampling-plus.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-sampling.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-share.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons-zero.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\creative-commons.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\critical-role.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\css3-alt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\css3.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\cuttlefish.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\d-and-d-beyond.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\d-and-d.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dailymotion.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dashcube.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\deezer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\delicious.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\deploydog.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\deskpro.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dev.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\deviantart.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dhl.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\diaspora.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\digg.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\digital-ocean.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\discord.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\discourse.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dochub.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\docker.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\draft2digital.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dribbble.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dropbox.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\drupal.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\dyalog.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\earlybirds.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ebay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\edge-legacy.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\edge.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\elementor.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ello.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ember.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\empire.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\envira.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\erlang.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ethereum.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\etsy.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\evernote.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\expeditedssl.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\facebook-f.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\facebook-messenger.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\facebook.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fantasy-flight-games.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fedex.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fedora.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\figma.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\firefox-browser.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\firefox.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\first-order-alt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\first-order.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\firstdraft.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\flickr.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\flipboard.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fly.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\font-awesome.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fonticons-fi.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fonticons.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fort-awesome-alt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fort-awesome.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\forumbee.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\foursquare.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\free-code-camp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\freebsd.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\fulcrum.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\galactic-republic.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\galactic-senate.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\get-pocket.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gg-circle.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gg.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\git-alt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\git.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\github-alt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\github.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gitkraken.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gitlab.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gitter.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\glide-g.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\glide.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gofore.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\golang.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\goodreads-g.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\goodreads.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\google-drive.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\google-pay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\google-play.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\google-plus-g.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\google-plus.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\google-wallet.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\google.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gratipay.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\grav.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gripfire.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\grunt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\guilded.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\gulp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hacker-news.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hackerrank.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hashnode.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hips.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hire-a-helper.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hive.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hooli.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hornbill.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hotjar.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\houzz.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\html5.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\hubspot.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ideal.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\imdb.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\instagram.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\instalod.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\intercom.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\internet-explorer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\invision.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ioxhost.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\itch-io.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\itunes-note.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\itunes.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\java.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\jedi-order.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\jenkins.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\jira.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\joget.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\joomla.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\js.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\jsfiddle.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\kaggle.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\keybase.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\keycdn.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\kickstarter-k.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\kickstarter.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\korvue.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\laravel.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\lastfm.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\leanpub.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\less.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\line.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\linkedin-in.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\linkedin.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\linode.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\linux.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\lyft.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\magento.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mailchimp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mandalorian.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\markdown.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mastodon.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\maxcdn.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mdb.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\medapps.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\medium.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\medrt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\meetup.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\megaport.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mendeley.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\meta.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\microblog.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\microsoft.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mix.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mixcloud.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mixer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\mizuni.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\modx.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\monero.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\napster.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\neos.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\nfc-directional.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\nfc-symbol.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\nimblr.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\node-js.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\node.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\npm.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ns8.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\nutritionix.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\octopus-deploy.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\odnoklassniki.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\odysee.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\old-republic.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\opencart.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\openid.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\opera.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\optin-monster.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\orcid.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\osi.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\padlet.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\page4.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pagelines.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\palfed.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\patreon.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\paypal.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\perbyte.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\periscope.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\phabricator.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\phoenix-framework.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\phoenix-squadron.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\php.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pied-piper-alt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pied-piper-hat.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pied-piper-pp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pied-piper.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pinterest-p.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pinterest.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pix.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\playstation.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\product-hunt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\pushed.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\python.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\qq.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\quinscape.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\quora.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\r-project.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\raspberry-pi.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ravelry.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\react.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\reacteurope.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\readme.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\rebel.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\red-river.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\reddit-alien.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\reddit.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\redhat.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\renren.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\replyd.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\researchgate.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\resolving.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\rev.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\rocketchat.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\rockrms.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\rust.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\safari.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\salesforce.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sass.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\schlix.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\screenpal.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\scribd.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\searchengin.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sellcast.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sellsy.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\servicestack.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\shirtsinbulk.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\shopify.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\shopware.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\simplybuilt.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sistrix.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sith.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sitrox.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sketch.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\skyatlas.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\skype.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\slack.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\slideshare.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\snapchat.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\soundcloud.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sourcetree.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\space-awesome.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\speakap.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\speaker-deck.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\spotify.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-behance.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-dribbble.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-facebook.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-font-awesome-stroke.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-font-awesome.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-git.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-github.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-gitlab.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-google-plus.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-hacker-news.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-instagram.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-js.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-lastfm.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-odnoklassniki.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-pied-piper.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-pinterest.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-reddit.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-snapchat.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-steam.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-tumblr.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-twitter.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-viadeo.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-vimeo.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-whatsapp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-xing.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\square-youtube.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\squarespace.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stack-exchange.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stack-overflow.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stackpath.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\staylinked.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\steam-symbol.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\steam.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\sticker-mule.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\strava.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stripe-s.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stripe.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stubber.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\studiovinari.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stumbleupon-circle.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\stumbleupon.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\superpowers.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\supple.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\suse.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\swift.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\symfony.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\teamspeak.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\telegram.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\tencent-weibo.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\the-red-yeti.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\themeco.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\themeisle.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\think-peaks.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\tiktok.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\trade-federation.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\trello.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\tumblr.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\twitch.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\twitter.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\typo3.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\uber.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ubuntu.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\uikit.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\umbraco.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\uncharted.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\uniregistry.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\unity.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\unsplash.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\untappd.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ups.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\usb.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\usps.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\ussunnah.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\vaadin.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\viacoin.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\viadeo.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\viber.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\vimeo-v.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\vimeo.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\vine.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\vk.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\vnv.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\vuejs.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\watchman-monitoring.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\waze.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\weebly.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\weibo.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\weixin.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\whatsapp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\whmcs.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wikipedia-w.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\windows.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wirsindhandwerk.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wix.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wizards-of-the-coast.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wodu.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wolf-pack-battalion.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wordpress-simple.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wordpress.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wpbeginner.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wpexplorer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wpforms.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\wpressr.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\xbox.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\xing.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\y-combinator.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\yahoo.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\yammer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\yandex-international.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\yandex.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\yarn.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\yelp.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\yoast.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\youtube.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\brands\zhihu.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\address-book.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\address-card.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\bell-slash.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\bell.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\bookmark.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\building.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\calendar-check.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\calendar-days.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\calendar-minus.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\calendar-plus.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\calendar-xmark.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\calendar.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\chart-bar.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\chess-bishop.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\chess-king.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\chess-knight.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\chess-pawn.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\chess-queen.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\chess-rook.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-check.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-dot.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-down.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-left.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-pause.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-play.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-question.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-right.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-stop.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-up.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-user.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle-xmark.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\circle.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\clipboard.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\clock.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\clone.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\closed-captioning.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\comment-dots.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\comment.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\comments.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\compass.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\copy.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\copyright.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\credit-card.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\envelope-open.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\envelope.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\eye-slash.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\eye.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-angry.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-dizzy.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-flushed.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-frown-open.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-frown.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grimace.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-beam-sweat.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-beam.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-hearts.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-squint-tears.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-squint.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-stars.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-tears.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-tongue-squint.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-tongue-wink.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-tongue.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-wide.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin-wink.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-grin.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-kiss-beam.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-kiss-wink-heart.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-kiss.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-laugh-beam.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-laugh-squint.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-laugh-wink.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-laugh.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-meh-blank.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-meh.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-rolling-eyes.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-sad-cry.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-sad-tear.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-smile-beam.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-smile-wink.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-smile.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-surprise.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\face-tired.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-audio.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-code.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-excel.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-image.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-lines.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-pdf.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-powerpoint.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-video.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-word.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file-zipper.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\file.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\flag.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\floppy-disk.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\folder-closed.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\folder-open.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\folder.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\font-awesome.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\futbol.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\gem.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-back-fist.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-lizard.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-peace.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-point-down.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-point-left.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-point-right.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-point-up.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-pointer.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-scissors.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand-spock.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hand.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\handshake.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hard-drive.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\heart.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hospital.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hourglass-half.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\hourglass.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\id-badge.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\id-card.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\image.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\images.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\keyboard.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\lemon.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\life-ring.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\lightbulb.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\map.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\message.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\money-bill-1.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\moon.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\newspaper.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\note-sticky.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\object-group.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\object-ungroup.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\paper-plane.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\paste.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\pen-to-square.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\rectangle-list.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\rectangle-xmark.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\registered.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\share-from-square.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\snowflake.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-caret-down.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-caret-left.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-caret-right.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-caret-up.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-check.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-full.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-minus.svg" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\svgs\regular\square-plus.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="homepage.aspx" />
+    <Content Include="Icons\Icons\email-icon-envelope-mail-services-contacts-1379676980.htm" />
+    <Content Include="images\980385239.png" />
+    <Content Include="images\home-hero-icon.png" />
+    <Content Include="images\Screenshot 2023-04-18 102209.png" />
+    <Content Include="images\Screenshot 2023-04-18 102226.png" />
+    <Content Include="images\Screenshot 2023-04-18 102238.png" />
+    <Content Include="images\Screenshot 2023-04-22 173739.png" />
+    <Content Include="Loginpage.aspx" />
+    <Content Include="password.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminlogin.aspx.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlogin.aspx.designer.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contant.aspx.cs">
+      <DependentUpon>contant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contant.aspx.designer.cs">
+      <DependentUpon>contant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loginpage.aspx.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginpage.aspx.designer.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="password.aspx.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="password.aspx.designer.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\brands.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\fontawesome.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\regular.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\solid.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\v4-shims.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_animated.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_bordered-pulled.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_core.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_fixed-width.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_icons.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_list.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_mixins.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_rotated-flipped.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_screen-reader.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_shims.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_sizing.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_stacked.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\less\_variables.less" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\categories.yml" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\icon-families.json" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\icon-families.yml" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\icons.json" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\icons.yml" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\shims.json" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\shims.yml" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\metadata\sponsors.yml" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\brands.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\fontawesome.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\regular.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\solid.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\v4-shims.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_animated.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_bordered-pulled.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_core.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_fixed-width.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_functions.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_icons.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_list.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_mixins.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_rotated-flipped.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_screen-reader.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_shims.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_sizing.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_stacked.scss" />
+    <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_variables.scss" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49851</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44364/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
