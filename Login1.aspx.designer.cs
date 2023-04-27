@@ -11,34 +11,34 @@ namespace Quick_AI
 {
 
 
-    public partial class Adminlogin
+    public partial class Login1
     {
 
         /// <summary>
-        /// Textbox5 control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textbox5;
+        protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// Textbox6 control.
+        /// Rpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textbox6;
+        protected global::System.Web.UI.WebControls.TextBox Rpassword;
 
         /// <summary>
-        /// Button2 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

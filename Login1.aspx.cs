@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Quick_AI
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class Login1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -57,3 +57,62 @@ C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.csproj.CoreCompileInp
 C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.csproj.CopyComplete
 C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.dll
 C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.pdb
+C:\Users\sociusRD\Desktop\Quick AI\bin\Quick AI.dll.config
+C:\Users\sociusRD\Desktop\Quick AI\bin\Quick AI.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\Quick AI.pdb
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\csc.exe
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\csc.exe.config
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\csc.rsp
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\csi.exe
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\csi.exe.config
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\csi.rsp
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.AppContext.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Console.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.IO.Compression.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Net.Http.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.ValueTuple.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\vbc.exe
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\vbc.exe.config
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\vbc.rsp
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\VBCSCompiler.exe
+C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sociusRD\Desktop\Quick AI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sociusRD\Desktop\Quick AI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.AssemblyReference.cache
+C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.CoreCompileInputs.cache
+C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.CopyComplete
+C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.dll
+C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.pdb

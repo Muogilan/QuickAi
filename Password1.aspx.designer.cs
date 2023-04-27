@@ -10,7 +10,7 @@
 
 namespace Quick_AI
 {
-    public partial class WebForm2
+    public partial class Password1
     {
     }
 }

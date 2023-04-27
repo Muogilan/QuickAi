@@ -3,8 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section href="https://localhost:44364/homepage.aspx">
+        <br />
+        <br />
+        <br />
+        <br />
    <center>
-        <img width="200px" src="images/home-hero-icon.png" / >
+        <img width="300px" src="images/home-hero-icon.png"/>
    <center>
     </section>
     <section>
@@ -14,12 +18,11 @@
                     <center>
                    <h1 class="margin-bottom-10 text_gradient animation">
                        <strong>Best AI Content Writer</strong>
-
                    </h1>
                     <p>Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster & save hours of work.</p>
                 </center>
                     <center>
-                    <a class="btn btn-primary ripple-effect button-sliding-icon" >Get started For free
+                    <a class="btn btn-primary ripple-effect button-sliding-icon"href="https://localhost:44364/Loginpage.aspx" >Get started For free
                         <i class="icon-feather-arrow-right"></i>
                     </a>
                     </center>
@@ -41,22 +44,19 @@
                 </center>
             </div>-->
             <div class="row">
-                
                 <div class="col-md-4">
-                    <center>
-                    <img src="images/Screenshot%202023-04-22%20173739.png" />
-                    </center>
                     <!--<center>
+                    <img src="images/Screenshot%202023-04-22%20173739.png" />
+                    </center>-->
+                    <center>
                     <img src="images/Screenshot%202023-04-18%20102209.png" />
-                        <hr />
                     <h4>Select a template</h4>
                     <p class="text-justify">Choose a content creation template. Multiple templates are available for your all needs.</p>
                     </center>
                 </div>
                 <div class="col-md-4">
                     <center>
-                        <img src="images/Screenshot%202023-04-18%20102226.png" />
-                        <hr />
+                        <img src="images/Screenshot%202023-04-18%20102238.png" />
                         <h4>Fill the form</h4>
                         <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
                     </center>
@@ -64,10 +64,9 @@
                 <div class="col-md-4">
                     <center>
                         <img src="images/Screenshot%202023-04-18%20102238.png" />
-                        <hr />
                         <h4>Get your content</h4>
                         <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
-                    </center>-->
+                    </center>
 
                 </div>
             </div>
@@ -77,7 +76,6 @@
                 <p>Generate your required content with over 60+ content creation templates</p>
                 </center>
             </div>
-        </div>
         <div class="template-container home-template">
             <div class="active"></div>
         </div>

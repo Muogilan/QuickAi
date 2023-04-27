@@ -1,65 +1,61 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Loginpage.aspx.cs" Inherits="Quick_AI.Loginpage" %>
+﻿     <%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Loginpage.aspx.cs" Inherits="Quick_AI.Loginpage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="titlebar" class="gradiant">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Register</h2>
-                    <br />
-                    <div>
+        <br />
+        <br />
+        <br />
+        <br />
+            <div class="container">
+      <div class="row">
+         <div class="col-md-6 mx-auto">
+            <div class="card">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col">
                         <center>
-                        <h3>Let's create your account!</h3>
-                            <span>
-                                "Already have an account?"
-                                <a href="#">Log In!</a>
-
-                            </span>
-                            <form class="mx-1 mx-md-4">
-
-                  <div class="d-flex flex-row align-items-center mb-4" width="50">
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" placeholder="Full Name" />
-
-                    </div>
+                            <h4>Let's create your account!</h4>
+                            <span>Already have an account? <a href="https://localhost:44364/Adminlogin.aspx">Log In!</a></span>
+                        </center>
+                     </div>
+                  </div>                 
+                  <div class="row">
+                     <div class="col">
+                        <hr>
+                     </div>
                   </div>
+                  <div class="row">
+                     <div class="col">                       
+                        <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="USER NAME"  ></asp:TextBox>
+                        </div>
+                      
+                        <div class="form-group">
+                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="FULL NAME" ></asp:TextBox>
+                        </div>
 
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="email" id="form3Example3c" class="form-control" placeholder="UserName"/>
-                    </div>
-                  </div>
+                         <div class="form-group">
+                            <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="EMAIL ADDRESS" ></asp:TextBox>
+                        </div>
 
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4c" class="form-control" placeholder="Email Address" />
-                    </div>
-                  </div>
+                        <div class="form-group">
+                            <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="PASSWORD"  ></asp:TextBox>
+                        </div>
 
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4cd" class="form-control" placeholder="Password" />
-                    </div>
-                  </div>
+                        <div class="form-group">
+                        
+                            <asp:Button Class="btn btn-success btn-block btn-lg" ID="Button2" runat="server" Text="REGISTER" OnClick="Buttonsignup_Click" Width="112px" />
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+            </div>
+           <a href="homepage.aspx"><< Back to Home</a><br><br>      
+         </div>
+      </div>
+   </div>
+           
 
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                    <label class="form-check-label" for="form2Example3">
-                      I agree all statements in Terms of service
-                    </label>
-                  </div>
-
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">Register</button>
-                  </div>
-
-                </form>
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-        </div>
             </div>
 </asp:Content>
