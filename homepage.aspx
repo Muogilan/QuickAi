@@ -44,6 +44,9 @@
                 </center>
             </div>-->
             <div class="row">
+                <center>
+                 <h1>How It Works?</h1>
+                </center>
                 <div class="col-md-4">
                     <!--<center>
                     <img src="images/Screenshot%202023-04-22%20173739.png" />
