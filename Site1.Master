@@ -21,7 +21,7 @@
       <!--bootstrapmin Js-->
     <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
       <!--poppers Js-->
-    <script src="Bootstarp/Css/JS/popper.min.js"></script>   
+    <script src="Bootstarp/Css/JS/popper.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -36,7 +36,7 @@
     <div style="display:inline-block;border-right: 2px solid #e0e0e0;padding-right:10px;height:82px;padding-top:15px;padding-left:20px;padding-right:20px;" class="logo">
            <a   href="https://localhost:44364/homepage.aspx"><img src="images/980385239.png" height="42"/></a>
     </div>
-   <div class="dropdown" style="float:right;padding-right:10px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:10px;height:82px;">
+   <div class="dropdown" style="float:right;padding-right:10px;border-left: 2px solid #e0e0e0;padding-top:20px;padding-left:10px;height:82px; width:10%">
         <label for="Language"></label>
                    <select name="Languge" id="Languge">
                        <option value="en">english</option>

@@ -11,7 +11,7 @@ namespace Quick_AI
 {
 
 
-    public partial class WebForm1
+    public partial class Accountsetting
     {
     }
 }

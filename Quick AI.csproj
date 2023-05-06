@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Accountsetting.aspx" />
     <Content Include="Adminlogin.aspx" />
     <Content Include="Bootstarp\Css\bootstrap.min.css" />
     <Content Include="Bootstarp\Css\flags.min.css" />
@@ -749,6 +750,8 @@
     <Content Include="images\Screenshot 2023-05-03 114720.png" />
     <Content Include="Login1.aspx" />
     <Content Include="Loginpage.aspx" />
+    <Content Include="memberplan.aspx" />
+    <Content Include="membershipplan.aspx" />
     <Content Include="password.aspx" />
     <Content Include="Password1.aspx" />
     <Content Include="Sample.aspx" />
@@ -757,6 +760,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accountsetting.aspx.cs">
+      <DependentUpon>Accountsetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accountsetting.aspx.designer.cs">
+      <DependentUpon>Accountsetting.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Adminlogin.aspx.cs">
       <DependentUpon>Adminlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -808,6 +818,20 @@
     </Compile>
     <Compile Include="Loginpage.aspx.designer.cs">
       <DependentUpon>Loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberplan.aspx.cs">
+      <DependentUpon>memberplan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberplan.aspx.designer.cs">
+      <DependentUpon>memberplan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membershipplan.aspx.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membershipplan.aspx.designer.cs">
+      <DependentUpon>membershipplan.aspx</DependentUpon>
     </Compile>
     <Compile Include="password.aspx.cs">
       <DependentUpon>password.aspx</DependentUpon>
