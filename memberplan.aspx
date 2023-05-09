@@ -2,177 +2,152 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <script src="fontawesome/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 <style>
-.container{
-    max-width:960px;
-}
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-   -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-}
-.col-xl-12{
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-form{
-    margin-top:0em;
-}
-.billing-cycle-radios{
-    display:block;
-    text-align:center;
-    margin:0 auto;
-}
-billing-cycle-radios .radio{
-    margin-right:20px;
-}
-.radio{
-    display:inline-block;
-    vertical-align:top;
-}
-input{
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    box-shadow: none;
-}
-}
-.radio input{
-    position:absolute;
-    opacity:0;
-}
-.margin-bottom-70{
-    margin-bottom:70px !important;
-}
+.main{
+            margin-left: 160px;
+            margin-right: 160px;
+            margin-top:100px;
+            
+        }
+        .section{
+           display: flex;
+           
+        }
+        .radio{
+            margin-left: 400px;
+            
+            
+        }
+        .section2{
+            margin-top: 100px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .innersection{
+            display: flex;
+        }
+        .innersection a{
+            color:whitesmoke;
+        }
+        .innersection li{
+            text-decoration: none;
+            list-style-type: none;
+            margin-top: 8px;
+           
+        }
+        .innersection li button:hover{
+            background-color: rgb(33, 148, 224);
+        }
 </style>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <form name="form1" method="post">
-                    <div class="billing-cycle-radios margin-bottom-70">
-                                                    <div class="radio billed-monthly-radio">
-                                <input id="radio-monthly" name="billed-type" type="radio" value="monthly" checked="">
-                                <label for="radio-monthly"><span class="radio-label"></span> Monthly                                </label>
-                            </div>
-                                                        <div class="radio billed-yearly-radio">
-                                <input id="radio-yearly" name="billed-type" type="radio" value="yearly">
-                                <label for="radio-yearly"><span class="radio-label"></span> Yearly                                </label>
-                            </div>
-                                                        <div class="radio billed-lifetime-radio">
-                                <input id="radio-lifetime" name="billed-type" type="radio" value="lifetime">
-                                <label for="radio-lifetime"><span class="radio-label"></span> Lifetime                                </label>
-                            </div>
-                                            </div>
-                    <!-- Pricing Plans Container -->
-                    <div class="pricing-plans-container">
-                                                    <!-- Plan -->
-                            <div class="pricing-plan " data-monthly-price="1" data-annual-price="1" data-lifetime-price="1">
-                                                                <h3>Free Plan</h3>
-                                                                    <div class="pricing-plan-label"><strong>
-                                            Free                                        </strong></div>
-
-                                    
-                                <div class="pricing-plan-features">
-                                    <strong>Features of&nbsp;Free Plan</strong>
-                                    <ul>
-                                                                                <li>
-                                            <strong>32</strong> AI Document Templates                                        </li>
-                                        <li>
-                                            <strong>10,000</strong> Words per month                                        </li>
-                                                                                    <li>
-                                                <strong>100</strong> Images per month                                            </li>
-                                                                                    <li>
-                                                <strong>0</strong> Speech to Text per month                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                            <li>
-                                                <strong>0 MB</strong> Audio file size limit                                            </li>
-                                                                                                                            <li>
-                                                                                                    <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                AI Chat                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                            </li>
-                                                                                                                            <li>
-                                                                                                    <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                AI Code                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                            </li>
-                                                                                <li>
-                                                                                            <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                        Hide Ads                                        </li>
-                                                                                <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Support</li>                                    </ul>
-                                </div>
-                                <a href="javascript:void(0);" class="button full-width margin-top-20 ripple-effect">Current Plan</a>                            </div>
-                                                    <!-- Plan -->
-                            <div class="pricing-plan " data-monthly-price="1" data-annual-price="1" data-lifetime-price="1">
-                                                                <h3>Trial Plan</h3>
-                                                                    <div class="pricing-plan-label"><strong>
-                                            Trial                                        </strong></div>
-
-                                    
-                                <div class="pricing-plan-features">
-                                    <strong>Features of&nbsp;Trial Plan</strong>
-                                    <ul>
-                                                                                <li>
-                                            <strong>61</strong> AI Document Templates                                        </li>
-                                        <li>
-                                            <strong>50,000</strong> Words per month                                        </li>
-                                                                                    <li>
-                                                <strong>500</strong> Images per month                                            </li>
-                                                                                    <li>
-                                                <strong>0</strong> Speech to Text per month                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                            <li>
-                                                <strong>0 MB</strong> Audio file size limit                                            </li>
-                                                                                                                            <li>
-                                                                                                    <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                AI Chat                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                            </li>
-                                                                                                                            <li>
-                                                                                                    <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                AI Code                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                            </li>
-                                                                                <li>
-                                                                                            <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                        Hide Ads                                        </li>
-                                                                                <li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span> Free Support</li>                                    </ul>
-                                </div>
-                                <button type="submit" class="button full-width margin-top-20 ripple-effect" name="upgrade" value="trial">Upgrade</button>                            </div>
-                                                    <!-- Plan -->
-                            <div class="pricing-plan recommended" data-monthly-price="5" data-annual-price="50" data-lifetime-price="550">
-                                <div class="recommended-badge">Recommended</div>                                 <h3>Extended Plan</h3>
-                                <div class="pricing-plan-label billed-monthly-label"><strong>5 ₹</strong>/ Monthly</div><div class="pricing-plan-label billed-yearly-label"><strong>50 ₹</strong>/ Yearly</div><div class="pricing-plan-label billed-lifetime-label"><strong>550 ₹</strong>/ Lifetime</div>
-                                <div class="pricing-plan-features">
-                                    <strong>Features of&nbsp;Extended Plan</strong>
-                                    <ul>
-                                                                                <li>
-                                            <strong>61</strong> AI Document Templates                                        </li>
-                                        <li>
-                                            <strong>100,000</strong> Words per month                                        </li>
-                                                                                    <li>
-                                                <strong>1,000</strong> Images per month                                            </li>
-                                                                                    <li>
-                                                <strong>0</strong> Speech to Text per month                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Create audio transcription"></i></li>
-                                            <li>
-                                                <strong>0 MB</strong> Audio file size limit                                            </li>
-                                                                                                                            <li>
-                                                                                                    <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                AI Chat                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Chat with the AI bot"></i>
-                                            </li>
-                                                                                                                            <li>
-                                                                                                    <span class="icon-text no"><i class="icon-feather-x-circle margin-right-2"></i></span>
-                                                                                                AI Code                                                <i class="icon-feather-help-circle margin-left-2" data-tippy-placement="top" title="Generate code of any programming language with the AI"></i>
-                                            </li>
-                                                                                <li>
-                                                                                            <span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span>
-                                                                                        Hide Ads                                        </li>
-                                                                                <li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Setup</li><li><span class="icon-text yes"><i class="icon-feather-check-circle margin-right-2"></i></span> Free Support</li>                                    </ul>
-                                </div>
-                                <button type="submit" class="button full-width margin-top-20 ripple-effect" name="upgrade" value="1">Upgrade</button>                            </div>
-                                            </div>
-                </form>
+   <div class="main">
+        <div class="section">
+              <div class="section1">
+                <h1>Membership Plan</h1>
+                <div class="radio">
+               <input type="radio"  name="radio-buttons" value="monthly" onchange="enableInputField(5)"/> Monthly&nbsp; &nbsp; &nbsp;
+               <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)"/> Yearly&nbsp; &nbsp; &nbsp;
+               <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)"/> Life Time&nbsp; &nbsp; &nbsp;
+                </div>
+              </div>
+        </div>
+        <div class="section2">
+            <div class="innersection">      
+            <ul>
+                <li><strong>Free Plan</strong></li>
+                <li><button style="width:200px;">Free</button></li>
+                <li>Features of Free Plan</li>
+                <li><b>32</b> AI Document Templates</li>
+                <li><b>10,000</b> Words per month</li>
+                <li><b>100</b> Images per month</li>
+                <li><b>0</b> Speech to Text per month </li>
+                <li><b>0</b> MB Audio file size limit</li>
+                <li> <i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i> </li>
+                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
+                <li> <i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Hide Ads</li>
+                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
+                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
+                <li><button  class="btn btn-primary" style="width:200px;">Current Plan</button></li>
+            </ul>
             </div>
+            <div class="innersection">            
+                <ul>
+                    <li><strong>Trail Plan</strong></li>
+                    <li><button style="width:200px;">Trail</button></li>
+                    <li>Features of Free Plan</li>
+                    <li><b>32</b> AI Document Templates</li>
+                    <li><b>10,000</b> Words per month</li>
+                    <li><b>100</b> Images per month</li>
+                    <li><b>0</b> Speech to Text per month </li>
+                    <li><b>0</b> MB Audio file size limit</li>
+                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i></li>
+                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
+                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i> Hide Ads</li>
+                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
+                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
+                     <li><button class="btn btn-primary" style="width:200px;">Upgrade</button></li>
+                </ul>
+                </div>
+                <div class="innersection">
+                    <ul>
+                        <li><strong>Extended Plan</strong></li>
+                        <li><input type="text" id="input-field" disabled></li>
+                        <li>Features of Free Plan</li>
+                        <li><b>32</b> AI Document Templates</li>
+                        <li><b>10,000</b> Words per month</li>
+                        <li><b>100</b> Images per month</li>
+                        <li><b>0</b> Speech to Text per month </li>
+                        <li><b>0</b> MB Audio file size limit</li>
+                        <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i> </li>
+                        <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
+                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i> AI Code</li>
+                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Setup</li>
+                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Support</li>
+                         <li><button class="btn btn-primary" style="width:200px;"><a href="http://localhost:49935/upgrade.aspx">   Upgrade</a></button></li>
+                    </ul>
+             </div>
         </div>
     </div>
+
+       <script>
+           function enableInputField(value) {
+               const radioButtons = document.getElementsByName('radio-buttons');
+               const inputField = document.getElementById('input-field');
+               for (let i = 0; i < radioButtons.length; i++) {
+                   if (radioButtons[i].checked) {
+                       inputField.disabled = false;
+                       switch (value) {
+                           case 5:
+                               inputField.value = "₹" + value + " per month";
+                               break;
+                           case 50:
+                               inputField.value = "₹" + value + " per year";
+                               break;
+                           case 550:
+                               inputField.value = "₹" + value + " lifetime";
+                               break;
+                           default:
+                               inputField.value = "";
+                               break;
+                       }
+                       return;
+                   }
+               }
+               inputField.disabled = true;
+               inputField.value = "";
+           }
+
+       </script>
 </asp:Content>

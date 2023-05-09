@@ -54,9 +54,8 @@
     <script src="Bootstarp/Css/JS/popper.min.js"></script>
     <style>
     *{
-        padding:5px;
+
         box-sizing:border-box;
-        width: -webkit-fill-available;
     }
 body{
     color: #666;
@@ -149,6 +148,7 @@ table th{
     color: #fff;
     vertical-align: top;
     font-weight: 500;
+    width: 36%;
 }
 table .basic-table{
     margin-bottom:0;
@@ -247,24 +247,24 @@ button{
     border: none;
 }
 
-    .btn #imgbtn:hover {
+.btn #imgbtn:hover {
         background-color: white;
         border: none;
-    }
+}
 
 .dropdown-menu li {
     font-size: 12px;
     margin-left: 0px;
 }
 
-    .dropdown-menu li a {
+.dropdown-menu li a {
         margin-left: 0px;
-    }
+}
 
-        .dropdown-menu li a i {
+.dropdown-menu li a i {
             font-size: 15px;
             margin-left: 05px;
-        }
+}
 
 
 
@@ -337,13 +337,13 @@ option {
     height: 50px;
 }
 
-    .user img {
+.user img {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-    }
+}
 
 .selectlang {
     float: right;
@@ -390,25 +390,25 @@ option {
     margin-bottom: 145px;
 }
 
-        .sidebar ul li {
+.sidebar ul li {
             width: 75%;
             list-style: none;
-        }
+}
 
-            .sidebar ul li a {
+.sidebar ul li a {
                 width: 100%;
                 text-decoration: none;
                 color: #707070;
                 height: 40px;
                 display: flex;
-                align-items: center;
-                font-size:13px;
-            }
+    align-items: center;
+    font-size:13px;
+}
 
-                .sidebar ul li a i {
-                    min-width: 60PX;
-                    font-size: 15PX;
-                    text-align: center;
+.sidebar ul li a i {
+    min-width: 60PX;
+    font-size: 15PX;
+    text-align: center;
                 }
 .sidebar div h9{
     margin-left:-27px;
@@ -417,7 +417,7 @@ option {
     margin-left:-25px;
     flex:none;
 }
-                .dropbtn {
+.dropbtn {
   background-color:white;
   color:#6c757d;
   padding: 16px;
@@ -571,44 +571,53 @@ body {
 </head>
 <body>
 
-    <div class="topbar">
+   <div class="topbar">
                     <div class="logo">
-                        <center>
-                            <img src="images/980385239.png" style="width:50%;margin-top:-18px; " />
-                        </center>
-                    </div> 
-                        <div></div> 
-                    <div class="dropdown">
-  <a class="btn " id="imgbtn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"">
-      <img src="images/default_user.png" style="height:42px; border-radius:94px;"/>
-  </a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#"><i class ="fa fa-dashboard icons"></i>DashBoard</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-image"></i>AI Images</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i>AI Chat</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-lines"></i>All Documents</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift"></i>Membership</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Account Setting</a></li>
-    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
-  </ul>
-</div>
-                     
+                        <center> <img src="images/980385239.png" /></center>
+                    </div>
+               <a href="javascript:void(0);"  class="header-icon">
+                   <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
+               </a>
+          <div class="header-notifications user-menu">
+                                    <div class="header-notifications-trigger">
+                                        <a href="#" title="">
+                                            <div class="user-avatar status-online">
+                                                <div class="dropdown">
+                                                    <span onclick="myFunction1()" class="dropbtn1" >
+                                                    <img src="images/default_user.png" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                             
+                                   <div id="login" class="dropdown-content"style="height: 465px;">
+                                        <ul class="user-menu-small-nav">
+                                            <li><a href="https://localhost:44364/Dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
+                                            <li><a href="3"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                            <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
+                                            <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                                            <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                      <div class="selectlang">
                          <select  id="langbtn" class="popup-with-zoom-anim button ripple-effect">
-                    <option value="EN">English</option>
-                     <option value="Ta">Tamil</option>
-                     <option value="Te">Telugu</option>
-                     <option value="HI">Hindi</option>
-                </select>
+                                <option value="EN">English</option>
+                                <option value="Ta">Tamil</option>
+                                <option value="Te">Telugu</option>
+                                <option value="HI">Hindi</option>
+                         </select>
                     </div>
                  </div>
     <div style="padding-top:80px;" class="row">
                                     <div class="col-6">
-                                      <h3 style="padding:15px;">Dashboard</h3>
-                                    
+                                      <h3 style="padding:15px;float: right;">Dashboard</h3>
                                     </div>
                              <div style="padding-right:40px;" class="col-6">
                                   
@@ -616,13 +625,12 @@ body {
                                           <span class="suhome"><a href="homepage.aspx">Home</a></span>
                                           <span class="icon"></span>
                                           <span style="color:white;">Dashboard</span>
-                                       </div>  
-                                  
+                                       </div>
                                </div>
                          </div>
-      <div class="sidebar" style="font-size: 16px;margin-left: 0px; margin-top: -6px;height: 80%;">
+      <div class="sidebar" style="font-size: 16px;margin-left: 0px; margin-top: -16px;height: 80%;">
                          <ul>
-                             <li "="">
+                             <li "">
                                  <div style="color:darkblue;font-weight:600;margin-bottom:-8px;">
                                     <h9> My Account</h9>
                                  </div>
@@ -734,7 +742,7 @@ body {
                                         <td>-</td>
                                    </tr>
                                     <tr>
-                                        <td align="right" colspan="4"><button type="button" class="button" onclick="window.location.href="#">Change Plan</button></td>
+                                        <td align="right" colspan="4"><button type="button" class="button" onclick="window.location.href="href="memberplan.aspx">Change Plan</button></td>
                                     </tr>
                                 </tbody></table>
                             </div>
@@ -743,5 +751,26 @@ body {
                 </div>
         </div>
     </form>
+    <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+              document.getElementById("login").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function (event) {
+              if (!event.target.matches('.dropbtn1')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+
+                      }
+                  }
+              }
+          }
+    </script>
 </body>
 </html>

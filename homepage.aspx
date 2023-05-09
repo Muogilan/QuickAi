@@ -70,17 +70,7 @@
                         <h4>Get your content</h4>
                         <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
                     </center>
-
                 </div>
             </div>
-            <div class="section padding-top-65 padding-bottom-65">
-                <center>
-                <h3 class="margin-botom-5">Templates</h3>
-                <p>Generate your required content with over 60+ content creation templates</p>
-                </center>
-            </div>
-        <div class="template-container home-template">
-            <div class="active"></div>
-        </div>
     </section>
 </asp:Content>

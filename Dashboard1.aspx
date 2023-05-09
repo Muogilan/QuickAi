@@ -321,7 +321,6 @@ body {
                         <center> <img src="images/980385239.png" /></center>
                     </div>
                <a href="javascript:void(0);"  class="header-icon">
-                       
                    <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
                     </a>
                  
@@ -457,7 +456,6 @@ body {
                                       <h3 style="float:right;">Dashboard</h3>
                                     </div>
                              <div style="padding-right:40px;" class="col-6">
-                                  
                                      <div style="float:right;" class="subcontainer">
                                           <span class="suhome"><a href="homepage.aspx">Home</a></span>
                                           <span class="icon"></span>

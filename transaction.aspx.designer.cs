@@ -11,7 +11,7 @@ namespace Quick_AI
 {
 
 
-    public partial class memberplan
+    public partial class transaction
     {
     }
 }

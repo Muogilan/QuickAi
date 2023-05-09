@@ -13,7 +13,8 @@
                     </ul>
                     </div>
         </div>
-</div>    <div class="welcome-text">
+</div>
+    <div class="welcome-text">
         <center>
              <div class="container">
     <div class="row" >
@@ -34,5 +35,6 @@
         </div>
     </div>
         </center>
-    </div>
+    </div>
+
 </asp:Content>
