@@ -702,7 +702,7 @@ body {
                            </li>
                             
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/transaction.aspx">
                                   <i class="fa-solid fa-file"></i> <div>Transaction</div>
                               </a>
                            </li>
@@ -742,7 +742,7 @@ body {
                                         <td>-</td>
                                    </tr>
                                     <tr>
-                                        <td align="right" colspan="4"><button type="button" class="button" onclick="window.location.href="href="memberplan.aspx">Change Plan</button></td>
+                                        <td align="right" colspan="4"><button type="button" class="button" onclick="window.location.href='https://localhost:44364/memberplan.aspx'">Change Plan</button></td>
                                     </tr>
                                 </tbody></table>
                             </div>
@@ -751,26 +751,5 @@ body {
                 </div>
         </div>
     </form>
-    <script>
-          /* When the user clicks on the button, 
-          toggle between hiding and showing the dropdown content */
-          function myFunction() {
-              document.getElementById("login").classList.toggle("show");
-          }
-
-          // Close the dropdown if the user clicks outside of it
-          window.onclick = function (event) {
-              if (!event.target.matches('.dropbtn1')) {
-                  var dropdowns = document.getElementsByClassName("dropdown-content");
-                  var i;
-                  for (i = 0; i < dropdowns.length; i++) {
-                      var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-
-                      }
-                  }
-              }
-          }
-    </script>
 </body>
 </html>

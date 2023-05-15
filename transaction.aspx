@@ -52,20 +52,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.topbar {
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
-    width: 100%;
-    height: 85px;
-    display: grid;
-    grid-template-columns: 2.5fr 8fr 1fr 1fr;
-    align-items: center;
-    z-index: 1;
-
-}
-
 .logo {
    
     border-right: 1px solid #e0e0e0;
@@ -254,7 +240,6 @@ body {
 
 .topbar {
     position: fixed;
-    background-color: #fff;
     box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
     width: 100%;
     height: 85px;
@@ -315,17 +300,7 @@ option {
     background-color: #314cc6;
 }
 
-.sidebar {
-    position: fixed;
-    top: 85px;
-    width: 260px;
-    background-color: #fff;
-    overflow-x: hidden;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
-}
+
 
 .sidebar ul {
         margin-top: 10px;
@@ -350,18 +325,6 @@ option {
                     text-align: center;
                 }
 
-
-.topbar {
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
-    width:100%;
-    height: 85px;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr 1fr;
-    align-items: center;
-    z-index: 1;
-}
 
 .logo {
    
@@ -456,18 +419,6 @@ option {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.topbar {
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
-    width: 100%;
-    height: 85px;
-    display: grid;
-    grid-template-columns: 2.5fr 8fr 1fr 1fr;
-    align-items: center;
-    z-index: 1;
-
-}
 
 .logo {
    
@@ -520,17 +471,6 @@ option {
     background-color: #314cc6;
 }
 
-.sidebar {
-    position: fixed;
-    top: 85px;
-    width: 260px;
-    background-color: #fff;
-    overflow-x: hidden;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
-}
 
     .sidebar ul {
         margin-top: 10px;

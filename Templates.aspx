@@ -1,142 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="Quick_AI.homepage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Templates.aspx.cs" Inherits="Quick_AI.Templates" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <style>
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.testimonials {
-  background: #fff;
-  text-align: center;
-  max-width: 600px;
-  margin: 1.5rem auto;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-}
-.title {
-  font-size: 1.5rem;
-}
-.description {
-  font-size: 0.95rem;
-  color: #333;
-}
-
-.slider-container {
-  margin-top: 2rem;
-  margin: 2rem auto 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-.slider {
-  display: flex;
-  flex: 0 0 1;
-  width: 300%; / Depends On slide-box Length  100 */
-  transition: all 0.5s linear;
-}
-.slide-box {
-  padding: 0 80px;
-}
-.slide-box .comment {
- 
-  font-size: 0.86rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.4px;
-  position: relative;
-  font-weight: 400;
-}
-
-.slide-box img {
-  max-width: 60px;
-  border-radius: 50%;
-}
-.slide-box .name {
-  font-size: 1rem;
-}
-.slide-box .job {
-  font-size: 0.7rem;
-  color: #8d8e97;
-  font-weight: 400;
-}
-.slide-box span{
-    border-radius:4px;
-    color:aliceblue
-}
-
-.control-slider {
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  line-height: 40px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-}
-.btn-left {
-  left: 10px;
-}
-.btn-right {
-  right: 10px;
-}
-h3{
-    margin-top:5px;
-    margin-bottom:5px;
-    text-align:center;
-}
-@media screen and (max-width: 500px) {
-            .slide-box {
-                padding: 0 55px;
-            }
-        }
-
-</style>
-    <style>
-.main{
-            margin-left: 160px;
-            margin-right: 160px;
-            margin-top:100px;
-            
-        }
-        .section{
-           display: flex;
-           
-        }
-        .radio{
-            margin-left: 400px;
-            
-            
-        }
-        .section2{
-            margin-top: 100px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            width: 100%;
-            height: 750px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .innersection{
-            display: flex;
-        }
-        .innersection a{
-            color:whitesmoke;
-        }
-        .innersection li{
-            text-decoration: none;
-            list-style-type: none;
-            margin-top: -5px;
-           
-        }
-        .innersection li button:hover{
-            background-color: rgb(33, 148, 224);
-        }
-</style>
-  <style>
+<style>
 *{
     margin-bottom:20px;
 }
@@ -189,9 +55,6 @@ body{
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-.col-md-4 a{
-    text-decoration:none;
-}
 .col-md-6{
     -webkit-box-flex: 0;
     flex: 0 0 33.333333%;
@@ -213,7 +76,7 @@ a{
     box-shadow:none;
     transition:0.3s;
 }
-.ai-templates .content{
+.ai-templates content{
     padding:20px;
 }
 .ai-templates-icon{
@@ -226,7 +89,6 @@ a{
     border-radius: 9px;
     padding: 0.5rem;
     box-shadow: 0 0 #0000, 0 0 #0000, 0px 0px 0px 1px rgba(17,24,39,.05), 0px 1px 4px rgba(17,24,39,.1), 0px 8px 16px rgba(17,24,39,.1);
-    margin-bottom: 10px;
 }
 .ai-templates.ai-templates-pro {
     border-color: #ffd400;
@@ -268,244 +130,11 @@ h4{
 span i{
     margin-bottom:-20px;
 }
-    </style>
-    <style>
-*{
-    box-sizing:border-box;
-}
-body{
-    color: #666;
-    font-size: 16px;
-    line-height: 27px;
-    background-color: #fff;
-}
-.section.border-top {
-    border-top: 1px solid #e0e0e0;
-}
-.container {
-    max-width:960px;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.col-xl-12 {
-    position:relative;
-    width:100%;
-    min-height:1px;
-    padding-right:15px;
-    padding-left:15px;
-}
-.col-xl-4 {
-    position:relative;
-    width:100%;
-    min-height:1px;
-    padding-right:15px;
-    padding-left:15px;
-}
-.margin-bottom-45{
-    margin-bottom:45px !important;
 
-}
-.margin-top-0{
-    margin-top:0!important;
-}
-.section-headline {
-    display:block;
-    position:relative;
-    padding-right:20px;
-}
-.section-headline h3 {
-    font-size:26px;
-    line-height:36PX;
-    font-weight:500;
-    color:#333;
-}
-.headline-link {
-    position:absolute;
-    right:0;
-    bottom:0;
-    text-decoration:none;
-}
-.blog-compact-item-container {
-    display:block;
-    height:100%;
-    width:100%;
-    border-radius:4px;
-    background:0 0;
-    transform: translate3d(0, 0, 0);
-    transition: transform .4s;
-    margin-bottom: 30px;
-}
-.blog-compact-item{
-    height:42px;
-    background: #ccc;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
-    border-radius: 4px;
-    height: 100%;
-    display: block;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 460px;
-    z-index: 100;
-    cursor: pointer;
-    transition: .4s;
-}
-.blog-compact-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
-}
-.img {
-    vertical-align: middle;
-    border-style: none;
-}
-span.blog-item-tag {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 5px 12px;
-    line-height: 20px;
-    font-weight: 400;
-    margin-bottom: 9px;
-    position: absolute;
-    top: 30px;
-    left: 32px;
-    z-index: 110;
-    transition: .4s;
-}
-.blog-post-tags {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 0;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    opacity: .9;
-}
-.blog-post-tags li {
-    display: inline-block;
-    margin-right: 5px;
-}
-.blog-compact-item-content {
-    position: absolute;
-    bottom: 32px;
-    left: 0;
-    padding: 0 34px;
-    width: 100%;
-    z-index: 50;
-    box-sizing: border-box;
-}
-.blog-compact-item-content h3 {
-    color: #fff;
-    font-size: 20px;
-    padding: 5px 0;
-    font-weight: 500;
-    margin: 2px 0 0;
-    line-height: 30px;
-}
-.blog-compact-item-content p {
-    font-size: 16px;
-    font-weight: 300;
-    display: inline-block;
-    color: rgba(255, 255, 255, .8);
-    margin: 7px 0 0;
-}
-.blog-compact-item:before {
-    content: "";
-    top: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    border-radius: 4px;
-    background: linear-gradient(to top, rgba(51, 51, 51, 0.8) 0%, rgba(51, 51, 51, 0.7) 35%, rgba(51, 51, 51, 0.3) 60%, rgba(51, 51, 51, 0.3) 100%);
-    transition: .4s;
-}
-.blog-compact-item:hover {
-  transform: translate(0, -3px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-</style>
-    <section href="https://localhost:44364/homepage.aspx">
-        <br />
-        <br />
-        <br />
-        <br />
-   <center>
-        <img width="300px" src="images/home-hero-icon.png"/>
-   <center>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <center>
-                   <h1 class="margin-bottom-10 text_gradient animation">
-                       <strong>Best AI Content Writer</strong>
-                   </h1>
-                    <p>Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster & save hours of work.</p>
-                </center>
-                    <center>
-                    <a class="btn btn-primary ripple-effect button-sliding-icon"href="https://localhost:44364/Loginpage.aspx" >Get started For free
-                        <i class="icon-feather-arrow-right"></i>
-                    </a>
-                    </center>
-                    <div class="margin-top-2 grey">
-                        <center>
-                        <small>No Credit Card Required</small>
-                        </center>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <br />
-        <br />
-       <!-- <div class="container">
-            <div class="row">
-                <center>
-                <h4>How It Works?</h4>
-                </center>
-            </div>-->
-            <div class="row">
-                <center>
-                 <h1>How It Works?</h1>
-                </center>
-                <div class="col-md-4">
-                    <!--<center>
-                    <img src="images/Screenshot%202023-04-22%20173739.png" />
-                    </center>-->
-                    <center>
-                    <img src="images/Screenshot%202023-04-18%20102209.png" />
-                    <h4>Select a template</h4>
-                    <p class="text-justify">Choose a content creation template. Multiple templates are available for your all needs.</p>
-                    </center>
-                </div>
-                <div class="col-md-4">
-                    <center>
-                        <img src="images/Screenshot%202023-04-18%20102238.png" />
-                        <h4>Fill the form</h4>
-                        <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
-                    </center>
-                </div>
-                <div class="col-md-4">
-                    <center>
-                        <img src="images/Screenshot%202023-04-18%20102238.png" />
-                        <h4>Get your content</h4>
-                        <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
-                    </center>
-                </div>
-            </div>
-        <div class="section padding-top-65 padding-bottom-65">
+    </style>
+    </head>
+    <body>
+<div class="section padding-top-65 padding-bottom-65">
         <div class="container margin-bottom-20">
             <div class="section-headline centered margin-top-0 margin-bottom-30">
                 <h3 class="margin-bottom-5">Templates</h3>
@@ -735,7 +364,7 @@ span.blog-item-tag {
                             </a>
                         </div>
                                             <div class="col-md-4 col-sm-6 category-2">
-                            <a href="http://hype.sociusus.com/ai-templates/linkedin-ad-headlines">
+                            <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -1380,226 +1009,9 @@ span.blog-item-tag {
                                 </div>
         </div>
     </div>
-           <div class="main">
-        <div class="section">
-              <div class="section1">
-                <h1>Membership Plan</h1>
-                <div class="radio">
-               <input type="radio"  name="radio-buttons" value="monthly" onchange="enableInputField(5)"/> Monthly&nbsp; &nbsp; &nbsp;
-               <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)"/> Yearly&nbsp; &nbsp; &nbsp;
-               <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)"/> Life Time&nbsp; &nbsp; &nbsp;
-                </div>
-              </div>
-        </div>
-        <div class="section2">
-            <div class="innersection">      
-            <ul>
-                <li><strong>Free Plan</strong></li>
-                <li><button style="width:200px;">Free</button></li>
-                <li>Features of Free Plan</li>
-                <li><b>32</b> AI Document Templates</li>
-                <li><b>10,000</b> Words per month</li>
-                <li><b>100</b> Images per month</li>
-                <li><b>0</b> Speech to Text per month </li>
-                <li><b>0</b> MB Audio file size limit</li>
-                <li> <i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i> </li>
-                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
-                <li> <i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Hide Ads</li>
-                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
-                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
-                <li><button  class="btn btn-primary" style="width:200px;">Current Plan</button></li>
-            </ul>
-            </div>
-            <div class="innersection">            
-                <ul>
-                    <li><strong>Trail Plan</strong></li>
-                    <li><button style="width:200px;">Trail</button></li>
-                    <li>Features of Free Plan</li>
-                    <li><b>32</b> AI Document Templates</li>
-                    <li><b>10,000</b> Words per month</li>
-                    <li><b>100</b> Images per month</li>
-                    <li><b>0</b> Speech to Text per month </li>
-                    <li><b>0</b> MB Audio file size limit</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i> Hide Ads</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
-                     <li><button class="btn btn-primary" style="width:200px;">Upgrade</button></li>
-                </ul>
-                </div>
-                <div class="innersection">
-                    <ul>
-                        <li><strong>Extended Plan</strong></li>
-                        <li><input type="text" id="input-field" disabled></li>
-                        <li>Features of Free Plan</li>
-                        <li><b>32</b> AI Document Templates</li>
-                        <li><b>10,000</b> Words per month</li>
-                        <li><b>100</b> Images per month</li>
-                        <li><b>0</b> Speech to Text per month </li>
-                        <li><b>0</b> MB Audio file size limit</li>
-                        <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i> </li>
-                        <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
-                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i> AI Code</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Setup</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Support</li>
-                         <li><button class="btn btn-primary" style="width:200px;"><a href="http://localhost:49935/upgrade.aspx">   Upgrade</a></button></li>
-                    </ul>
-             </div>
-        </div>
-    </div>
-        <div class="section-headline centered margin-top-0 margin-bottom-5">
-                        <h3>Testimonials</h3>
-         <i class="fa-sharp fa-solid fa-quote-right" style="color: #0949b9; font-size: 63px;margin-left: -473px;"></i>
-                    </div>
-   
-    <div class="testimonials">
-      
-        <div class="slider-container">
-            <div class="slider">
-
-                <div class="slide-box">
-                    <!-- Testi One -->
-                    
-                    <img src="images/default_user.png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Natasha</h4>
-                        <span style="background: #0949b9;">Designer</span>
-                        <p class="comment">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco labons nisi ut aliquip ea commodo consequat. Etsed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <!-- Testi Two -->
-                   
-                    <img src="images/default_user.png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Steve Roger</h4>
-                        <span style="background: #0949b9;">Content Writer</span>
-                         <p class="comment">
-                        Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e
-                    </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <!-- Testi Three -->
-                    <img src="images/default_user.png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Tony Stark</h4>
-                        <span style="background: #0949b9;">Social Marketing</span>
-                        <p class="comment">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#!" class="control-slider btn-left">
-                <i class="fas fa-chevron-left"></i>
-            </a>
-            <a href="#!" class="control-slider btn-right">
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
-    </div>
-        <div class="section border-top padding-top-65 padding-bottom-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-
-                    <!-- Section Headline -->
-                    <div class="section-headline margin-top-0 margin-bottom-45">
-                        <h3>Recent Blog</h3>
-                        <a href="#" class="headline-link">View Blog<i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="row">
-                        <!-- Blog Post Item -->
-                            <div class="col-xl-4">
-                                <a href="#" class="blog-compact-item-container">
-                                    <div class="blog-compact-item"style="width:40%;">
-                                        <img src="images/blog.png" alt="First Blog">
-                                        <span class="blog-item-tag">Admin</span>
-                                        <div class="blog-compact-item-content">
-                                            <ul class="blog-post-tags">
-                                                <li>3 years ago</li>
-                                            </ul>
-                                            <h3>First Blog</h3>
-                                            <p>Consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut eni...</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                           <!-- Blog post Item / End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+        
+    </body>
     <script>
-        const sliderElm = document.querySelector(".slider-container .slider");
-        const btnLeft = document.querySelector(".slider-container .btn-left");
-        const btnRight = document.querySelector(".slider-container .btn-right");
+ $('.ai-templates-category').on('click', function (e) {            e.preventDefault();            // make active            $('.template-categories li').removeClass('active');            $(this).parents('li').addClass('active');            if ($(this).data('category') === 'all') {                $('.ai-template-blocks > div').show();            $('.ai-templates-category-title').show();            } else {                $('.ai-template-blocks > div').hide();            $('.category-' + $(this).data('category')).show();            $('.ai-templates-category-title').hide();            // empty search            $('#template-search').val('');            }        });</script>
 
-        const numberSliderBoxs = sliderElm.children.length;
-        let idxCurrentSlide = 0;
-
-        // Functions:
-        function moveSlider() {
-            let leftMargin = (sliderElm.clientWidth / numberSliderBoxs) * idxCurrentSlide;
-            sliderElm.style.marginLeft = -leftMargin + "px";
-            console.log(sliderElm.clientWidth, leftMargin);
-        }
-        function moveLeft() {
-            if (idxCurrentSlide === 0) idxCurrentSlide = numberSliderBoxs - 1;
-            else idxCurrentSlide--;
-
-            moveSlider();
-        }
-        function moveRight() {
-            if (idxCurrentSlide === numberSliderBoxs - 1) idxCurrentSlide = 0;
-            else idxCurrentSlide++;
-
-            moveSlider();
-        }
-
-        // Event Listeners:
-        btnLeft.addEventListener("click", moveLeft);
-        btnRight.addEventListener("click", moveRight);
-        window.addEventListener("resize", moveSlider);
-
-    </script>
-     <script>
-           function enableInputField(value) {
-               const radioButtons = document.getElementsByName('radio-buttons');
-               const inputField = document.getElementById('input-field');
-               for (let i = 0; i < radioButtons.length; i++) {
-                   if (radioButtons[i].checked) {
-                       inputField.disabled = false;
-                       switch (value) {
-                           case 5:
-                               inputField.value = "₹" + value + " per month";
-                               break;
-                           case 50:
-                               inputField.value = "₹" + value + " per year";
-                               break;
-                           case 550:
-                               inputField.value = "₹" + value + " lifetime";
-                               break;
-                           default:
-                               inputField.value = "";
-                               break;
-                       }
-                       return;
-                   }
-               }
-               inputField.disabled = true;
-               inputField.value = "";
-           }
-
-     </script>
-    <script>
-        $('.ai-templates-category').on('click', function (e) {            e.preventDefault();            // make active            $('.template-categories li').removeClass('active');            $(this).parents('li').addClass('active');            if ($(this).data('category') === 'all') {                $('.ai-template-blocks > div').show();                $('.ai-templates-category-title').show();            } else {                $('.ai-template-blocks > div').hide();                $('.category-' + $(this).data('category')).show();                $('.ai-templates-category-title').hide();                // empty search                $('#template-search').val('');            }        });</script>
 </asp:Content>

@@ -435,7 +435,7 @@ body {
                            </li>
                             
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/transaction.aspx">
                                   <i class="fa-solid fa-file"></i> <div>Transaction</div>
                               </a>
                            </li>

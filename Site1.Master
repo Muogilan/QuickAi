@@ -28,9 +28,8 @@
 <body>
     <form id="form1" runat="server">
 <nav style=" 
-    position: sticky;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: #fff;
-    margin-top:33px">
+    position: sticky;
+    background: #fff;">
     <nav class="navbar navbar-expand-lg navbar-light">
 <div class="header navbar-light bg-light" style=" position:fixed;width:100%;height:82px;"> 
     <div style="display:inline-block;border-right: 2px solid #e0e0e0;padding-right:10px;height:82px;padding-top:15px;padding-left:20px;padding-right:20px;" class="logo">
@@ -90,20 +89,22 @@
                                          <div class="col-md-1"></div>
                              </div>
                       </div>
-        
-                       <div class="col-md-6">
+        <div class="col-md-1"></div>
+                       <div class="col-md-4">
                            <div class="foot">
                                <div class="row">
-                          <div class="col-md-3">
+                          <div class="col-md-4">
                           <div class=" footer-col1">			
 				             <h6> My Account</h6>
 				              <ul style="list-style:none;">
-					           <li><a href="#">Login</a></li>
-					           <li><a href="#">Register</a></li>
+					           <li><a href="#">Dashboard</a></li>
+					           <li><a href="#">Templates</a></li>
+                                  <li><a href="#">AI images</a></li>
+                                  <li><a href="#">Logout</a></li>
 				                </ul>
                           </div>
 			              </div>
-                           <div class="col-md-3">
+                           <div class="col-md-4">
 			                   <div class="footer-col2">
 				                 <h6>Helpful Links</h6>
 				                  <ul style="list-style:none;">
@@ -113,37 +114,34 @@
 				                      </ul>
 			                       </div>
                                  </div>
-                         <div class="col-md-3">
+                         <div class="col-md-4">
 			                    <div class="footer-col3">
 				                   <h6>Information</h6>
 				                    <ul style="list-style:none;">
 					                 <li><a href="#">FAQ</a></li>
-					                 <li><a href="#">Testinomials</a></li>
+					                 <li><a href="https://localhost:44364/Testimonialsfooter.aspx">Testimonials</a></li>
 				                   </ul>
 			                   </div>
-                         </div>  <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" />
+                         </div> 
                         <div class="col-md-3"></div>
                       </div>
                    </div>
                </div>
              </div>  <hr style="border-top: dotted 1px;margin-top: 0rem; margin-bottom: 0rem" />
                     <div class="footer2" style="background-color:#303030;border-top-color:gray;">
-                           <div class="row">
+                           <div class="row" style="margin-bottom: -40px;">
                               <div class="col-md-6">
-                                <div class="row">
+                                <div class="row"style="    width: 150%;">
                                             <div class="col-md-2"></div>
                                       <div class="col-md-7">
                                            <div class="copyfoot">
                                                <p style="color:silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
                                           </div>
                                       </div>
-                                           <div class="col-md-4"></div>
-
                                 </div>
-
                            </div>
-                                   <div class="col-md-6">
-                                     <div class="row">
+                                   <div class="col-md-6"">
+                                     <div class="row" style="width:400%;">
                                         <div class="col-md-4"></div>
 
                                             <div class="col-md-6">
@@ -155,8 +153,7 @@
 	                                                  <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
 		                                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
 	                                              </div>
-                                             </div>
-                                                   <div class="col-md-2"></div>                        
+                                             </div>                    
                                       </div>
                                    </div>
                                </div>         

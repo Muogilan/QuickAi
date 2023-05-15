@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Quick_AI
 {
-    public partial class membershipplan : System.Web.UI.Page
+    public partial class Templates : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

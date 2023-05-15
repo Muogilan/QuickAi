@@ -1260,7 +1260,7 @@ body{
                                                 <h5>Username *</h5>
                                                 <div class="input-with-icon-left">
                                                     <i class="la la-user"></i>
-                                                    <input type="text" class="with-border" id="username" name="username" value="Mugilan" onblur="checkAvailabilityUsername()"/>
+                                                    <input type="text" class="with-border" id="username" name="username" value="" onblur="checkAvailabilityUsername()"/>
                                                 </div>
                                                 <span id="user-availability-status"><span class="status-available">Success</span></span>
                                             </div>
