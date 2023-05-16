@@ -1155,7 +1155,8 @@ body{
                            </li>
                              <li>
                               <a href="#">
-                                  <i class="fa-solid fa-file-lines"></i> <div> <select name="ctl13" class="dropdown-item-text">
+                                  <i class="fa-solid fa-file-lines"></i> 
+                                  <div> <select name="ctl13" class="dropdown-item-text">
 	<option selected="selected" value="MY Documents">My Documents</option>
 	<option value="All AI Images">All AI Images</option>
 

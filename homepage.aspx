@@ -612,7 +612,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-pencil-square-o"></i>
+                                            <i class="bi bi-pencil-square"></i>
                                         </div>
                                         <h4>
                                             Article Rewriter                                                                                    </h4>
@@ -685,7 +685,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-facebook-official"></i>
+                                            <i class="fa fa-facebook-square"></i>
                                         </div>
                                         <h4>
                                             Facebook Ads                                                                                    </h4>
@@ -799,7 +799,7 @@ span.blog-item-tag {
                                             <i class="fa fa-text-width"></i>
                                         </div>
                                         <h4>
-                                            Content Shorten                                                                                    </h4>
+                                            Content Shorten</h4>
                                         <p class="margin-bottom-0">Short your content in a different voice and style to appeal to different readers.</p>
                                     </div>
                                 </div>
@@ -826,7 +826,7 @@ span.blog-item-tag {
                                             <i class="fa fa-child"></i>
                                         </div>
                                         <h4>
-                                            Summarize for a 2nd grader                                                                                    </h4>
+                                            Summarize for a 2nd grader</h4>
                                         <p class="margin-bottom-0">Translates difficult text into simpler concepts.</p>
                                     </div>
                                 </div>
@@ -837,10 +837,10 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-heart-o"></i>
+                                            <i class="bi bi-suit-heart"></i>
                                         </div>
                                         <h4>
-                                            Stories                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                            Stories<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Engaging and persuasive stories that will capture your reader's attention and interest.</p>
                                     </div>
@@ -855,7 +855,7 @@ span.blog-item-tag {
                                             <i class="fa fa-list"></i>
                                         </div>
                                         <h4>
-                                            Bullet Point Answers                                                                                    </h4>
+                                            Bullet Point Answers</h4>
                                         <p class="margin-bottom-0">Precise and informative bullet points that provide quick and valuable answers to your customers' questions.</p>
                                     </div>
                                 </div>
@@ -869,7 +869,7 @@ span.blog-item-tag {
                                             <i class="fa fa-tasks"></i>
                                         </div>
                                         <h4>
-                                            Definition                                                                                    </h4>
+                                            Definition</h4>
                                         <p class="margin-bottom-0">A definition for a word, phrase, or acronym that's used often by your target buyers.</p>
                                     </div>
                                 </div>
@@ -883,7 +883,7 @@ span.blog-item-tag {
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <h4>
-                                            Answers                                                                                    </h4>
+                                            Answers</h4>
                                         <p class="margin-bottom-0">Instant, quality answers to any questions or concerns that your audience might have.</p>
                                     </div>
                                 </div>
@@ -897,7 +897,7 @@ span.blog-item-tag {
                                             <i class="fa fa-question-circle"></i>
                                         </div>
                                         <h4>
-                                            Questions                                                                                    </h4>
+                                            Questions</h4>
                                         <p class="margin-bottom-0">A tool to create engaging questions and polls that increase audience participation and engagement.</p>
                                     </div>
                                 </div>
@@ -911,7 +911,7 @@ span.blog-item-tag {
                                             <i class="fa fa-sort-alpha-desc"></i>
                                         </div>
                                         <h4>
-                                            Passive to Active Voice                                                                                    </h4>
+                                            Passive to Active Voice</h4>
                                         <p class="margin-bottom-0">Easy and quick solution to converting your passive voice sentences into active voice sentences.</p>
                                     </div>
                                 </div>
@@ -925,23 +925,21 @@ span.blog-item-tag {
                                             <i class="fa fa-key"></i>
                                         </div>
                                         <h4>
-                                            Pros and Cons                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                            Pros and Cons<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">List of the main benefits versus the most common problems and concerns.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                           <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" data-tippy-placement="top" data-tippy="" data-original-title="Not available in the free plan">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>
-                                            Rewrite With Keywords                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                        <h4>Rewrite With Keywords<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Rewrite your existing content to include more keywords and boost your search engine rankings.</p>
                                     </div>
                                 </div>
@@ -955,7 +953,7 @@ span.blog-item-tag {
                                             <i class="fa fa-envelope"></i>
                                         </div>
                                         <h4>
-                                            Emails                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                            Emails<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Professional-looking emails that help you engage leads and customers.</p>
                                     </div>
@@ -967,11 +965,9 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-envelope"></i>
+                                            <i class="bi bi-envelope-open"></i>
                                         </div>
-                                        <h4>
-                                            Emails V2                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                        <h4>Emails V2<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Personalized email outreach to your target prospects that get better results.</p>
                                     </div>
                                 </div>
@@ -982,10 +978,10 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-envelope-open-o"></i>
+                                            <i class="bi bi-envelope"></i>
                                         </div>
                                         <h4>
-                                            Email Subject Lines                                                                                    </h4>
+                                            Email Subject Lines</h4>
                                         <p class="margin-bottom-0">Powerful email subject lines that increase open rates.</p>
                                     </div>
                                 </div>
@@ -1019,31 +1015,27 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                          <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-file-text-o"></i>
+                                            <i class="bi bi-file-earmark-text"></i>
                                         </div>
-                                        <h4>
-                                            Company Mission                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                        <h4>Company Mission<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">A clear and concise statement of your company's goals and purpose.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                          <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-left"></i>
                                         </div>
-                                        <h4>
-                                            Company Vision                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
-                                                                                    </h4>
+                                        <h4>Company Vision<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">A vision that attracts the right people, clients, and employees.</p>
                                     </div>
                                 </div>
@@ -1192,7 +1184,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-youtube-play"></i>
+                                            <i class="bi bi-youtube"></i>
                                         </div>
                                         <h4>YouTube Titles</h4>
                                         <p class="margin-bottom-0">Catchy titles that attract more views and increase the number of shares.</p>
@@ -1205,7 +1197,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-youtube-play"></i>
+                                            <i class="bi bi-youtube"></i>
                                         </div>
                                         <h4>YouTube Descriptions<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Catchy and persuasive YouTube descriptions that help your videos rank higher.</p>
@@ -1218,7 +1210,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-youtube-play"></i>
+                                           <i class="bi bi-youtube"></i>
                                         </div>
                                         <h4>YouTube Outlines<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Video outlines that are a breeze to create and uber-engaging.</p>
@@ -1343,7 +1335,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-question-circle-o"></i>
+                                            <i class="bi bi-question-circle"></i>
                                         </div>
                                         <h4>FAQs<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Generate frequently asked questions based on your product description.</p>
@@ -1356,7 +1348,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-question-circle-o"></i>
+                                            <i class="bi bi-question-circle"></i>
                                         </div>
                                         <h4>FAQ Answers<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Generate creative answers to questions (FAQs) about your business or website.</p>
@@ -1369,7 +1361,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-star-half-o"></i>
+                                           <i class="bi bi-star-half"></i>
                                         </div>
                                         <h4>Testimonials / Reviews<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Add social proof to your website by generating user testimonials.</p>
@@ -1517,7 +1509,7 @@ span.blog-item-tag {
                     <div class="row">
                         <!-- Blog Post Item -->
                             <div class="col-xl-4">
-                                <a href="#" class="blog-compact-item-container">
+                                <a href="https://localhost:44364/Viewblog.aspx" class="blog-compact-item-container">
                                     <div class="blog-compact-item"style="width:40%;">
                                         <img src="images/blog.png" alt="First Blog">
                                         <span class="blog-item-tag">Admin</span>
@@ -1601,5 +1593,22 @@ span.blog-item-tag {
 
      </script>
     <script>
-        $('.ai-templates-category').on('click', function (e) {            e.preventDefault();            // make active            $('.template-categories li').removeClass('active');            $(this).parents('li').addClass('active');            if ($(this).data('category') === 'all') {                $('.ai-template-blocks > div').show();                $('.ai-templates-category-title').show();            } else {                $('.ai-template-blocks > div').hide();                $('.category-' + $(this).data('category')).show();                $('.ai-templates-category-title').hide();                // empty search                $('#template-search').val('');            }        });</script>
+        $('.ai-templates-category').on('click', function (e) {
+            e.preventDefault();
+            // make active
+            $('.template-categories li').removeClass('active');
+            $(this).parents('li').addClass('active');
+
+            if ($(this).data('category') === 'all') {
+                $('.ai-template-blocks > div').show();
+                $('.ai-templates-category-title').show();
+            } else {
+                $('.ai-template-blocks > div').hide();
+                $('.category-' + $(this).data('category')).show();
+                $('.ai-templates-category-title').hide();
+
+                // empty search
+                $('#template-search').val('');
+            }
+        });</script>
 </asp:Content>

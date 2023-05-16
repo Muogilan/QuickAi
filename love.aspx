@@ -329,10 +329,6 @@ a i:hover {
     color: white;
 }
 
-
-
-
-
 /*-------------media-------------*/
 @media(max-width:1100px){
     .tag {
@@ -376,7 +372,7 @@ a i:hover {
                         <h4 style="color: #888888">Recent Blogs</h4>
                     </div>
                     <div class="col-6">
-                        <div style="float: right;" class="subcontainer">
+                        <div style="float: right;background:#303030; border-radius:4px;" class="subcontainer">
                             <span class="suhome"><a href="homepage.aspx">Home</a></span>
                             <span class="icon"></span>
                             <span style="color: white;">Blog</span>

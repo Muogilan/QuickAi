@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>hype</title>
-      <!--Bootstrap css-->
+     <!--Bootstrap css-->
     <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
     <!--Datatables css-->
     <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -24,7 +24,32 @@
       <!--bootstrapmin Js-->
     <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
       <!--poppers Js-->
-    <script src="Bootstarp/Css/JS/popper.min.js"></script>  
+    <script src="Bootstarp/Css/JS/popper.min.js"></script>
+   <!--Bootstrap css-->
+    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
+    <!--Datatables css-->
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--Fontawesome css-->
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--fontswesome link>-->
+       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="font%20all%20min/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!--jquery-->
+    <script src="Bootstarp/Css/JS/jquery-3.3.1.slim.min.js"></script>
+    <script src="Bootstarp/Css/JS/jquery-3.6.4.min.js"></script>
+    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
+      <!--Jquery Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
+      <!--bootstrapmin Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
+      <!--poppers Js-->
+    <script src="Bootstarp/Css/JS/popper.min.js"></script>
       <style>
        * {
     font-family: Arial, Helvetica, sans-serif;
@@ -289,31 +314,6 @@ body {
 
 
 </style>
-   <!--Bootstrap css-->
-    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
-    <!--Datatables css-->
-    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
-    <!--Fontawesome css-->
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
-    <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <!--fontswesome link>-->
-       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="font%20all%20min/all.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!--jquery-->
-    <script src="Bootstarp/Css/JS/jquery-3.3.1.slim.min.js"></script>
-    <script src="Bootstarp/Css/JS/jquery-3.6.4.min.js"></script>
-    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
-      <!--Jquery Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
-      <!--bootstrapmin Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
-      <!--poppers Js-->
-    <script src="Bootstarp/Css/JS/popper.min.js"></script>
 </head>
     <body>
           <div class="topbar">
@@ -374,12 +374,9 @@ body {
                               </a>
                            </li>
                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-file-lines"></i> <div> <select name="ctl13" class="dropdown-item-text">
-	<option selected="selected" value="MY Documents">My Documents</option>
-	<option value="All AI Images">All AI Images</option>
-
-</select></div>
+                              <a href="#"">
+                                  <i class="fa-solid fa-file-lines"></i>
+                                   <div class="dropdown">                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>                          <div id="myDropdown1" class="dropdown-content" >                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>                              </div>                              </div>
                               </a>
                            </li>                          
                          </ul>
@@ -451,9 +448,10 @@ body {
                            </li>
                          </ul>
                      </div>
-<div style="padding-top:80px;" class="row">
+                         <div style="padding-top:80px;" class="row">
                                     <div class="col-6">
                                       <h3 style="float:right;">Dashboard</h3>
+                                      
                                     </div>
                              <div style="padding-right:40px;" class="col-6">
                                      <div style="float:right;" class="subcontainer">
@@ -586,6 +584,7 @@ body {
              });
 
     </script>
+         <script>             /* When the user clicks on the button,              toggle between hiding and showing the dropdown content */             function myFunction() {                 document.getElementById("myDropdown1").classList.toggle("show");             }             // Close the dropdown if the user clicks outside of it             window.onclick = function (event) {                 if (!event.target.matches('.dropbtn')) {                     var dropdowns = document.getElementsByClassName("dropdown-content");                     var i;                     for (i = 0; i < dropdowns.length; i++) {                         var openDropdown = dropdowns[i];                         if (openDropdown.classList.contains('show')) {                         }                     }                 }             }     </script>
     </body>
 </html>
 

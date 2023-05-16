@@ -69,7 +69,11 @@
   <ItemGroup>
     <Content Include="Accountsetting.aspx" />
     <Content Include="Adminlogin.aspx" />
+    <Content Include="AI images.aspx" />
+    <Content Include="All document.aspx" />
+    <Content Include="Allimages.aspx" />
     <Content Include="Bootstarp\bootstrap.min.js" />
+    <Content Include="Bootstarp\Css\bootstrap.bundle.min.js" />
     <Content Include="Bootstarp\Css\bootstrap.min.css" />
     <Content Include="Bootstarp\Css\flags.min.css" />
     <Content Include="Bootstarp\Css\JS\bootstrap.bundle.min.js" />
@@ -78,9 +82,11 @@
     <Content Include="Bootstarp\Css\JS\jquery-3.6.4.min.js" />
     <Content Include="Bootstarp\Css\JS\jquery.min.js" />
     <Content Include="Bootstarp\Css\JS\popper.min.js" />
+    <Content Include="carusolefooter.aspx" />
     <Content Include="contant.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Dashboard1.aspx" />
+    <Content Include="Dashboardtemplate.aspx" />
     <Content Include="Data Tables\Css\jquery.dataTables.min.css" />
     <Content Include="Data Tables\Js\jquery.dataTables.min.js" />
     <Content Include="font all min\all.min.css" />
@@ -784,6 +790,34 @@
     <Compile Include="Adminlogin.aspx.designer.cs">
       <DependentUpon>Adminlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AI images.aspx.cs">
+      <DependentUpon>AI images.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI images.aspx.designer.cs">
+      <DependentUpon>AI images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="All document.aspx.cs">
+      <DependentUpon>All document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All document.aspx.designer.cs">
+      <DependentUpon>All document.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Allimages.aspx.cs">
+      <DependentUpon>Allimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Allimages.aspx.designer.cs">
+      <DependentUpon>Allimages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="carusolefooter.aspx.cs">
+      <DependentUpon>carusolefooter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carusolefooter.aspx.designer.cs">
+      <DependentUpon>carusolefooter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="contant.aspx.cs">
       <DependentUpon>contant.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -804,6 +838,13 @@
     </Compile>
     <Compile Include="Dashboard1.aspx.designer.cs">
       <DependentUpon>Dashboard1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboardtemplate.aspx.cs">
+      <DependentUpon>Dashboardtemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboardtemplate.aspx.designer.cs">
+      <DependentUpon>Dashboardtemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

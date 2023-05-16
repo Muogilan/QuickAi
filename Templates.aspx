@@ -1012,6 +1012,23 @@ span i{
         
     </body>
     <script>
- $('.ai-templates-category').on('click', function (e) {            e.preventDefault();            // make active            $('.template-categories li').removeClass('active');            $(this).parents('li').addClass('active');            if ($(this).data('category') === 'all') {                $('.ai-template-blocks > div').show();            $('.ai-templates-category-title').show();            } else {                $('.ai-template-blocks > div').hide();            $('.category-' + $(this).data('category')).show();            $('.ai-templates-category-title').hide();            // empty search            $('#template-search').val('');            }        });</script>
+ $('.ai-templates-category').on('click', function (e) {
+            e.preventDefault();
+            // make active
+            $('.template-categories li').removeClass('active');
+            $(this).parents('li').addClass('active');
+
+            if ($(this).data('category') === 'all') {
+                $('.ai-template-blocks > div').show();
+            $('.ai-templates-category-title').show();
+            } else {
+                $('.ai-template-blocks > div').hide();
+            $('.category-' + $(this).data('category')).show();
+            $('.ai-templates-category-title').hide();
+
+            // empty search
+            $('#template-search').val('');
+            }
+        });</script>
 
 </asp:Content>
