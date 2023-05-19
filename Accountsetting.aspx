@@ -42,16 +42,7 @@
        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
     <link href="font%20all%20min/all.min.css" rel="stylesheet" />
-    <!--jquery-->
-    <script src="Bootstarp/Css/JS/jquery-3.3.1.slim.min.js"></script>
-    <script src="Bootstarp/Css/JS/jquery-3.6.4.min.js"></script>
-    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
-      <!--Jquery Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
-      <!--bootstrapmin Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
-      <!--poppers Js-->
-    <script src="Bootstarp/Css/JS/popper.min.js"></script>   
+
       <style>
        * {
     font-family: Arial, Helvetica, sans-serif;

@@ -1,10 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AI images.aspx.cs" Inherits="Quick_AI.AI_images" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ai chat.aspx.cs" Inherits="Quick_AI.Ai_chat" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>AI image</title>
-   <!--Bootstrap css-->
+    <title>Ai chat</title>
+    <!--Bootstrap css-->
     <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
     <!--Datatables css-->
     <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -35,7 +36,7 @@
     <!--fontswesome link>-->
        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <style>
-       * {
+            * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing:border-box;
 }
@@ -48,7 +49,7 @@
 }
 
 .topbar {
-/*    position: fixed;*/
+  /*  position: absolute;*/
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
     width: 100%;
@@ -111,7 +112,7 @@ option {
 }
 
 .sidebar {
-    position: fixed;
+    position: absolute;
     top: 85px;
     width: 260px;
     background-color: #fff;
@@ -119,7 +120,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px -1px 02px rgb(0,0,0,0.5);
-    height: 85%;  
+    height: 80%
 }
 
 .sidebar ul {
@@ -414,12 +415,131 @@ table .basic-table{
     vertical-align: top;
     font-weight: 500;
 }
- input, select{
-    border-radius:5px;
-    box-shadow:3px;
-    width:235px;
-    height:35px;
-    display:flex;
+    </style>
+<style>
+.error{
+    color:#ef8b8b;
+    background-color:#ffe9e9;
+}
+.notification .small-notification{
+    padding:15px 10px;
+    font-size:14px;
+}
+.notification{
+    line-height:14px;
+    margin-bottom:20px;
+    position:relative;
+}
+</style>
+<!--chatbox-->
+    <style>
+    #msgWindow {
+  margin-top: 20px;
+}
+
+#msgs {
+  margin: 0px 25px;
+  min-height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.msg {
+  margin: 5px 0;
+  border: 1px solid silver;
+  padding: 3px 7px;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+}
+.msg::before, .msg::after {
+  content: "";
+  display: inline-block;
+  bottom: 0;
+  position: absolute;
+  border: 1px solid silver;
+}
+.msg::before {
+  right: -20px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+}
+.msg::after {
+  right: -35px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+.msg.from {
+  align-self: flex-end;
+}
+.msg.to {
+  align-self: flex-start;
+}
+.msg.to::before {
+  right: inherit;
+  left: -20px;
+}
+.msg.to::after {
+  right: inherit;
+  left: -35px;
+}
+.msg.typing {
+  color: silver;
+}
+
+#msgForm input:focus,
+#msgForm button:focus {
+  box-shadow: none;
+}
+.card-header {
+    max-height: 82px;
+    font-size: 16px;
+    margin: 0;
+    padding: 22px 30px;
+    color: #333;
+    background-color: #fff;
+    display: block;
+    border-bottom: 1px solid #eaeaea;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+}
+.message-action{
+    border-radius: 50px;
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    display: inline-block;
+    transition: .3s;
+    color: #666;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+    .button {
+        background-color: #66676b;
+        top: 0;
+        padding: 10px 20px;
+        line-height: 24px;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(102, 103, 107, .15);
+    }
+a.button{
+
 }
 </style>
 </head>
@@ -447,8 +567,8 @@ table .basic-table{
                                         </a>
                                     </div>
                              
-                                   <div id="login" class="dropdown-content"style="height: 465px;">
-                                        <ul class="user-menu-small-nav">
+                                   <div id="login" class="dropdown-content"style="height: 465px;list-style:none;">
+                                        <ul class="user-menu-small-nav" style="list-style:none">
                                             <li><a href="https://localhost:44364/Dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
                                             <li><a href="3"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
                                             <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
@@ -471,7 +591,7 @@ table .basic-table{
                          </select>
                     </div>
                  </div>
-                <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
+              <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -532,7 +652,7 @@ table .basic-table{
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600;">
+                                 <div style="color:darkblue;font-weight:600; ">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
@@ -564,10 +684,9 @@ table .basic-table{
                            </li>
                          </ul>
                      </div>
-        </div>
-         <div class="dashboard-headline"style="margin-bottom:40px;padding:40px;">
+               <div class="dashboard-headline"style="margin-bottom:40px;padding:40px;">
                     <h3 class="d-flex align-items-center">
-                        All Documents
+                        AI chat
                         <div class="word-used-wrapper margin-left-10">
                             <i class="bi bi-bar-chart-line-fill"></i>
                             <i id="quick-words-left">0</i> / 10,000
@@ -577,166 +696,47 @@ table .basic-table{
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="#" style="color:white;">Home</a></li>
-                            <li>All Documents</li>
+                            <li><a href="http://hype.sociusus.com/" style="color:white;">Home</a></li>
+                            <li>AI chat</li>
                         </ul>
                     </nav>
                 </div>
-        <!---Onclick display-->
-              <div id="ai_images" name="ai_images" method="post" action="#">
-                    <span style="padding:25px 25px">Start with a detailed description. <a href="#" class="try-example"><strong>Try an example</strong></a></span>
-                    <div class="message-reply ai_image_description margin-bottom-20"style="padding:25px 25px;margin-left:300px">
-                     <textarea style="WIDTH: 65%;height:35px;border-radius:50px" name="description" class="with-border small-input image-description" placeholder="SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old" required=""></textarea>
-                   <button type="submit" name="submit" class="button ripple-effect border-pilled" style="background-color:darkblue;color:white; border-radius:20px;" onclick="myFunction3()">Generate<i class="fa fa-arrow-right" aria-hidden="true"></i>
-
-                   </button>
-                    </div>
-                    <div id="main" style="display:none">
-                        <div style="display:flex">
-                        <div class="col-sm-3">
-                            <div class="submit-field margin-bottom-20">
-                                <h6>Image Title</h6>
-                                <input name="title" class="with-border small-input" type="text" value="New Image"/>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="submit-field margin-bottom-20">
-                                <h6>Art style</h6>
-                                <div class="btn-group bootstrap-select with-border small-input">
-                                   <style>
-                                       input, select{
-                                           border-radius:5px;
-                                           box-shadow:3px;
-                                           width:235px;
-                                           height:35px;
-                                           display:flex;
-                                       }
-                                   </style>
-                                   
-                                    <div>
-                                    <select >
-                                    <option value="" selected="selected">None</option>
-                                    <option value="3d_render">3D render</option>
-                                    <option value="pixel">Pixel</option>
-                                    <option value="sticker">Sticker</option>
-                                    <option value="realistic">Realistic</option>
-                                    <option value="isometric">Isometric</option>
-                                    <option value="cyberpunk">Cyberpunk</option>
-                                    <option value="line">Line art</option>
-                                    <option value="pencil">Pencil drawing</option>
-                                    <option value="ballpoint_pen">Ballpoint pen drawing</option>
-                                    <option value="watercolor">Watercolor</option>
-                                    <option value="origami">Origami</option>
-                                    <option value="cartoon">Cartoon</option>
-                                    <option value="retro">Retro</option>
-                                    <option value="anime">Anime</option>
-                                    <option value="renaissance">Renaissance</option>
-                                    <option value="clay">Clay</option>
-                                    <option value="vaporwave">Vaporwave</option>
-                                    <option value="steampunk">Steampunk</option>
-                                    <option value="glitchcore">Glitchcore</option>
-                                    <option value="bauhaus">Bauhaus</option>
-                                    <option value="vector">Vector</option>
-                                    <option value="low_poly">Low poly</option>
-                                    <option value="ukiyo_e">Ukiyo-e</option>
-                                    <option value="cubism">Cubism</option>
-                                    <option value="modern">Modern</option>
-                                    <option value="pop">Pop</option>
-                                    <option value="contemporary">Contemporary</option>
-                                    <option value="impressionism">Impressionism</option>
-                                    <option value="pointillism">Pointillism</option>
-                                    <option value="minimalism">Minimalism</option>
-                                </select></div></div>
-                            </div>
-                        </div>
-                            
-                        <div class="col-sm-3">
-                            <div class="submit-field margin-bottom-20">
-                                <h6>Lighting style</h6>
-                                <div class="btn-group bootstrap-select with-border small-input">
-                                    
-                                    <div >
-                                       
-                                    <select>
-                                    <option value="" selected="selected">None</option>
-                                    <option value="warm">Warm</option>
-                                    <option value="cold">Cold</option>
-                                    <option value="golden_hour">Golden Hour</option>
-                                    <option value="blue_hour">Blue Hour</option>
-                                    <option value="ambient">Ambient</option>
-                                    <option value="studio">Studio</option>
-                                    <option value="neon">Neon</option>
-                                    <option value="dramatic">Dramatic</option>
-                                    <option value="cinematic">Cinematic</option>
-                                    <option value="natural">Natural</option>
-                                    <option value="foggy">Foggy</option>
-                                    <option value="backlight">Backlight</option>
-                                    <option value="hard">Hard</option>
-                                </select></div></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="submit-field margin-bottom-20">
-                                <h6>Mood</h6>
-                                <div class="btn-group bootstrap-select with-border small-input">
-                                    
-                                    
-                                        <div>
-                                    <select >
-                                    <option value="" selected="selected">None</option>
-                                    <option value="aggressive">Aggressive</option>
-                                    <option value="angry">Angry</option>
-                                    <option value="boring">Boring</option>
-                                    <option value="bright">Bright</option>
-                                    <option value="calm">Calm</option>
-                                    <option value="cheerful">Cheerful</option>
-                                    <option value="chilling">Chilling</option>
-                                    <option value="colorful">Colorful</option>
-                                    <option value="dark">Dark</option>
-                                    <option value="neutral">Neutral</option>
-                                </select></div></div>
-
-                            </div>
-                            </div>
-                        </div>
-                        <div style="display:flex;">
-                        <div class="col-sm-3">
-                            <div class="submit-field margin-bottom-20">
-                                <h6>Resolution</h6>
-                                <div class="btn-group bootstrap-select with-border small-input">
-                                 
-                                    <div>
-                                    <select >
-                                     <option value="256x256">Small Image (256x256)</option>
-                                     <option value="512x512">Medium Image (512x512)</option>
-                                    <option value="1024x1024">Large Image (1024x1024)</option>
-                                </select></div></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="submit-field margin-bottom-20">
-                                <h6>Number of Images</h6>
-                                <div class="btn-group bootstrap-select with-border small-input">
-                                    
-                                    <div>
-                                       
-                                    <select >
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select></div></div>
-                            </div>
-                        </div>
-                            </div>
-                            </div>
-                            </div>
-        <br />
-                    <small><button onclick="hideshow()" style="padding:5px 5px;margin-left:70px;border:none;color:darkblue">Advanced Settings</button> <strong>+</strong></small><hr/>
-                  <%--  <div id="snackbar" >API Error: The API key is missing or invalid.</div>--%>
-     </form>
-    <script>
+        </div>
+        <div class="dashboard-content-inner" style="min-height: 625.023px;padding:50px;padding-bottom:0; position:relative;">
+            <div class="notification small-notification error"style="width: 91%;padding: 10px; border-radius: 8px;">
+                        You can not use the chat feature with your OpenAI model. Upgrade your membership plan to use this feature.
+        </div>
+              <div class="container">
+  <div class="row">
+    <div class="col msg-window-container">
+      <div class="card" id="msgWindow">
+        <div class="card-header"><span class="card-title"><i class="bi bi-person-circle"></i>AI chatbot</span>
+            <div class="col-md-6"></div>
+            <div class="message-action">
+                    <a href="#" class="button ripple-effect btn-sm" id="export-chats" title="Export Conversation" data-tippy-placement="top" onclick="DownloadFile('Sample.pdf')" style="    background-color: #0d6efd;">
+                                       <i class="fa-solid fa-download"></i></a>
+                    <a href="C:\Users\sociusRD\Desktop\Quick AI\Download file" class="button ripple-effect btn-sm red" id="delete-chats" data-tippy-placement="top" data-tippy="" onclick="REMOVE()" data-original-title="Delete Conversation"   "><i class="bi bi-trash"></i></a>
+            </div>
+        </div>
+        <div class="card-body" id="msgs"></div>
+        <div class="card-footer">
+          <div class="input-group" id="msgForm" data-sender="me">
+            <input class="form-control" type="text" placeholder="Type your message here..."/>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      
+       
+    </form>
+    
+     <script>
           /* When the user clicks on the button, 
           toggle between hiding and showing the dropdown content */
           function myFunction1() {
@@ -756,53 +756,131 @@ table .basic-table{
                   }
               }
           }
-    </script>
-<script type="text/javascript">
-    $("#icon").on("click", function () {
-        $(".sidebar").toggle();
-        $(".col-6").toggleClass('col-lg-12 full-width');
+     </script>
+    <script type="text/javascript">
+        $("#icon").on("click", function () {
+            $(".sidebar").toggle();
+            $(".col-6").toggleClass('col-lg-12 full-width');
 
-    });
-
-</script>
-    <script>
-        // text counter
-        $('.quick-text-counter').each(function () {
-            var $this = $(this);
-
-            $this.simpleTxtCounter({
-                maxLength: $this.data('maxlength'),
-                countElem: '<div class="form-text"></div>',
-                lineBreak: false,
-            });
         });
 
-        var examples = ["A boombox reflecting the surroundings in a cave, Painting by H.R. Giger, Closeup",
-            "SpongeBob SquarePants talking to a mouse in an airport, 1960s Cartoon",
-            "SpongeBob SquarePants dressed as a mailman drinking a cup of coffee in a mountainside scene, watercolors by 5 year old",
-            "A cactus sitting next to onion rings in a farm, 1960s Cartoon",
-            "Garfield driving a school bus in a rock concert, Painting by Leonardo Da Vinci",
-            "A mouse riding on a horse in a mountainside scene, Painting by Rembrandt",
-            "Super Mario dressed as a medieval knight riding a pterodactyl in the back of a bus, Baroque painting"];
-        $('.try-example').on('click', function (e) {
-            e.preventDefault();
-
-            $('.image-description').val(examples[Math.floor(Math.random() * examples.length)]);
-        })
     </script>
+    <!---chatbox-->
     <script>
-        var div = document.getElementById('main');
-        var display = 0;
-        function hideshow() {
-            if (display == 1) {
-                div.style.display = 'block';
-                display = 0;
-            }
-            else {
-                div.style.display = 'none';
-                display = 1;
-            }
-        }
+        $(function () {
+            // Define some elements from the DOM and utility methods.
+            let $form = $("#msgForm"),
+                $newMsg = $form.find("input"),
+                $sendBtn = $form.find("button"),
+                $feed = $("#msgs"),
+                _wait = ms => new Promise((r, j) => setTimeout(r, ms)), // See [0]
+                _secs = (a, b) => Math.floor(Math.random() * (b - a + 1)) + a;
+
+            // Define our send method.
+            var _send = data => {
+                // Send data to a new .msg
+                let $msg = $('<div class="msg"></div>'),
+                    { sender, typing } = data;
+                if (sender !== "me") {
+                    $msg.addClass("to");
+                } else {
+                    $msg.addClass("from");
+                }
+                $msg.text(data.msg);
+                if (typing) $msg.addClass("typing");
+                $msg.appendTo($feed);
+                // If sending was successful, clear the text field.
+                $newMsg.val("");
+                // And simulate a reply from our agent.
+                if (sender === "me") setTimeout(_agentReply, 1000);
+                if (typing) return $msg; // ref to new DOM .msg
+            };
+
+            var _agentReply = () => {
+                // After a few seconds, the agent starts to type a message.
+                let waitAfew = _wait(_secs(3000, 5000)),
+                    showAgentTyping = async () => {
+                        console.log("typing...");
+                        // Let the user know the agent is typing
+                        let $agentMsg = _send({
+                            msg: "typing...",
+                            typing: true,
+                            sender: false
+                        });
+
+                        // and in a few seconds show the typed message.
+                        waitAfew.then(() => {
+                            // @TODO: Simulate actual typing by removing the typing message when the agent isn't typing, and before the agent sends the typed message. Also allow typing to continue a number of times with breaks in between.
+                            $agentMsg.text("Typing...");
+                            $agentMsg.removeClass("typing");
+                        });
+                    };
+                waitAfew.then(showAgentTyping());
+            };
+
+            // Define event handlers: Hitting Enter or Send should send the form.
+            $newMsg.on("keypress", function (e) {
+                // @TODO: Allow [mod] + [enter] to expand field & insert a <BR>
+                if (e.which === 13) {
+                    // Stop the   
+                    e.stopPropagation();
+                    e.preventDefault();
+                    // Wrap the msg and send!
+                    let theEnvelope = {
+                        msg: $newMsg.val(),
+                        sender: "me"
+                    };
+
+                    return _send(theEnvelope);
+                } else {
+                    // goggles
+                }
+            });
+            $sendBtn.on("click", function (e) {
+                // Stop the prop
+                e.stopPropagation();
+                e.preventDefault();
+                // Wrap the msg and send!
+                let theEnvelope = {
+                    msg: $newMsg.val(),
+                    sender: "me"
+                };
+
+                return _send(theEnvelope);
+            });
+        });
+    </script>
+    <!--download button-->
+    <script type="text/javascript">
+        function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "Files/" + fileName;
+
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
+
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, fileName);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", fileName);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+        };
      </script>
 </body>
 </html>

@@ -588,7 +588,13 @@ a{
                              <li>
                               <a href="#"">
                                   <i class="fa-solid fa-file-lines"></i>
-                                   <div class="dropdown">                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>                          <div id="myDropdown1" class="dropdown-content" >                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>                              </div>                              </div>
+                                   <div class="dropdown">
+                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                          <div id="myDropdown1" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                              </div>
+                              </div>
                               </a>
                            </li>                          
                          </ul>
@@ -1582,7 +1588,27 @@ a{
             }
         }
     </script>
-       <script>           /* When the user clicks on the button,            toggle between hiding and showing the dropdown content */           function myFunction() {               document.getElementById("myDropdown1").classList.toggle("show");           }           // Close the dropdown if the user clicks outside of it           window.onclick = function (event) {               if (!event.target.matches('.dropbtn')) {                   var dropdowns = document.getElementsByClassName("dropdown-content");                   var i;                   for (i = 0; i < dropdowns.length; i++) {                       var openDropdown = dropdowns[i];                       if (openDropdown.classList.contains('show')) {                       }                   }               }           }     </script>
+       <script>
+           /* When the user clicks on the button, 
+           toggle between hiding and showing the dropdown content */
+           function myFunction() {
+               document.getElementById("myDropdown1").classList.toggle("show");
+           }
+
+           // Close the dropdown if the user clicks outside of it
+           window.onclick = function (event) {
+               if (!event.target.matches('.dropbtn')) {
+                   var dropdowns = document.getElementsByClassName("dropdown-content");
+                   var i;
+                   for (i = 0; i < dropdowns.length; i++) {
+                       var openDropdown = dropdowns[i];
+                       if (openDropdown.classList.contains('show')) {
+
+                       }
+                   }
+               }
+           }
+     </script>
           <script type="text/javascript">
               $("#icon").on("click", function () {
                   $(".sidebar").toggle();

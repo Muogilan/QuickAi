@@ -69,9 +69,12 @@
   <ItemGroup>
     <Content Include="Accountsetting.aspx" />
     <Content Include="Adminlogin.aspx" />
+    <Content Include="Ai chat.aspx" />
+    <Content Include="AI code.aspx" />
     <Content Include="AI images.aspx" />
     <Content Include="All document.aspx" />
     <Content Include="Allimages.aspx" />
+    <Content Include="Billingdetails.aspx" />
     <Content Include="Bootstarp\bootstrap.min.js" />
     <Content Include="Bootstarp\Css\bootstrap.bundle.min.js" />
     <Content Include="Bootstarp\Css\bootstrap.min.css" />
@@ -89,6 +92,7 @@
     <Content Include="Dashboardtemplate.aspx" />
     <Content Include="Data Tables\Css\jquery.dataTables.min.css" />
     <Content Include="Data Tables\Js\jquery.dataTables.min.js" />
+    <Content Include="Demo.aspx" />
     <Content Include="font all min\all.min.css" />
     <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\all.css" />
     <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\all.min.css" />
@@ -765,10 +769,13 @@
     <Content Include="Password1.aspx" />
     <Content Include="Recentblog.aspx" />
     <Content Include="Sample.aspx" />
+    <Content Include="Speech to text.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Templates.aspx" />
     <Content Include="Testimonials.aspx" />
     <Content Include="Testimonialsfooter.aspx" />
+    <Content Include="Textarea.aspx" />
+    <Content Include="Textbox.aspx" />
     <Content Include="transaction.aspx" />
     <Content Include="Travellove.aspx" />
     <Content Include="Viewblog.aspx" />
@@ -790,6 +797,20 @@
     <Compile Include="Adminlogin.aspx.designer.cs">
       <DependentUpon>Adminlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ai chat.aspx.cs">
+      <DependentUpon>Ai chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ai chat.aspx.designer.cs">
+      <DependentUpon>Ai chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AI code.aspx.cs">
+      <DependentUpon>AI code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AI code.aspx.designer.cs">
+      <DependentUpon>AI code.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AI images.aspx.cs">
       <DependentUpon>AI images.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -810,6 +831,13 @@
     </Compile>
     <Compile Include="Allimages.aspx.designer.cs">
       <DependentUpon>Allimages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Billingdetails.aspx.cs">
+      <DependentUpon>Billingdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Billingdetails.aspx.designer.cs">
+      <DependentUpon>Billingdetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="carusolefooter.aspx.cs">
       <DependentUpon>carusolefooter.aspx</DependentUpon>
@@ -845,6 +873,13 @@
     </Compile>
     <Compile Include="Dashboardtemplate.aspx.designer.cs">
       <DependentUpon>Dashboardtemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -927,6 +962,13 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Speech to text.aspx.cs">
+      <DependentUpon>Speech to text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Speech to text.aspx.designer.cs">
+      <DependentUpon>Speech to text.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Templates.aspx.cs">
       <DependentUpon>Templates.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -947,6 +989,20 @@
     </Compile>
     <Compile Include="Testimonialsfooter.aspx.designer.cs">
       <DependentUpon>Testimonialsfooter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Textarea.aspx.cs">
+      <DependentUpon>Textarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Textarea.aspx.designer.cs">
+      <DependentUpon>Textarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Textbox.aspx.cs">
+      <DependentUpon>Textbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Textbox.aspx.designer.cs">
+      <DependentUpon>Textbox.aspx</DependentUpon>
     </Compile>
     <Compile Include="transaction.aspx.cs">
       <DependentUpon>transaction.aspx</DependentUpon>
@@ -1024,6 +1080,7 @@
     <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_stacked.scss" />
     <Content Include="Font awesome\fontawesome-free-6.4.0-web\scss\_variables.scss" />
     <Content Include="Font awesome\fontawesome-free-6.4.0-web.zip" />
+    <Content Include="libman.json" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">

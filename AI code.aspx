@@ -1,56 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard1.aspx.cs" Inherits="Quick_AI.Dashboard1" %>   
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" Codefile="AI code.aspx.cs" Inherits="Quick_AI.AI_code" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>hype</title>
-     <!--Bootstrap css-->
-    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
-    <!--Datatables css-->
-    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
-    <!--Fontawesome css-->
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
-    <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <!--fontswesome link>-->
-       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <!--jquery-->
-    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
-      <!--Jquery Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
-      <!--bootstrapmin Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
-      <!--poppers Js-->
-    <script src="Bootstarp/Css/JS/popper.min.js"></script>
-   <!--Bootstrap css-->
-    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
-    <!--Datatables css-->
-    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
-    <!--Fontawesome css-->
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
-    <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <!--fontswesome link>-->
-       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="font%20all%20min/all.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!--jquery-->
-    <script src="Bootstarp/Css/JS/jquery-3.3.1.slim.min.js"></script>
-    <script src="Bootstarp/Css/JS/jquery-3.6.4.min.js"></script>
-    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
-      <!--Jquery Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
-      <!--bootstrapmin Js-->
-    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
-      <!--poppers Js-->
-    <script src="Bootstarp/Css/JS/popper.min.js"></script>
-      <style>
+    <head>
+    <title>AI chat</title>
+          <style>
        * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -314,9 +269,54 @@ body {
 
 
 </style>
+    <title>hype</title>
+     <!--Bootstrap css-->
+    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
+    <!--Datatables css-->
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--Fontawesome css-->
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--fontswesome link>-->
+       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!--jquery-->
+    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
+      <!--Jquery Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
+      <!--bootstrapmin Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
+      <!--poppers Js-->
+    <script src="Bootstarp/Css/JS/popper.min.js"></script>
+   <!--Bootstrap css-->
+    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
+    <!--Datatables css-->
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--Fontawesome css-->
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--fontswesome link>-->
+       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="font%20all%20min/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!--jquery-->
+    <script src="Bootstarp/Css/JS/jquery-3.3.1.slim.min.js"></script>
+    <script src="Bootstarp/Css/JS/jquery-3.6.4.min.js"></script>
+    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
+      <!--Jquery Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
+      <!--bootstrapmin Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
+      <!--poppers Js-->
+    <script src="Bootstarp/Css/JS/popper.min.js"></script>
 </head>
-    <body>
-          <div class="topbar">
+<body>
+        <div class="topbar">
                     <div class="logo">
                         <center> <img src="images/980385239.png" /></center>
                     </div>
@@ -361,7 +361,9 @@ body {
                          </select>
                     </div>
                  </div>
-        <div class="sidebar" style="font-size:20px">
+        <div class="row">
+            <div class="col-lg-3">
+                 <div class="sidebar" style="font-size:20px">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -419,10 +421,9 @@ body {
                               </a>
                            </li>
                              </ul>
-
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; margin-top:100px">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
@@ -454,7 +455,9 @@ body {
                            </li>
                          </ul>
                      </div>
-                         <div style="padding-top:80px;" class="row">
+            </div>
+            <div class="col-lg-9" style="width:75%">
+                <div style="padding-top:80px;" class="row">
                                     <div class="col-6">
                                       <h3 style="float:right;">Dashboard</h3>
                                       
@@ -467,150 +470,89 @@ body {
                                        </div> 
                                </div>
                          </div>
-
-    <div class="container1" style="margin-left:287px">
-      <div class="word-box">
-          <div class="word-text">
-                    <span>Words Used&nbsp; &nbsp;&nbsp; &nbsp; 
-            <img  style="float:right;" src="images/Screenshot%202023-05-03%20114631.png" /><br /><h4>0/10,000</h4></span>
-            &nbsp;</div>
-      </div>
-            <div class="word-box">
-          <div class="word-text">
-              <span>Image Used&nbsp; &nbsp;<br />
-                  <h4>0/100</h4>
-              </span>
-              <img style="float:right;" src="images/Screenshot%202023-05-03%20114700.png" />
-              <h4></h4>
-              
-               </div>
-                </div>
-                <div class="word-box">
-          <div class="word-text" style="width:10px">
-              <span>Speech to Text &nbsp; &nbsp;<br /><h4>0/0</h4></span>
-          <img style="float:right;" src="images/Screenshot%202023-05-03%20114720.png" />
-               </div>
+                  <div class="card" style="width:35%;margin-left:0;">
+        <div class="card-body">
+            <div class="headline" >
+                            <span><i class="fa fa-chevron-left" aria-hidden="true"style="color:darkblue"></i><i class="fa fa-chevron-right" aria-hidden="true" style="color:darkblue"></i>
+                                &nbsp;AI Code
+                            </span>
+            </div><hr />
+                    <p style="color:white;background-color:cornflowerblue;padding:2px 2px;font-size:12px">Use this code generator to create code in any programming language.</p>
+                    <span>Title</span><br />
+                    <input type="text" style="width:275px;" min-length="100" value="New Code"/><br />
+            <br /><label for="text" > Description *</label>
+            <textarea style="width:250px" placeholder="Generate a Javascript function to generate a random string"></textarea>
+                    <div>
+                        <span class="alert alert-danger" role="alert" id="error-msg" style="display:none;background-color:white;border:none;font-size:10px">
+                          Upgrade your membership plan to use this feature
+                        </span>
+                        <button type="button" id="submit-btn" style="color:white;background-color:darkblue;width:100%;">
+                            <span>Generate &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                        </button>
                     </div>
-</div>
-   <div class="dashboard-box main-box-in-row">
-                <div class="headline" style="margin-left:400px">
-                    <h3><i class="fa-solid fa-chart-simple"></i>Word used this month</h3>
-                </div>
-                <div class="content">
-                    <!-- Chart -->
-                   <div class="content" style="margin-left: 415px;">
-                    <!-- Chart -->
-                    <div class="chart">
-                        <div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-                            <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                    <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-                        <div>
-                            <canvas id="myChart"></canvas>
-                        </div>
-
-                    </div>
-                </div>
-
-                </div>
-            </div>
-        <div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
     </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="#"> <i class="fa-brands fa-facebook-f" style="color: #b2b8c2;"></i></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: #aaadb1;"></i></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i></a></li>
-    </ul>
-  </footer>
+        </div>
+    <div class="card" style="border: 1px solid gray;margin-top: -319px;;display:flex;margin-left: 380px;">
+        <div class="card-body">
+            <div class="container8">
+            <div style="padding:1px 1px;margin:1px 1px;display:flex">
+            <span style='font-size:15px'><i class='fas fa-align-left fa-2x' style='color:#0769e9;font-size:15px'></i>Generated Result</span>
+            </div><hr />
+                <label style="height:50px;background-color:#3184ae;opacity:0.7;width:100%;padding:7px 7px;color:darkblue">Generated code will appear here.</label>
+               </div>
+            </div>
+          </div>
+        </div>
 </div>
-<script>
-          /* When the user clicks on the button, 
-          toggle between hiding and showing the dropdown content */
-          function myFunction1() {
-              document.getElementById("login").classList.toggle("show");
+</body>
+        <script>
+          /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+                document.getElementById("login").classList.toggle("show");
           }
 
-          // Close the dropdown if the user clicks outside of it
-          window.onclick = function (event) {
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
               if (!event.target.matches('.dropbtn1')) {
                   var dropdowns = document.getElementsByClassName("dropdown-content");
-                  var i;
-                  for (i = 0; i < dropdowns.length; i++) {
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
                       var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
+            if (openDropdown.classList.contains('show')) {
 
-                      }
+            }
                   }
               }
           }
     </script>
-<script>
-    const ctx = document.getElementById('myChart');
+             <script type="text/javascript">
+                 $("#icon").on("click", function () {
+                     $(".sidebar").toggle();
+                     $(".col-6").toggleClass('col-lg-12 full-width');
 
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ["01 May", "02 May", "03 May", "04 May", "05 May", "06 May", "07 May", "08 May", "09 May", "10 May", "11 May", "12 May", "13 May", "14 May", "15 May", "16 May", "17 May", "18 May", "19 May", "20 May", "21 May", "22 May", "23 May", "24 May", "25 May", "26 May", "27 May", "28 May", "29 May", "30 May", "31 May"],
-            // Information about the dataset
-            datasets: [{
-                label: "Words Used",
-                backgroundColor: '#18469815',
-                borderColor: '#184698',
-                borderWidth: "3",
-                data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                pointRadius: 5,
-                pointHoverRadius: 5,
-                pointHitRadius: 10,
-                pointBackgroundColor: "#fff",
-                pointHoverBackgroundColor: "#fff",
-                pointBorderWidth: "2",
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-     </script>
-         <script type="text/javascript">
-             $("#icon").on("click", function () {
-                 $(".sidebar").toggle();
-                 $(".col-6").toggleClass('col-lg-12 full-width');
+                 });
 
-             });
+             </script>
+             <script>
+                 /* When the user clicks on the button, 
+                 toggle between hiding and showing the dropdown content */
+                 function myFunction() {
+                     document.getElementById("myDropdown1").classList.toggle("show");
+                 }
 
-    </script>
-         <script>
-             /* When the user clicks on the button, 
-             toggle between hiding and showing the dropdown content */
-             function myFunction() {
-                 document.getElementById("myDropdown1").classList.toggle("show");
-             }
+                 // Close the dropdown if the user clicks outside of it
+                 window.onclick = function (event) {
+                     if (!event.target.matches('.dropbtn')) {
+                         var dropdowns = document.getElementsByClassName("dropdown-content");
+                         var i;
+                         for (i = 0; i < dropdowns.length; i++) {
+                             var openDropdown = dropdowns[i];
+                             if (openDropdown.classList.contains('show')) {
 
-             // Close the dropdown if the user clicks outside of it
-             window.onclick = function (event) {
-                 if (!event.target.matches('.dropbtn')) {
-                     var dropdowns = document.getElementsByClassName("dropdown-content");
-                     var i;
-                     for (i = 0; i < dropdowns.length; i++) {
-                         var openDropdown = dropdowns[i];
-                         if (openDropdown.classList.contains('show')) {
-
+                             }
                          }
                      }
                  }
-             }
-     </script>
-    </body>
+             </script>
 </html>
-

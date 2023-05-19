@@ -7,7 +7,7 @@
         <br />
         <br />
         <br />
-            <div class="container">
+      <div class="container">
       <div class="row">
          <div class="col-md-6 mx-auto">
             <div class="card">
@@ -48,10 +48,10 @@
                             <asp:Button Class="btn btn-success btn-block btn-lg" ID="Button2" runat="server" Text="REGISTER" OnClick="Buttonsignup_Click" Width="112px" />
                         </div>
                      </div>
-                  </div> 
+                  </div>
                </div>
             </div>
-           <a href="homepage.aspx"><< Back to Home</a><br><br>      
+           <a href="homepage.aspx"><< Back to Home</a><br><br>   
          </div>
       </div>
    </div>
