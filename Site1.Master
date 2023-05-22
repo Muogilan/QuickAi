@@ -98,7 +98,7 @@
 				             <h6> My Account</h6>
 				              <ul style="list-style:none;">
 					           <li><a href="#">Dashboard</a></li>
-					           <li><a href="#">Templates</a></li>
+					           <li><a href="https://localhost:44364/Testimonialsfooter.aspx">Templates</a></li>
                                   <li><a href="#">AI images</a></li>
                                   <li><a href="#">Logout</a></li>
 				                </ul>
@@ -131,7 +131,7 @@
                     <div class="footer2" style="background-color:#303030;border-top-color:gray;">
                            <div class="row" style="margin-bottom: -40px;">
                               <div class="col-md-6">
-                                <div class="row"style="    width: 150%;">
+                                <div class="row"style="width: 100%;">
                                             <div class="col-md-2"></div>
                                       <div class="col-md-7">
                                            <div class="copyfoot">
@@ -141,8 +141,8 @@
                                 </div>
                            </div>
                                    <div class="col-md-6"">
-                                     <div class="row" style="width:400%;">
-                                        <div class="col-md-4"></div>
+                                     <div class="row">
+                                       
 
                                             <div class="col-md-6">
                                                   <div class="icons">

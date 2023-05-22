@@ -57,6 +57,7 @@ C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.csproj.CoreCompileInp
 C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.csproj.CopyComplete
 C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.dll
 C:\Users\sociusRD\source\repos\Quick AI\obj\Debug\Quick AI.pdb
+C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.CoreCompileInputs.cache
 C:\Users\sociusRD\Desktop\Quick AI\bin\Quick AI.dll.config
 C:\Users\sociusRD\Desktop\Quick AI\bin\Quick AI.dll
 C:\Users\sociusRD\Desktop\Quick AI\bin\Quick AI.pdb
@@ -111,8 +112,7 @@ C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\VBCSCompiler.exe
 C:\Users\sociusRD\Desktop\Quick AI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\sociusRD\Desktop\Quick AI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\sociusRD\Desktop\Quick AI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.AssemblyReference.cache
-C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.CoreCompileInputs.cache
 C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.CopyComplete
 C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.dll
 C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.pdb
+C:\Users\sociusRD\Desktop\Quick AI\obj\Debug\Quick AI.csproj.AssemblyReference.cache

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="transaction.aspx.cs" Inherits="Quick_AI.transaction" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Codefile="transaction.aspx.cs" Inherits="Quick_AI.transaction" %>
 
 <!DOCTYPE html>
 
@@ -10,10 +10,10 @@
     <!--Datatables css-->
     <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
     <!--Fontawesome css-->
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet"/>
     <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
     <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
     <!--fontswesome link>-->
        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!--jquery-->
@@ -32,12 +32,8 @@
     <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
     <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
     <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
     <!--fontswesome link>-->
-       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="font%20all%20min/all.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>

@@ -537,11 +537,45 @@ table .basic-table{
         border: none;
         border-radius: 4px;
         box-shadow: 0 4px 12px rgba(102, 103, 107, .15);
+        background: indianred;
     }
 a.button{
 
 }
 </style>
+<style>
+     <style>.chat-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-input input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    background: #0084ff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chat-output {
+    padding: 10px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold
+}
+  </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -715,24 +749,101 @@ a.button{
             <div class="message-action">
                     <a href="#" class="button ripple-effect btn-sm" id="export-chats" title="Export Conversation" data-tippy-placement="top" onclick="DownloadFile('Sample.pdf')" style="    background-color: #0d6efd;">
                                        <i class="fa-solid fa-download"></i></a>
-                    <a href="C:\Users\sociusRD\Desktop\Quick AI\Download file" class="button ripple-effect btn-sm red" id="delete-chats" data-tippy-placement="top" data-tippy="" onclick="REMOVE()" data-original-title="Delete Conversation"   "><i class="bi bi-trash"></i></a>
+                   <%-- <a href="C:\Users\sociusRD\Desktop\Quick AI\Download file" class="button ripple-effect btn-sm red" id="delete-chats" data-tippy-placement="top" data-tippy="" onclick="remove()" data-original-title="Delete Conversation"   "><i class="bi bi-trash"></i></a>--%>
+                    <button style="color:red" <i class="fas fa-trash-can" type="button" id="return" onclick="sendMessage()"></button>
             </div>
         </div>
         <div class="card-body" id="msgs"></div>
         <div class="card-footer">
-          <div class="input-group" id="msgForm" data-sender="me">
+         <%-- <div class="input-group" id="msgForm" data-sender="me">
             <input class="form-control" type="text" placeholder="Type your message here..."/>
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button">Send</button>
             </div>
-          </div>
+          </div>--%>
+             <div class="chat-input">
+    <input type="text" id="message" placeholder="Type a message..." />
+    <button type="button" id="send" onclick="sendMessage()">Send</button>
+    </div>
+    <div class="chat-output" id="output"></div>	
         </div>
       </div>
     </div>
   </div>
 </div>
         </div>
-      
+        <div style="background-color: #303030">
+                <div class="container-foot">
+                    <footer style="background-color: #303030; box-sizing: border-box;">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="logofoot">
+                                    <img src="images/980385239.png" />
+                                    <p style="color: silver">
+                                        Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="foot">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class=" footer-col1">
+                                                <h6>My Account</h6>
+                                                <ul style="list-style: none;">
+                                                    <li><a href="#">Login</a></li>
+                                                    <li><a href="#">Register</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="footer-col2">
+                                                <h6>Helpful Links</h6>
+                                                <ul style="list-style: none;">
+                                                    <li><a href="#">Blog</a></li>
+                                                    <li><a href="#">Feedback</a></li>
+                                                    <li><a href="#">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="footer-col3">
+                                                <h6>Information</h6>
+                                                <ul style="list-style: none;">
+                                                    <li><a href="#">FAQ</a></li>
+                                                    <li><a href="#">Testinomials</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <div style="border-top: 1px solid #484848; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
+                    <div style="background-color: #303030;">
+                        <div class="row">
+                            <div class="col-md-8 footcopy" id="border-right-line">
+                                <div class="copyfoot">
+                                    <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 footcopy" >
+                                <div class="icons">
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
        
     </form>
     
@@ -867,7 +978,7 @@ a.button{
                 //Check the Browser type and download the File.
                 var isIE = false || !!document.documentMode;
                 if (isIE) {
-                    window.navigator.msSaveBlob(blob, fileName);
+                    window.navigator.msSaveBlob(blob, fileName);+
                 } else {
                     var url = window.URL || window.webkitURL;
                     link = url.createObjectURL(blob);
@@ -881,6 +992,26 @@ a.button{
             };
             req.send();
         };
-     </script>
+    </script>
+       <script>
+           function sendMessage() {
+               let input = $("#message").val();
+
+               if (input === "hi" || input === "hello") {
+                   $("#output").html("<span>Typing...</span>");
+                   setTimeout(function () {
+                       $("#output").html("<span>Typing....you need to upgrade your plan to use this feature.</span>");
+                   }, 1000);
+                   $("#return").click(function () {
+                       event.preventDefault();
+                       remove();
+
+                   });
+                   function remove() {
+                       $("#output").html("");
+                   }
+               }
+           }
+         </script>
 </body>
 </html>

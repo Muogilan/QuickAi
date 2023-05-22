@@ -121,7 +121,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px -1px 02px rgb(0,0,0,0.5);
-    height: 100%
+    height: 87%
 }
 
 .sidebar ul {
@@ -422,7 +422,7 @@ table .basic-table{
 <body>
     <form id="form1" runat="server">
         <div>
-          <div class="topbar" style="margin-top: -102px;">
+          <div class="topbar">
                     <div class="logo">
                         <center> <img src="images/980385239.png" /></center>
                     </div>
@@ -467,7 +467,9 @@ table .basic-table{
                          </select>
                     </div>
                  </div>
-        <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
+            <div class="row">
+                <div class="col-3">
+                    <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -528,7 +530,7 @@ table .basic-table{
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; margin-top:100px">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
@@ -560,8 +562,9 @@ table .basic-table{
                            </li>
                          </ul>
                      </div>
-
-           <div class="dashboard-headline"style="margin-top:100px;margin-bottom:40px;padding:40px;">
+                </div>
+                <div class="col-9">
+                     <div class="dashboard-headline"style="margin-top:100px;margin-bottom:40px;padding:40px;">
                     <h3 class="d-flex align-items-center">
                         All Documents
                         <div class="word-used-wrapper margin-left-10">
@@ -616,6 +619,11 @@ table .basic-table{
       <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i></a></li>
     </ul>
   </footer>
+                </div>
+            </div>
+        
+
+          
 </div>
 <script>
           /* When the user clicks on the button, 

@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard1.aspx.cs" Inherits="Quick_AI.Dashboard1" %>   
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Dashboard1.aspx.cs" Inherits="Quick_AI.Dashboard1" %>   
 
 <!DOCTYPE html>
 
@@ -121,11 +120,9 @@ option {
     box-sizing: border-box;
     color: black;
 }
-
 #langbtn:hover {
     background-color: #314cc6;
 }
-
 .sidebar {
     position: fixed;
     top: 85px;
@@ -135,7 +132,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
+    height:87%
 }
 
 .sidebar ul {
@@ -340,11 +337,11 @@ body {
                                    <div id="login" class="dropdown-content"style="height: 465px;">
                                         <ul class="user-menu-small-nav">
                                             <li><a href="https://localhost:44364/Dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
-                                            <li><a href="3"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                            <li><a href="https://localhost:44364/Template.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                            <li><a href="https://localhost:44364/images.aspx"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="https://localhost:44364/Ai%20chat.aspx"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                            <li><a href="https://localhost:44364/Speech%20to%20text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                            <li><a href="https://localhost:44364/AI%20code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                                             <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
@@ -361,7 +358,9 @@ body {
                          </select>
                     </div>
                  </div>
-        <div class="sidebar" style="font-size:20px">
+        <div class="row">
+            <div class="col-lg-4">
+                 <div class="sidebar" style="font-size:20px">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -422,7 +421,7 @@ body {
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; margin-top:100px">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
@@ -454,6 +453,9 @@ body {
                            </li>
                          </ul>
                      </div>
+            </div>
+            <div class="col-lg-8"style="width:100%">
+                
                          <div style="padding-top:80px;" class="row">
                                     <div class="col-6">
                                       <h3 style="float:right;">Dashboard</h3>
@@ -468,53 +470,53 @@ body {
                                </div>
                          </div>
 
-    <div class="container1" style="margin-left:287px">
-      <div class="word-box">
-          <div class="word-text">
-                    <span>Words Used&nbsp; &nbsp;&nbsp; &nbsp; 
-            <img  style="float:right;" src="images/Screenshot%202023-05-03%20114631.png" /><br /><h4>0/10,000</h4></span>
-            &nbsp;</div>
-      </div>
-            <div class="word-box">
-          <div class="word-text">
-              <span>Image Used&nbsp; &nbsp;<br />
-                  <h4>0/100</h4>
-              </span>
-              <img style="float:right;" src="images/Screenshot%202023-05-03%20114700.png" />
-              <h4></h4>
+           <div class="container1" style="margin-left:287px">
+              <div class="word-box">
+                  <div class="word-text">
+                            <span>Words Used&nbsp; &nbsp;&nbsp; &nbsp; 
+                    <img  style="float:right;" src="images/Screenshot%202023-05-03%20114631.png" /><br /><h4>0/10,000</h4></span>
+                    &nbsp;</div>
+              </div>
+                    <div class="word-box">
+                  <div class="word-text">
+                      <span>Image Used&nbsp; &nbsp;<br />
+                          <h4>0/100</h4>
+                      </span>
+                      <img style="float:right;" src="images/Screenshot%202023-05-03%20114700.png" />
+                      <h4></h4>
               
-               </div>
-                </div>
-                <div class="word-box">
-          <div class="word-text" style="width:10px">
-              <span>Speech to Text &nbsp; &nbsp;<br /><h4>0/0</h4></span>
-          <img style="float:right;" src="images/Screenshot%202023-05-03%20114720.png" />
-               </div>
-                    </div>
-</div>
-   <div class="dashboard-box main-box-in-row">
-                <div class="headline" style="margin-left:400px">
-                    <h3><i class="fa-solid fa-chart-simple"></i>Word used this month</h3>
-                </div>
-                <div class="content">
-                    <!-- Chart -->
-                   <div class="content" style="margin-left: 415px;">
-                    <!-- Chart -->
-                    <div class="chart">
-                        <div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-                            <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                                    <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-                        <div>
-                            <canvas id="myChart"></canvas>
+                       </div>
+                        </div>
+                        <div class="word-box">
+                  <div class="word-text" style="width:10px">
+                      <span>Speech to Text &nbsp; &nbsp;<br /><h4>0/0</h4></span>
+                  <img style="float:right;" src="images/Screenshot%202023-05-03%20114720.png" />
+                       </div>
+                            </div>
+        </div>
+           <div class="dashboard-box main-box-in-row">
+                        <div class="headline" style="margin-left:400px">
+                            <h3><i class="fa-solid fa-chart-simple"></i>Word used this month</h3>
+                        </div>
+                        <div class="content">
+                            <!-- Chart -->
+                           <div class="content" style="margin-left: 415px;">
+                            <!-- Chart -->
+                            <div class="chart">
+                                <div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                    <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                        <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                <div>
+                                    <canvas id="myChart"></canvas>
+                                </div>
+
+                            </div>
                         </div>
 
+                        </div>
                     </div>
-                </div>
-
-                </div>
-            </div>
-        <div class="container">
+           <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -529,7 +531,9 @@ body {
       <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i></a></li>
     </ul>
   </footer>
-</div>
+            </div>
+        </div>
+       </div>
 <script>
           /* When the user clicks on the button, 
           toggle between hiding and showing the dropdown content */
@@ -610,7 +614,7 @@ body {
                      }
                  }
              }
-     </script>
+         </script>
     </body>
 </html>
 

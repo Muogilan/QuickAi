@@ -432,7 +432,7 @@ h5{
         </div>
         <!--Testimonials-footer-->
         <div class="container margin-bottom-50  margin-right-20 margin-left-20">
-        <div class="row">
+        <div class="row" style="margin-bottom:30px;">
                 <div class="col-md-4">
                     <div class="single-testimonial">
                         <div class="single-inner">
@@ -479,6 +479,79 @@ h5{
                     </div>
                 </div>
                     </div>
+            </div>
+        <!-----FOOTER------>
+        <div style="background-color: #303030">
+                <div class="container-foot">
+                    <footer style="background-color: #303030; box-sizing: border-box;">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="logofoot">
+                                    <img src="images/980385239.png" />
+                                    <p style="color: silver">
+                                        Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="foot">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class=" footer-col1">
+                                                <h6>My Account</h6>
+                                                <ul style="list-style: none;">
+                                                    <li><a href="#">Login</a></li>
+                                                    <li><a href="#">Register</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="footer-col2">
+                                                <h6>Helpful Links</h6>
+                                                <ul style="list-style: none;">
+                                                    <li><a href="#">Blog</a></li>
+                                                    <li><a href="#">Feedback</a></li>
+                                                    <li><a href="#">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="footer-col3">
+                                                <h6>Information</h6>
+                                                <ul style="list-style: none;">
+                                                    <li><a href="#">FAQ</a></li>
+                                                    <li><a href="#">Testinomials</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <div style="border-top: 1px solid #484848; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
+                    <div style="background-color: #303030;">
+                        <div class="row">
+                            <div class="col-md-8 footcopy" id="border-right-line">
+                                <div class="copyfoot">
+                                    <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 footcopy" >
+                                <div class="icons">
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     </form>
 <script>

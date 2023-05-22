@@ -47,7 +47,9 @@ namespace Quick_AI
                     Response.Write("<script>alert('Invalid Credentials ');</script>");
                 }
             }
+#pragma warning disable CS0168 // The variable 'ex' is declared but never used
             catch (Exception ex)
+#pragma warning restore CS0168 // The variable 'ex' is declared but never used
             {
 
             }

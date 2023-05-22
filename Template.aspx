@@ -1,148 +1,307 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="Quick_AI.homepage" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <style>
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.testimonials {
-  background: #fff;
-  text-align: center;
-  max-width: 600px;
-  margin: 1.5rem auto;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-}
-.title {
-  font-size: 1.5rem;
-}
-.description {
-  font-size: 0.95rem;
-  color: #333;
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Template.aspx.cs" Inherits="Quick_AI.Template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Temaplates</title>
+    <!--Bootstrap css-->
+    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
+    <!--Datatables css-->
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--Fontawesome css-->
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--fontswesome link>-->
+       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!--jquery-->
+    <script src="Bootstarp/Css/JS/jquery.min.js"></script>
+      <!--Jquery Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
+      <!--bootstrapmin Js-->
+    <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
+      <!--poppers Js-->
+    <script src="Bootstarp/Css/JS/popper.min.js"></script>
+   <!--Bootstrap css-->
+    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
+    <!--Datatables css-->
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--Fontawesome css-->
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!--fontswesome link>-->
+       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
+    <link href="font%20all%20min/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+         <style>
+       * {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.slider-container {
-  margin-top: 2rem;
-  margin: 2rem auto 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-.slider {
-  display: flex;
-  flex: 0 0 1;
-  width: 300%; / Depends On slide-box Length  100 */
-  transition: all 0.5s linear;
-}
-.slide-box {
-  padding: 0 80px;
-}
-.slide-box .comment {
- 
-  font-size: 0.86rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  letter-spacing: 0.4px;
-  position: relative;
-  font-weight: 400;
+.container {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.slide-box img {
-  max-width: 60px;
-  border-radius: 50%;
-}
-.slide-box .name {
-  font-size: 1rem;
-}
-.slide-box .job {
-  font-size: 0.7rem;
-  color: #8d8e97;
-  font-weight: 400;
-}
-.slide-box span{
-    border-radius:4px;
-    color:aliceblue
+.topbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
+    width: 100%;
+    height: 85px;
+    display: grid;
+    grid-template-columns: 2.5fr 8fr 1fr 1fr;
+    align-items: center;
+    z-index: 1;
+    margin-top:-25px;
 }
 
-.control-slider {
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  line-height: 40px;
-  color: #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+.logo {
+   
+    border-right: 1px solid #e0e0e0;
+    justify-content: center;
+    height: 80px;
+    padding-top: 10px;
+    width: 260px;
 }
-.btn-left {
-  left: 10px;
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
 }
-.btn-right {
-  right: 10px;
+
+    .user img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+.selectlang {
+    float: right;
+    padding-right: 30px;
+    border-left: 1px solid #e0e0e0;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 82px;
 }
-h3{
-    margin-top:5px;
-    margin-bottom:5px;
-    text-align:center;
+
+#langbtn {
+    border: none;
+    background-color: #444444;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px 4px;
+    color: white;
 }
-a{
-    text-decoration:none;
+
+option {
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
 }
-@media screen and (max-width: 500px) {
-            .slide-box {
-                padding: 0 55px;
+#langbtn:hover {
+    background-color: #314cc6;
+}
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    background-color: #fff;
+    overflow-x: hidden;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
+    height:87%
+}
+
+.sidebar ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+        .sidebar ul li {
+            width: 98%;
+            list-style: none;
+        }
+
+            .sidebar ul li a {
+                width: 100%;
+                text-decoration: none;
+                color: #707070;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                font-size:13px;
             }
-        }
+
+                .sidebar ul li a i {
+                    min-width: 60PX;
+                    font-size: 15PX;
+                    text-align: center;
+                }
+                .dropbtn {
+  background-color:white;
+  color:#6c757d;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.icon {
+    border-left: 4px solid rgba(255, 255, 255, .3);
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #aaa;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.subcontainer {
+    background-color: #444444;
+    padding: 12px 22px;
+    margin: 0;
+    line-height: 23px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.suhome {
+    color: white;
+    padding-right: 6px;
+}
+
+.suhome a {
+     color: white;
+     text-decoration: none;
+}
+.dropdown img{
+    height:42px;
+    border-radius:20px;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding: 10px;
+}
+.word-box {
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .10);
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 calc(25% - 30px);
+    height: 150px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.word-text{
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display:inline-flex;
+}
+
 
 </style>
     <style>
-.main{
-            margin-left: 160px;
-            margin-right: 160px;
-            margin-top:100px;
-            
-        }
-        .section{
-           display: flex;
-           
-        }
-        .radio{
-            margin-left: 400px;
-            
-            
-        }
-        .section2{
-            margin-top: 100px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            width: 100%;
-            height: 750px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .innersection{
-            display: flex;
-        }
-        .innersection a{
-            color:whitesmoke;
-        }
-        .innersection li{
-            text-decoration: none;
-            list-style-type: none;
-            margin-top: -5px;
-           
-        }
-        .innersection li button:hover{
-            background-color: rgb(33, 148, 224);
-        }
-</style>
-  <style>
-*{
-    margin-bottom:20px;
-}
+/*templates*/
 body{
     color: #666;
     font-size: 16px;
@@ -186,14 +345,13 @@ body{
     max-width:100%;
     -webkit-box-flex:0;
     flex:0 0 100%;
+    margin-bottom:20px;
 }
 .col-md-4{
     -webkit-box-flex: 0;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
-}
-.col-md-4 a{
-    text-decoration:none;
+    margin-bottom:20px;
 }
 .col-md-6{
     -webkit-box-flex: 0;
@@ -209,6 +367,7 @@ body{
 a{
     transition:.3s;
     box-sizing:border-box;
+    text-decoration:none;
 }
 .ai-templates{
     border-radius:9px;
@@ -216,7 +375,7 @@ a{
     box-shadow:none;
     transition:0.3s;
 }
-.ai-templates .content{
+.ai-templates content{
     padding:20px;
 }
 .ai-templates-icon{
@@ -229,7 +388,6 @@ a{
     border-radius: 9px;
     padding: 0.5rem;
     box-shadow: 0 0 #0000, 0 0 #0000, 0px 0px 0px 1px rgba(17,24,39,.05), 0px 1px 4px rgba(17,24,39,.1), 0px 8px 16px rgba(17,24,39,.1);
-    margin-bottom: 10px;
 }
 .ai-templates.ai-templates-pro {
     border-color: #ffd400;
@@ -271,249 +429,177 @@ h4{
 span i{
     margin-bottom:-20px;
 }
-    </style>
-    <style>
-*{
-    box-sizing:border-box;
+.content{
+    padding:15px;
 }
-body{
-    color: #666;
-    font-size: 16px;
-    line-height: 27px;
-    background-color: #fff;
-}
-.section.border-top {
-    border-top: 1px solid #e0e0e0;
-}
-.container {
-    max-width:960px;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.col-xl-12 {
-    position:relative;
-    width:100%;
-    min-height:1px;
-    padding-right:15px;
-    padding-left:15px;
-}
-.col-xl-4 {
-    position:relative;
-    width:100%;
-    min-height:1px;
-    padding-right:15px;
-    padding-left:15px;
-}
-.margin-bottom-45{
-    margin-bottom:45px !important;
 
-}
-.margin-top-0{
-    margin-top:0!important;
-}
-.section-headline {
-    display:block;
-    position:relative;
-    padding-right:20px;
-}
-.section-headline h3 {
-    font-size:26px;
-    line-height:36PX;
-    font-weight:500;
-    color:#333;
-}
-.headline-link {
-    position:absolute;
-    right:0;
-    bottom:0;
-    text-decoration:none;
-}
-.blog-compact-item-container {
-    display:block;
-    height:100%;
-    width:100%;
-    border-radius:4px;
-    background:0 0;
-    transform: translate3d(0, 0, 0);
-    transition: transform .4s;
-    margin-bottom: 30px;
-}
-.blog-compact-item{
-    height:42px;
-    background: #ccc;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
-    border-radius: 4px;
-    height: 100%;
-    display: block;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 460px;
-    z-index: 100;
-    cursor: pointer;
-    transition: .4s;
-}
-.blog-compact-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
-}
-.img {
-    vertical-align: middle;
-    border-style: none;
-}
-span.blog-item-tag {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 5px 12px;
-    line-height: 20px;
-    font-weight: 400;
-    margin-bottom: 9px;
-    position: absolute;
-    top: 30px;
-    left: 32px;
-    z-index: 110;
-    transition: .4s;
-}
-.blog-post-tags {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 0;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    opacity: .9;
-}
-.blog-post-tags li {
-    display: inline-block;
-    margin-right: 5px;
-}
-.blog-compact-item-content {
-    position: absolute;
-    bottom: 32px;
-    left: 0;
-    padding: 0 34px;
-    width: 100%;
-    z-index: 50;
-    box-sizing: border-box;
-}
-.blog-compact-item-content h3 {
-    color: #fff;
-    font-size: 20px;
-    padding: 5px 0;
-    font-weight: 500;
-    margin: 2px 0 0;
-    line-height: 30px;
-}
-.blog-compact-item-content p {
-    font-size: 16px;
-    font-weight: 300;
-    display: inline-block;
-    color: rgba(255, 255, 255, .8);
-    margin: 7px 0 0;
-}
-.blog-compact-item:before {
-    content: "";
-    top: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    border-radius: 4px;
-    background: linear-gradient(to top, rgba(51, 51, 51, 0.8) 0%, rgba(51, 51, 51, 0.7) 35%, rgba(51, 51, 51, 0.3) 60%, rgba(51, 51, 51, 0.3) 100%);
-    transition: .4s;
-}
-.blog-compact-item:hover {
-  transform: translate(0, -3px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-</style>
-    <section href="https://localhost:44364/homepage.aspx">
-        <br />
-        <br />
-        <br />
-        <br />
-   <center>
-        <img width="300px" src="images/home-hero-icon.png"/>
-   <center>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <center>
-                    <h1 class="margin-bottom-10 text_gradient animation">
-                       <strong>Best AI Content Writer</strong>
-                    </h1>
-                    <p>Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster & save hours of work.</p>
-                    </center>
-                    <center>
-                    <a class="btn btn-primary ripple-effect button-sliding-icon"href="https://localhost:44364/Loginpage.aspx" >Get started For free
-                        <i class="icon-feather-arrow-right"></i>
-                    </a>
-                    </center>
-                    <div class="margin-top-2 grey">
-                        <center>
-                        <small>No Credit Card Required</small>
-                        </center>
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+               <div class="topbar">
+                    <div class="logo">
+                        <center> <img src="images/980385239.png" /></center>
                     </div>
-                </div>
-                
+               <a href="javascript:void(0);"  class="header-icon">
+                   <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
+                    </a>
+                 
+          <div class="header-notifications user-menu">
+                                    <div class="header-notifications-trigger">
+                                        <a href="#" title="">
+                                            <div class="user-avatar status-online">
+                                                <div class="dropdown">
+                                                    <span onclick="myFunction1()" class="dropbtn1" >
+                                                    <img src="images/default_user.png" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                             
+                                   <div id="login" class="dropdown-content"style="height: 465px;">
+                                        <ul class="user-menu-small-nav">
+                                            <li><a href="https://localhost:44364/Dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
+                                            <li><a href="3"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                            <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
+                                            <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
+                                            <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                     <div class="selectlang">
+                         <select  id="langbtn" class="popup-with-zoom-anim button ripple-effect">
+                                <option value="EN">English</option>
+                                <option value="Ta">Tamil</option>
+                                <option value="Te">Telugu</option>
+                                <option value="HI">Hindi</option>
+                         </select>
+                    </div>
+                 </div>
+              <div class="row">
+            <div class="col-3">
+                 <div class="sidebar" style="font-size:20px">
+                         <ul>
+                             <li "="">
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9> My Account</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="#">
+                                  <i class="fa fa-th-large"></i> <div>Dashboard</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#"">
+                                  <i class="fa-solid fa-file-lines"></i>
+                                   <div class="dropdown">
+                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                          <div id="myDropdown1" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                              </div>
+                              </div>
+                              </a>
+                           </li>                          
+                         </ul>
+
+                         <ul>
+                             <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Organize And Manage</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="#">
+                                 <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="https://localhost:44364/AI%20images.aspx">
+                                  <i class="fa-solid fa-image"></i> <div>AI Imeage</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
+                              </a>
+                           </li>                    
+                            <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="#">
+                                 <i class="fa-solid fa-code"></i><div>AI Code</div>
+                              </a>
+                           </li>
+                             </ul>
+
+                             <ul>
+                                 <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Account</h9>
+                                 </div>
+                             </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="https://localhost:44364/membershipplan.aspx">
+                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
+                              </a>
+                           </li>
+                            
+                             <li>
+                              <a href="https://localhost:44364/transaction.aspx">
+                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="https://localhost:44364/Accountsetting.aspx">
+                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
+                              </a>
+                           </li>
+                         </ul>
+                     </div>
             </div>
-        </div>
-        <br />
-        <br />
-       <!-- <div class="container">
-            <div class="row">
-                <center>
-                <h4>How It Works?</h4>
-                </center>
-            </div>-->
-            <div class="row" style="padding:30px;">
-                <center>
-                 <h1>How It Works?</h1>
-                </center>
-                <div class="col-md-4">
-                    <!--<center>
-                    <img src="images/Screenshot%202023-04-22%20173739.png" />
-                    </center>-->
-                    <center>
-                    <img src="images/Screenshot%202023-04-18%20102209.png" />
-                    <h4>Select a template</h4>
-                    <p class="text-justify">Choose a content creation template. Multiple templates are available for your all needs.</p>
-                    </center>
-                </div>
-                <div class="col-md-4">
-                    <center>
-                        <img src="images/Screenshot%202023-04-18%20102238.png" />
-                        <h4>Fill the form</h4>
-                        <p>Enter a detailed description of your content. Tell the AI what do you want.</p>
-                    </center>
-                </div>
-                <div class="col-md-4">
-                    <center>
-                        <img src="images/Screenshot%202023-04-18%20102238.png" />
-                        <h4>Get your content</h4>
-                        <p>Get a unique high quality content. The content is plagiarism free and you can use it anywhere.</p>
-                    </center>
-                </div>
-            </div>
-        <div class="section padding-top-65 padding-bottom-65">
+            <div class="col-9">
+                 <div style="padding-top:80px;" class="row">
+                                    <div class="col-6">
+                                      <h3>Dashboard</h3>
+                                      
+                                    </div>
+                             <div style="padding-right:40px;" class="col-6">
+                                     <div style="float:right;" class="subcontainer">
+                                          <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                                          <span class="icon"></span>
+                                          <span style="color:white;">Dashboard</span>
+                                       </div> 
+                               </div>
+                         </div>
+                      <div>
+                  <input type="text" placeholder="Search.." style="    width: 100%;border-radius: 25px;margin-top: 20px;margin-bottom: 20px;">
+            <div class="section padding-top-65 padding-bottom-65">
         <div class="container margin-bottom-20">
-            <div class="section-headline centered margin-top-0 margin-bottom-30">
+<%--            <div class="section-headline centered margin-top-0 margin-bottom-30">
                 <h3 class="margin-bottom-5">Templates</h3>
                 <p>Generate your required content with over 60+ content creation templates</p>
-            </div>
+            </div>--%>
             <div class="template-categories home-templates">
                 <ul>
                     <li class="active"><a href="javascript:void();" class="ai-templates-category" data-category="all">All templates</a></li>
@@ -527,10 +613,10 @@ span.blog-item-tag {
                                     </ul>
             </div>
             <div class="row ai-template-blocks">
-                                    <div class="col-md-12 ai-templates-category-title">
+                    <div class="col-md-12 ai-templates-category-title">
                         <h4>Article And Blogs</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-1">
+                        <div class="col-md-4 col-sm-6 category-1">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -569,7 +655,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                       <div class="col-md-4 col-sm-6 category-1">
+                        <div class="col-md-4 col-sm-6 category-1">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -615,7 +701,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-pencil-square"></i>
+                                            <i class="fa fa-pencil-square-o"></i>
                                         </div>
                                         <h4>
                                             Article Rewriter                                                                                    </h4>
@@ -680,15 +766,15 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                    <div class="col-md-12 ai-templates-category-title">
+                        <div class="col-md-12 ai-templates-category-title">
                         <h4>Ads And Marketing Tools</h4>
                     </div>
-                    <div class="col-md-4 col-sm-6 category-2">
+                        <div class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="fa fa-facebook-square"></i>
+                                            <i class="fa fa-facebook-official"></i>
                                         </div>
                                         <h4>
                                             Facebook Ads                                                                                    </h4>
@@ -697,7 +783,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                        <div class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -711,7 +797,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                        <div class="col-md-4 col-sm-6 category-2">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -724,7 +810,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                        <div class="col-md-4 col-sm-6 category-2">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -737,8 +823,8 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
-                            <a href="http://hype.sociusus.com/ai-templates/linkedin-ad-headlines">
+                        <div class="col-md-4 col-sm-6 category-2">
+                            <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
@@ -750,7 +836,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                        <div class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -764,7 +850,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-2">
+                        <div class="col-md-4 col-sm-6 category-2">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -778,10 +864,10 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                        <div class="col-md-12 ai-templates-category-title">
+                        <div class="col-md-12 ai-templates-category-title">
                         <h4>General Writing</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -794,7 +880,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -802,13 +888,13 @@ span.blog-item-tag {
                                             <i class="fa fa-text-width"></i>
                                         </div>
                                         <h4>
-                                            Content Shorten</h4>
+                                            Content Shorten                                                                                    </h4>
                                         <p class="margin-bottom-0">Short your content in a different voice and style to appeal to different readers.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" data-tippy-placement="top" data-tippy="" data-original-title="Not available in the free plan">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -821,7 +907,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -829,28 +915,28 @@ span.blog-item-tag {
                                             <i class="fa fa-child"></i>
                                         </div>
                                         <h4>
-                                            Summarize for a 2nd grader</h4>
+                                            Summarize for a 2nd grader                                                                                    </h4>
                                         <p class="margin-bottom-0">Translates difficult text into simpler concepts.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="h#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-suit-heart"></i>
+                                            <i class="fa fa-heart-o"></i>
                                         </div>
                                         <h4>
-                                            Stories<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                            Stories                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Engaging and persuasive stories that will capture your reader's attention and interest.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -858,13 +944,13 @@ span.blog-item-tag {
                                             <i class="fa fa-list"></i>
                                         </div>
                                         <h4>
-                                            Bullet Point Answers</h4>
+                                            Bullet Point Answers                                                                                    </h4>
                                         <p class="margin-bottom-0">Precise and informative bullet points that provide quick and valuable answers to your customers' questions.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -872,13 +958,13 @@ span.blog-item-tag {
                                             <i class="fa fa-tasks"></i>
                                         </div>
                                         <h4>
-                                            Definition</h4>
+                                            Definition                                                                                    </h4>
                                         <p class="margin-bottom-0">A definition for a word, phrase, or acronym that's used often by your target buyers.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -886,13 +972,13 @@ span.blog-item-tag {
                                             <i class="fa fa-check-circle"></i>
                                         </div>
                                         <h4>
-                                            Answers</h4>
+                                            Answers                                                                                    </h4>
                                         <p class="margin-bottom-0">Instant, quality answers to any questions or concerns that your audience might have.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -900,13 +986,13 @@ span.blog-item-tag {
                                             <i class="fa fa-question-circle"></i>
                                         </div>
                                         <h4>
-                                            Questions</h4>
+                                            Questions                                                                                    </h4>
                                         <p class="margin-bottom-0">A tool to create engaging questions and polls that increase audience participation and engagement.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -914,13 +1000,13 @@ span.blog-item-tag {
                                             <i class="fa fa-sort-alpha-desc"></i>
                                         </div>
                                         <h4>
-                                            Passive to Active Voice</h4>
+                                            Passive to Active Voice                                                                                    </h4>
                                         <p class="margin-bottom-0">Easy and quick solution to converting your passive voice sentences into active voice sentences.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -928,27 +1014,29 @@ span.blog-item-tag {
                                             <i class="fa fa-key"></i>
                                         </div>
                                         <h4>
-                                            Pros and Cons<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                            Pros and Cons                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">List of the main benefits versus the most common problems and concerns.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                           <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" data-tippy-placement="top" data-tippy="" data-original-title="Not available in the free plan">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-refresh"></i>
                                         </div>
-                                        <h4>Rewrite With Keywords<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
+                                        <h4>
+                                            Rewrite With Keywords                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                                                                    </h4>
                                         <p class="margin-bottom-0">Rewrite your existing content to include more keywords and boost your search engine rankings.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -956,41 +1044,43 @@ span.blog-item-tag {
                                             <i class="fa fa-envelope"></i>
                                         </div>
                                         <h4>
-                                            Emails<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                            Emails                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
                                                                                     </h4>
                                         <p class="margin-bottom-0">Professional-looking emails that help you engage leads and customers.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-envelope-open"></i>
+                                            <i class="fa fa-envelope"></i>
                                         </div>
-                                        <h4>Emails V2<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
+                                        <h4>
+                                            Emails V2                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                                                                    </h4>
                                         <p class="margin-bottom-0">Personalized email outreach to your target prospects that get better results.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-envelope"></i>
+                                            <i class="fa fa-envelope-open-o"></i>
                                         </div>
                                         <h4>
-                                            Email Subject Lines</h4>
+                                            Email Subject Lines                                                                                    </h4>
                                         <p class="margin-bottom-0">Powerful email subject lines that increase open rates.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1004,7 +1094,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1018,36 +1108,40 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                          <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-file-earmark-text"></i>
+                                            <i class="fa fa-file-text-o"></i>
                                         </div>
-                                        <h4>Company Mission<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
+                                        <h4>
+                                            Company Mission                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                                                                    </h4>
                                         <p class="margin-bottom-0">A clear and concise statement of your company's goals and purpose.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                          <div class="col-md-4 col-sm-6 category-3">
+                        <div class="col-md-4 col-sm-6 category-3">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
                                             <i class="fa fa-align-left"></i>
                                         </div>
-                                        <h4>Company Vision<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
+                                        <h4>
+                                            Company Vision                                                                                            <span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span>
+                                                                                    </h4>
                                         <p class="margin-bottom-0">A vision that attracts the right people, clients, and employees.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                                        <div class="col-md-12 ai-templates-category-title">
+                        <div class="col-md-12 ai-templates-category-title">
                         <h4>Ecommerce</h4>
                     </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                        <div class="col-md-4 col-sm-6 category-4">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1061,7 +1155,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                        <div class="col-md-4 col-sm-6 category-4">
                             <a href="#">
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
@@ -1075,7 +1169,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                        <div class="col-md-4 col-sm-6 category-4">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1088,7 +1182,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                        <div class="col-md-4 col-sm-6 category-4">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1101,7 +1195,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-4">
+                        <div class="col-md-4 col-sm-6 category-4">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1114,7 +1208,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                    <div class="col-md-12 ai-templates-category-title">
+                        <div class="col-md-12 ai-templates-category-title">
                         <h4>Social Media</h4>
                     </div>
                         <div class="col-md-4 col-sm-6 category-5">
@@ -1130,7 +1224,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                       <div class="col-md-4 col-sm-6 category-5">
+                        <div class="col-md-4 col-sm-6 category-5">
                             <a href="#" data-tippy-placement="top" data-tippy="" data-original-title="Not available in the free plan">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1187,7 +1281,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-youtube"></i>
+                                            <i class="fa fa-youtube-play"></i>
                                         </div>
                                         <h4>YouTube Titles</h4>
                                         <p class="margin-bottom-0">Catchy titles that attract more views and increase the number of shares.</p>
@@ -1200,7 +1294,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-youtube"></i>
+                                            <i class="fa fa-youtube-play"></i>
                                         </div>
                                         <h4>YouTube Descriptions<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Catchy and persuasive YouTube descriptions that help your videos rank higher.</p>
@@ -1213,7 +1307,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                           <i class="bi bi-youtube"></i>
+                                            <i class="fa fa-youtube-play"></i>
                                         </div>
                                         <h4>YouTube Outlines<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Video outlines that are a breeze to create and uber-engaging.</p>
@@ -1247,10 +1341,10 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                    <div class="col-md-12 ai-templates-category-title">
+                        <div class="col-md-12 ai-templates-category-title">
                         <h4>Website</h4>
                     </div>
-                    <div class="col-md-4 col-sm-6 category-6">
+                        <div class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1263,7 +1357,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                                            <div class="col-md-4 col-sm-6 category-6">
+                        <div class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1278,7 +1372,7 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                       <div class="col-md-4 col-sm-6 category-6">
+                        <div class="col-md-4 col-sm-6 category-6">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1291,10 +1385,10 @@ span.blog-item-tag {
                                 </div>
                             </a>
                         </div>
-                    <div class="col-md-12 ai-templates-category-title">
+                        <div class="col-md-12 ai-templates-category-title">
                         <h4>Other</h4>
                     </div>
-                    <div class="col-md-4 col-sm-6 category-7">
+                        <div class="col-md-4 col-sm-6 category-7">
                             <a href="#" title="Not available in the free plan" data-tippy-placement="top">
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
@@ -1338,7 +1432,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-question-circle"></i>
+                                            <i class="fa fa-question-circle-o"></i>
                                         </div>
                                         <h4>FAQs<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Generate frequently asked questions based on your product description.</p>
@@ -1351,7 +1445,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                            <i class="bi bi-question-circle"></i>
+                                            <i class="fa fa-question-circle-o"></i>
                                         </div>
                                         <h4>FAQ Answers<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Generate creative answers to questions (FAQs) about your business or website.</p>
@@ -1364,7 +1458,7 @@ span.blog-item-tag {
                                 <div class="dashboard-box ai-templates ai-templates-pro">
                                     <div class="content">
                                         <div class="ai-templates-icon">
-                                           <i class="bi bi-star-half"></i>
+                                            <i class="fa fa-star-half-o"></i>
                                         </div>
                                         <h4>Testimonials / Reviews<span class="dashboard-status-button yellow"><i class="fa fa-gift"></i> Pro</span></h4>
                                         <p class="margin-bottom-0">Add social proof to your website by generating user testimonials.</p>
@@ -1373,299 +1467,29 @@ span.blog-item-tag {
                             </a>
                         </div>
                                 </div>
-        </div>
-    </div>
-           <div class="main">
-        <div class="section">
-              <div class="section1">
-                <h1>Membership Plan</h1>
-                <div class="radio">
-               <input type="radio"  name="radio-buttons" value="monthly" onchange="enableInputField(5)"/> Monthly&nbsp; &nbsp; &nbsp;
-               <input type="radio" name="radio-buttons" value="yearly" onchange="enableInputField(50)"/> Yearly&nbsp; &nbsp; &nbsp;
-               <input type="radio" name="radio-buttons" value="Lifetime" onchange="enableInputField(550)"/> Life Time&nbsp; &nbsp; &nbsp;
-                </div>
-              </div>
-        </div>
-        <div class="section2">
-            <div class="innersection">      
-            <ul>
-                <li><strong>Free Plan</strong></li>
-                <li><button style="width:200px;">Free</button></li>
-                <li>Features of Free Plan</li>
-                <li><b>32</b> AI Document Templates</li>
-                <li><b>10,000</b> Words per month</li>
-                <li><b>100</b> Images per month</li>
-                <li><b>0</b> Speech to Text per month </li>
-                <li><b>0</b> MB Audio file size limit</li>
-                <li> <i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i> </li>
-                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
-                <li> <i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Hide Ads</li>
-                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
-                 <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
-                <li><button  class="btn btn-primary" style="width:200px;">Current Plan</button></li>
-            </ul>
-            </div>
-            <div class="innersection">            
-                <ul>
-                    <li><strong>Trail Plan</strong></li>
-                    <li><button style="width:200px;">Trail</button></li>
-                    <li>Features of Free Plan</li>
-                    <li><b>32</b> AI Document Templates</li>
-                    <li><b>10,000</b> Words per month</li>
-                    <li><b>100</b> Images per month</li>
-                    <li><b>0</b> Speech to Text per month </li>
-                    <li><b>0</b> MB Audio file size limit</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
-                    <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i> Hide Ads</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Setup</li>
-                    <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>Free Support</li>
-                     <li><button class="btn btn-primary" style="width:200px;">Upgrade</button></li>
-                </ul>
-                </div>
-                <div class="innersection">
-                    <ul>
-                        <li><strong>Extended Plan</strong></li>
-                        <li><input type="text" id="input-field" disabled></li>
-                        <li>Features of Free Plan</li>
-                        <li><b>32</b> AI Document Templates</li>
-                        <li><b>10,000</b> Words per month</li>
-                        <li><b>100</b> Images per month</li>
-                        <li><b>0</b> Speech to Text per month </li>
-                        <li><b>0</b> MB Audio file size limit</li>
-                        <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>AI Chat <i class="fa-solid fa-circle-question"></i> </li>
-                        <li><i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i> AI Code<i class="fa-solid fa-circle-question"></i></li>
-                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i> AI Code</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Setup</li>
-                        <li><i class="fa-regular fa-circle-check" style="color: #5af207;"></i>Free Support</li>
-                         <li><button class="btn btn-primary" style="width:200px;"><a href="http://localhost:49935/upgrade.aspx">   Upgrade</a></button></li>
-                    </ul>
              </div>
+          </div>
         </div>
-    </div>
-        <div class="section-headline centered margin-top-0 margin-bottom-5">
-                        <h3>Testimonials</h3>
-         <i class="fa-sharp fa-solid fa-quote-right" style="color: #0949b9; font-size: 63px;margin-left: -473px;"></i>
-                    </div>
-   
-    <div class="testimonials">
-      
-        <div class="slider-container">
-            <div class="slider">
-
-                <div class="slide-box">
-                    <!-- Testi One -->
-                    
-                    <img src="images/default_user.png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Natasha</h4>
-                        <span style="background: #0949b9;">Designer</span>
-                        <p class="comment">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco labons nisi ut aliquip ea commodo consequat. Etsed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <!-- Testi Two -->
-                   
-                    <img src="images/default_user.png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Steve Roger</h4>
-                        <span style="background: #0949b9;">Content Writer</span>
-                         <p class="comment">
-                        Elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e
-                    </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <!-- Testi Three -->
-                    <img src="images/default_user.png" style="height: 15%;"  />
-                    <div class="testimonial-author">
-                        <h4>Tony Stark</h4>
-                        <span style="background: #0949b9;">Social Marketing</span>
-                        <p class="comment">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                    </div>
-                </div>
-            </div>
-            <a href="#!" class="control-slider btn-left">
-                <i class="fas fa-chevron-left"></i>
-            </a>
-            <a href="#!" class="control-slider btn-right">
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
-    </div>
-        <div class="section border-top padding-top-65 padding-bottom-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <!-- Section Headline -->
-                    <div class="section-headline margin-top-0 margin-bottom-45">
-                        <h3>Recent Blog</h3>
-                        <a href="https://localhost:44364/Recentblog.aspx" class="headline-link">View Blog<i class="bi bi-arrow-right"></i></a>
-                    </div>
-
-                    <div class="row">
-                        <!-- Blog Post Item -->
-                            <div class="col-xl-4">
-                                <a href="https://localhost:44364/Viewblog.aspx" class="blog-compact-item-container">
-                                    <div class="blog-compact-item"style="width:40%;">
-                                        <img src="images/blog.png" alt="First Blog">
-                                        <span class="blog-item-tag">Admin</span>
-                                        <div class="blog-compact-item-content">
-                                            <ul class="blog-post-tags">
-                                                <li>3 years ago</li>
-                                            </ul>
-                                            <h3>First Blog</h3>
-                                            <p>Consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut eni...</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                           <!-- Blog post Item / End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<%--                    <div style="background-color: #e0e0e0; padding-top: 60px; padding-bottom: 60px">
-        <div class="container">--%>
-		<!-- bootstrap card with row name myCarousel as row 1-->
-            <div class="carousel slide" id="myCarousel">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="col-xs-2" style="padding-right: 80px">
-                            <a href="#">
-                                <img src="images/logo-carousel-06.png"class="img-responsive" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-2" style="padding-right: 80px">
-                            <a href="#">
-                                <img src="images/logo-carousel-05.png"class="img-responsive" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-2" style="padding-right: 80px">
-                            <a href="#">
-                                <img src="images/logo-carousel-04.png" class="img-responsive"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-2" style="padding-right: 80px">
-                            <a href="#">
-                                <img src="images/logo-carousel-02.png"class="img-responsive" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-2" style="padding-right: 80px">
-                            <a href="#">
-                                <img src="images/logo-carousel-01.png" class="img-responsive"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-2" style="padding-right: 80px">
-                            <a href="#">
-<img src="images/acm-letter-logo-design-in-illustration-logo-calligraphy-designs-for-logo-poster-invitation-etc-vector.jpg"class="img-responsive" />
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <a class="left carousel-control" 
-                    href="#myCarousel"
-                    data-slide="prev">
-                    <i class="bi bi-chevron-compact-left"></i>
-                </a>
-                <a class="right carousel-control"
-                    href="#myCarousel"
-                    data-slide="next">
-                   <i class="bi bi-chevron-right"></i>
-                </a>
-
-            </div>
-        </div>
-
-
-
+       </div>
+     <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">2023 Socius IGB Pvt Ltd, All right reserved</span>
     </div>
 
-
-    </section>
-    <!--TESTIMONIALS-->
-    <script>
-        const sliderElm = document.querySelector(".slider-container .slider");
-        const btnLeft = document.querySelector(".slider-container .btn-left");
-        const btnRight = document.querySelector(".slider-container .btn-right");
-
-        const numberSliderBoxs = sliderElm.children.length;
-        let idxCurrentSlide = 0;
-
-        // Functions:
-        function moveSlider() {
-            let leftMargin = (sliderElm.clientWidth / numberSliderBoxs) * idxCurrentSlide;
-            sliderElm.style.marginLeft = -leftMargin + "px";
-            console.log(sliderElm.clientWidth, leftMargin);
-        }
-        function moveLeft() {
-            if (idxCurrentSlide === 0) idxCurrentSlide = numberSliderBoxs - 1;
-            else idxCurrentSlide--;
-
-            moveSlider();
-        }
-        function moveRight() {
-            if (idxCurrentSlide === numberSliderBoxs - 1) idxCurrentSlide = 0;
-            else idxCurrentSlide++;
-
-            moveSlider();
-        }
-
-        // Event Listeners:
-        btnLeft.addEventListener("click", moveLeft);
-        btnRight.addEventListener("click", moveRight);
-        window.addEventListener("resize", moveSlider);
-
-    </script>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"> <i class="fa-brands fa-facebook-f" style="color: #b2b8c2;"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: #aaadb1;"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i></a></li>
+    </ul>
+  </footer>
+                </div>
+    </form>
      <script>
-         <!--MEMBERSHIP PAGE-->
-           function enableInputField(value) {
-               const radioButtons = document.getElementsByName('radio-buttons');
-               const inputField = document.getElementById('input-field');
-               for (let i = 0; i < radioButtons.length; i++) {
-                   if (radioButtons[i].checked) {
-                       inputField.disabled = false;
-                       switch (value) {
-                           case 5:
-                               inputField.value = "₹" + value + " per month";
-                               break;
-                           case 50:
-                               inputField.value = "₹" + value + " per year";
-                               break;
-                           case 550:
-                               inputField.value = "₹" + value + " lifetime";
-                               break;
-                           default:
-                               inputField.value = "";
-                               break;
-                       }
-                       return;
-                   }
-               }
-               inputField.disabled = true;
-               inputField.value = "";
-           }
-
-     </script>
-    <!--TEMPLATE-->
-    <script>
-        $('.ai-templates-category').on('click', function (e) {
+ $('.ai-templates-category').on('click', function (e) {
             e.preventDefault();
             // make active
             $('.template-categories li').removeClass('active');
@@ -1673,49 +1497,44 @@ span.blog-item-tag {
 
             if ($(this).data('category') === 'all') {
                 $('.ai-template-blocks > div').show();
-                $('.ai-templates-category-title').show();
+            $('.ai-templates-category-title').show();
             } else {
                 $('.ai-template-blocks > div').hide();
-                $('.category-' + $(this).data('category')).show();
-                $('.ai-templates-category-title').hide();
+            $('.category-' + $(this).data('category')).show();
+            $('.ai-templates-category-title').hide();
 
-                // empty search
-                $('#template-search').val('');
+            // empty search
+            $('#template-search').val('');
             }
         });</script>
-      <!--FOOTER CARUSOL-->
-    <script type="text/javascript"
-            src="//code.jquery.com/jquery-1.9.1.js">
-</script>
-    <link rel="stylesheet"
-        type="text/css"
-        href="/css/result-light.css">
-    <script type="text/javascript"
-            src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
-</script>
-    <link rel="stylesheet"
-        type="text/css"
-        href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-     
-    <link rel="stylesheet"
-        type="text/css"
-        href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script type="text/javascript">
-        <!-- JavaScript to slide images horizontally-->
-    $(window).load(function () {
-        $(".carousel .item").each(function () {
-            var i = $(this).next();
-            i.length || (i = $(this).siblings(":first")),
-                i.children(":first-child").clone().appendTo($(this));
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction1() {
+            document.getElementById("login").classList.toggle("show");
+        }
 
-            for (var n = 0; n < 4; n++)(i = i.next()).length ||
-                (i = $(this).siblings(":first")),
-                i.children(":first-child").clone().appendTo($(this))
-        })
-    });
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn1')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+
+                    }
+                }
+            }
+        }
     </script>
+             <script type="text/javascript">
+                 $("#icon").on("click", function () {
+                     $(".sidebar").toggle();
+                     $(".col-6").toggleClass('col-lg-12 full-width');
 
-</asp:Content>
+                 });
+
+             </script>
+</body>
+</html>

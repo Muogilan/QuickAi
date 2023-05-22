@@ -226,13 +226,13 @@ span.blog-item-tag {
                     <!-- Section Headline -->
                     <div class="section-headline margin-top-0 margin-bottom-45">
                         <h3>Recent Blog</h3>
-                        <a href="#" class="headline-link">View Blog<i class="bi bi-arrow-right"></i></a>
+                        <a href="https://localhost:44364/Recentblog.aspx" class="headline-link">View Blog<i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <div class="row">
                         <!-- Blog Post Item -->
                             <div class="col-xl-4">
-                                <a href="#" class="blog-compact-item-container">
+                                <a href="https://localhost:44364/Viewblog.aspx" class="blog-compact-item-container">
                                     <div class="blog-compact-item">
                                         <img src="images/blog.png" alt="First Blog">
                                         <span class="blog-item-tag">Admin</span>

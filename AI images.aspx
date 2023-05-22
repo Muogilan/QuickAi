@@ -119,7 +119,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px -1px 02px rgb(0,0,0,0.5);
-    height: 85%;  
+    height: 87%;  
 }
 
 .sidebar ul {
@@ -471,7 +471,9 @@ table .basic-table{
                          </select>
                     </div>
                  </div>
-                <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -564,10 +566,11 @@ table .basic-table{
                            </li>
                          </ul>
                      </div>
-        </div>
-         <div class="dashboard-headline"style="margin-bottom:40px;padding:40px;">
+                    </div>
+                    <div class="col-9">
+                         <div class="dashboard-headline"style="margin-bottom:40px;padding:40px;">
                     <h3 class="d-flex align-items-center">
-                        All Documents
+                        AI image
                         <div class="word-used-wrapper margin-left-10">
                             <i class="bi bi-bar-chart-line-fill"></i>
                             <i id="quick-words-left">0</i> / 10,000
@@ -578,7 +581,7 @@ table .basic-table{
                     <nav id="breadcrumbs" class="dark">
                         <ul>
                             <li><a href="#" style="color:white;">Home</a></li>
-                            <li>All Documents</li>
+                            <li>AI image</li>
                         </ul>
                     </nav>
                 </div>
@@ -594,7 +597,7 @@ table .basic-table{
                     <div id="main" style="display:none">
                         <div style="display:flex">
                         <div class="col-sm-3">
-                            <div class="submit-field margin-bottom-20">
+                            <div class="submit-field margin-bottom-20" style="padding:5px;">
                                 <h6>Image Title</h6>
                                 <input name="title" class="with-border small-input" type="text" value="New Image"/>
                             </div>
@@ -735,6 +738,11 @@ table .basic-table{
         <br />
                     <small><button onclick="hideshow()" style="padding:5px 5px;margin-left:70px;border:none;color:darkblue">Advanced Settings</button> <strong>+</strong></small><hr/>
                   <%--  <div id="snackbar" >API Error: The API key is missing or invalid.</div>--%>
+                    </div>
+                </div>
+                
+        </div>
+        
      </form>
     <script>
           /* When the user clicks on the button, 

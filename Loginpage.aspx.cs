@@ -63,7 +63,9 @@ namespace Quick_AI
                         return false;
                     }
 
+#pragma warning disable CS0162 // Unreachable code detected
                    con.Close();
+#pragma warning restore CS0162 // Unreachable code detected
                     Response.Write("<script>alert('Sign Up Successful.Go to User Login');</script>");
 
                 }

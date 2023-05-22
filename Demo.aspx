@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Demo.aspx.cs" Inherits="Quick_AI.Demo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Codefile="Demo.aspx.cs" Inherits="Quick_AI.Demo" %>
 
 <!DOCTYPE html>
 
@@ -38,51 +38,7 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-    <asp:TextBox ID="mytextbox" TextMode="MultiLine" runat="server"></asp:TextBox>     
-    <asp:TextBox ID="mylabel" BorderStyle="None" Enabled="false" Text="0" runat="server"></asp:TextBox>
-    <script language="javascript" type="text/javascript">
-        var txt = document.getElementById("mytextbox.ClientID");
-      var lbl = document.getElementById("mylabel.ClientID");
-    </script>
-    </div>
-    </form>
-
+                <div style="background-color: #e0e0e0; padding-top: 60px; padding-bottom: 60px">        <div class="container">		<!-- bootstrap card with row name myCarousel as row 1-->            <div class="carousel slide" id="myCarousel">                <div class="carousel-inner">                    <div class="item active">                        <div class="col-xs-2" style="padding-right: 80px">                            <a href="#">                                <img src="photos/logo-carousel-01.png"                                    class="img-responsive" />                            </a>                        </div>                    </div>                    <div class="item">                        <div class="col-xs-2" style="padding-right: 80px">                            <a href="#">                                <img src="photos/logo-carousel-02.png"                                    class="img-responsive" />                            </a>                        </div>                    </div>                    <div class="item">                        <div class="col-xs-2" style="padding-right: 80px">                            <a href="#">                                <img src="photos/logo-carousel-03.png"                                    class="img-responsive" />                            </a>                        </div>                    </div>                    <div class="item">                        <div class="col-xs-2" style="padding-right: 80px">                            <a href="#">                                <img src="photos/logo-carousel-04.png"                                    class="img-responsive" />                            </a>                        </div>                    </div>                    <div class="item">                        <div class="col-xs-2" style="padding-right: 80px">                            <a href="#">                                <img src="photos/logo-carousel-05.png"                                    class="img-responsive" />                            </a>                        </div>                    </div>                    <div class="item">                        <div class="col-xs-2" style="padding-right: 80px">                            <a href="#">                                <img src="photos/logo-carousel-06.png"                                    class="img-responsive" />                            </a>                        </div>                    </div>                </div>                <a class="left carousel-control"                     href="#myCarousel"                    data-slide="prev">                    <i class="glyphicon glyphicon-chevron-left"></i>                </a>                <a class="right carousel-control"                    href="#myCarousel"                    data-slide="next">                    <i class="glyphicon glyphicon-chevron-right"></i>                </a>            </div>        </div>    </div>
 </body>
-    <script>
-        var btn = document.querySelector('.toggle');
-        var btnst = true;
-        btn.onclick = function () {
-            if (btnst == true) {
-                document.querySelector('.toggle span').classList.add('toggle');
-                document.getElementById('sidebar').classList.add('sidebarshow');
-                btnst = false;
-            } else if (btnst == false) {
-                document.querySelector('.toggle span').classList.remove('toggle');
-                document.getElementById('sidebar').classList.remove('sidebarshow');
-                btnst = true;
-            }
-        }
-    </script>
-    <script language="javascript" type="text/javascript">
-        var totchars = 0;
-        function countchars(e) {
-            var key;
-            if (window.event)
-                key = window.event.keyCode; //IE
-            else
-                key = e.which; //firefox     
-            if (key != 13 && key != 8)
-                totchars++;
-            else if (key == 8 && totchars > 0)
-                totchars--;
-            lbl.value = totchars;
-        }
-        function countcharsforIE(e) {
-            if (window.event && window.event.keyCode == 8 && totchars > 0)
-                totchars--;
-            lbl.value = totchars;
-        }
-    </script>
+    
 </html>

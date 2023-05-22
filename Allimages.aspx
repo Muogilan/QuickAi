@@ -91,7 +91,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px -1px 02px rgb(0,0,0,0.5);
-    height: 100%
+    height: 87%;
 }
 
 .sidebar ul {
@@ -295,7 +295,7 @@ body {
     color:#333;
 }
 #breadcrumbs ul{
-    margin:0;
+    margin:0PX 5PX;
     padding:12px 22px;
     line-height:22px;
 }
@@ -423,7 +423,7 @@ table .basic-table{
     <form id="form1" runat="server">
         <div>
             <div>
-          <div class="topbar" style="margin-top: -102px;">
+          <div class="topbar">
                     <div class="logo">
                         <center> <img src="images/980385239.png" /></center>
                     </div>
@@ -467,7 +467,9 @@ table .basic-table{
                          </select>
                     </div>
                  </div>
-        <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
+                <div class="row">
+                    <div class="col-3">
+                           <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -484,7 +486,7 @@ table .basic-table{
                                   <i class="fa-solid fa-file-lines"></i> 
                                    <div class="dropdown">
                         <span onclick="myFunction()" class="dropbtn">My Documents </span>
-                          < <div id="myDropdown1" class="dropdown-content" >
+                              <div id="myDropdown1" class="dropdown-content" >
                                    <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
                                    <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
                               </div>
@@ -528,7 +530,7 @@ table .basic-table{
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; margin-top:100px">
+                                 <div style="color:darkblue;font-weight:600; ">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
@@ -560,10 +562,11 @@ table .basic-table{
                            </li>
                          </ul>
                      </div>
-
-           <div class="dashboard-headline"style="margin-top:100px;margin-bottom:40px;padding:40px;">
+                    </div>
+                    <div class="col-9">
+                           <div class="dashboard-headline"style="margin-top:100px;margin-bottom:40px;padding:40px;">
                     <h3 class="d-flex align-items-center">
-                        All Documents
+                        AI IMAGES
                         <div class="word-used-wrapper margin-left-10">
                             <i class="bi bi-bar-chart-line-fill"></i>
                             <i id="quick-words-left">0</i> / 10,000
@@ -574,7 +577,7 @@ table .basic-table{
                     <nav id="breadcrumbs" class="dark">
                         <ul>
                             <li><a href="http://hype.sociusus.com/" style="color:white;">Home</a></li>
-                            <li>All Documents</li>
+                            <li>AI images</li>
                         </ul>
                     </nav>
                 </div>
@@ -617,6 +620,8 @@ table .basic-table{
     </ul>
   </footer>
 </div>
+                    </div>
+                </div>
 <script>
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
