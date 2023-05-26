@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <meta charset=utf-8 />
     <br />
     <br />
     <br />
@@ -27,11 +28,11 @@
                             <br />
                             <!-- Email input -->
                             <div class="row">
-                                <div class="col"> 
+                                <div class="col">
                                     <center>
-                                    <asp:TextBox cssclass=" form-control1" ID="Textbox5" runat="server" placeholder="&#xf007; Username/E-mail Address" ></asp:TextBox>
+                                    <asp:TextBox cssclass=" form-control1" ID="Textbox5" runat="server" placeholder="Username/E-mail Address" style="width: 100%;margin-bottom:10px;" ></asp:TextBox>
                                     </center>
-                                            </div>
+                                </div>
                                     <br />
                                 </div>
                             <!-- Password input -->
@@ -39,7 +40,7 @@
                                 <div class="col">
                                     <div class="form-group"></div>
                                     <center>
-                                    <asp:TextBox cssclass=" form-control1" ID="Textbox6" runat="server" placeholder=" Password" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox cssclass=" form-control1" ID="Textbox6" runat="server" placeholder=" Password" TextMode="Password" style="width:100%" ></asp:TextBox>
                                     </center>
                                     <br />
                                 </div>
@@ -51,8 +52,7 @@
                              <br />
                              <div class="form-group">
                                  <center>
-                                     <asp:Button  class="btn btn-primary btn-block"  ID="Button2"  runat="server" Text="Sign in" OnClick="Button2_Click" />
-                                 
+                                     <asp:Button  class="btn btn-primary btn-block"  ID="Button2"  runat="server" Text="Sign in" OnClick="Button2_Click" />          
                                  </center>
                              </div>
   </div>

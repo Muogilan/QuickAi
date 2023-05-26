@@ -625,7 +625,9 @@ a.button{
                          </select>
                     </div>
                  </div>
-              <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
+             <div class="row">
+                 <div class="col-3">
+                                                <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -633,21 +635,19 @@ a.button{
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Dashboard1.aspx">
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-file-lines"></i> 
-                                             <div class="dropdown">
+                             <div class="dropdown">
+                                 <i class="fa-solid fa-file-lines"></i>
                         <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
                           <div id="myDropdown1" class="dropdown-content" >
                                    <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
                                    <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
                               </div>
                               </div>
-                              </a>
                            </li>                          
                          </ul>
 
@@ -658,27 +658,27 @@ a.button{
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Template.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Imagesa</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              <a href="https://localhost:44364/Speech%20to%20text.aspx">
+                                  <i class="fa-solid fa-headphones"></i><div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/AI%20code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li>
@@ -686,14 +686,20 @@ a.button{
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; ">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
                               <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
+                              <div class="dropdown">
+                                 <i class="fa fa-th-large"></i>
+                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
+                                   <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
+                              </div>
+                              </div>   
+
                            </li>
                              <li>
                               <a href="https://localhost:44364/membershipplan.aspx">
@@ -712,13 +718,15 @@ a.button{
                               </a>
                            </li>
                               <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Login1.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>
                          </ul>
                      </div>
-               <div class="dashboard-headline"style="margin-bottom:40px;padding:40px;">
+                 </div>
+                 <div class="col-9">
+                        <div class="dashboard-headline"style="margin-bottom:40px;padding:40px;">
                     <h3 class="d-flex align-items-center">
                         AI chat
                         <div class="word-used-wrapper margin-left-10">
@@ -735,8 +743,7 @@ a.button{
                         </ul>
                     </nav>
                 </div>
-        </div>
-        <div class="dashboard-content-inner" style="min-height: 625.023px;padding:50px;padding-bottom:0; position:relative;">
+               <div class="dashboard-content-inner" style="min-height: 625.023px;padding:50px;padding-bottom:0; position:relative;">
             <div class="notification small-notification error"style="width: 91%;padding: 10px; border-radius: 8px;">
                         You can not use the chat feature with your OpenAI model. Upgrade your membership plan to use this feature.
         </div>
@@ -749,22 +756,18 @@ a.button{
             <div class="message-action">
                     <a href="#" class="button ripple-effect btn-sm" id="export-chats" title="Export Conversation" data-tippy-placement="top" onclick="DownloadFile('Sample.pdf')" style="    background-color: #0d6efd;">
                                        <i class="fa-solid fa-download"></i></a>
-                   <%-- <a href="C:\Users\sociusRD\Desktop\Quick AI\Download file" class="button ripple-effect btn-sm red" id="delete-chats" data-tippy-placement="top" data-tippy="" onclick="remove()" data-original-title="Delete Conversation"   "><i class="bi bi-trash"></i></a>--%>
-                    <button style="color:red" <i class="fas fa-trash-can" type="button" id="return" onclick="sendMessage()"></button>
+                    <a href="C:\Users\sociusRD\Desktop\Quick AI\Download file" class="button ripple-effect btn-sm red" id="delete-chats" data-tippy-placement="top" data-tippy="" onclick="remove()" data-original-title="Delete Conversation"   "><i class="bi bi-trash"></i></a>
+                   
             </div>
         </div>
         <div class="card-body" id="msgs"></div>
         <div class="card-footer">
-         <%-- <div class="input-group" id="msgForm" data-sender="me">
+          <div class="input-group" id="msgForm" data-sender="me">
             <input class="form-control" type="text" placeholder="Type your message here..."/>
             <div class="input-group-append">
               <button class="btn btn-outline-secondary" type="button">Send</button>
             </div>
-          </div>--%>
-             <div class="chat-input">
-    <input type="text" id="message" placeholder="Type a message..." />
-    <button type="button" id="send" onclick="sendMessage()">Send</button>
-    </div>
+          </div>
     <div class="chat-output" id="output"></div>	
         </div>
       </div>
@@ -772,6 +775,12 @@ a.button{
   </div>
 </div>
         </div>
+                 </div>
+             </div>
+
+            
+        </div>
+
         <div style="background-color: #303030">
                 <div class="container-foot">
                     <footer style="background-color: #303030; box-sizing: border-box;">

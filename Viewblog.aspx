@@ -266,10 +266,8 @@ body {
     margin-bottom: 10px;
     display:inline-flex;
 }
-
-
 </style>
-          <style>
+<style>
        
 .blogmain {
     padding: 0px;

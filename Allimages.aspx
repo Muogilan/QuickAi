@@ -469,7 +469,7 @@ table .basic-table{
                  </div>
                 <div class="row">
                     <div class="col-3">
-                           <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
+                                            <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -477,21 +477,19 @@ table .basic-table{
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Dashboard1.aspx">
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-file-lines"></i> 
-                                   <div class="dropdown">
-                        <span onclick="myFunction()" class="dropbtn">My Documents </span>
-                              <div id="myDropdown1" class="dropdown-content" >
+                             <div class="dropdown">
+                                 <i class="fa-solid fa-file-lines"></i>
+                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                          <div id="myDropdown1" class="dropdown-content" >
                                    <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
                                    <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
                               </div>
                               </div>
-                              </a>
                            </li>                          
                          </ul>
 
@@ -502,27 +500,27 @@ table .basic-table{
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Template.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Imagesa</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              <a href="https://localhost:44364/Speech%20to%20text.aspx">
+                                  <i class="fa-solid fa-headphones"></i><div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/AI%20code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li>
@@ -530,14 +528,20 @@ table .basic-table{
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; ">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
                               <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
+                              <div class="dropdown">
+                                 <i class="fa fa-th-large"></i>
+                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
+                                   <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
+                              </div>
+                              </div>   
+
                            </li>
                              <li>
                               <a href="https://localhost:44364/membershipplan.aspx">
@@ -556,7 +560,7 @@ table .basic-table{
                               </a>
                            </li>
                               <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Login1.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>

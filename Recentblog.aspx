@@ -6,7 +6,6 @@
 <head runat="server">
     <title>Recntblog-hype</title>
     <style>
-              <style>
        * {
     font-family: Arial, Helvetica, sans-serif;
 }

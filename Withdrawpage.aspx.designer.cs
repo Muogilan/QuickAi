@@ -10,7 +10,7 @@
 
 namespace Quick_AI
 {
-    public partial class carusolefooter
+    public partial class Withdrawpage
     {
 
         /// <summary>

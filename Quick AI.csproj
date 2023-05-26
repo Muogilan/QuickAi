@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Accountsetting.aspx" />
     <Content Include="Adminlogin.aspx" />
+    <Content Include="Affliateprogram.aspx" />
     <Content Include="Ai chat.aspx" />
     <Content Include="AI code.aspx" />
     <Content Include="AI images.aspx" />
@@ -85,14 +86,15 @@
     <Content Include="Bootstarp\Css\JS\jquery-3.6.4.min.js" />
     <Content Include="Bootstarp\Css\JS\jquery.min.js" />
     <Content Include="Bootstarp\Css\JS\popper.min.js" />
-    <Content Include="carusolefooter.aspx" />
-    <Content Include="contant.aspx" />
-    <Content Include="Dashboard.aspx" />
+    <Content Include="Account setting.aspx" />
     <Content Include="Dashboard1.aspx" />
     <Content Include="Dashboardtemplate.aspx" />
     <Content Include="Data Tables\Css\jquery.dataTables.min.css" />
     <Content Include="Data Tables\Js\jquery.dataTables.min.js" />
     <Content Include="Demo.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="Feedback1.aspx" />
     <Content Include="font all min\all.min.css" />
     <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\all.css" />
     <Content Include="Font awesome\fontawesome-free-6.4.0-web\css\all.min.css" />
@@ -780,7 +782,6 @@
     <Content Include="Speech to text.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Template.aspx" />
-    <Content Include="Templates.aspx" />
     <Content Include="Testimonials.aspx" />
     <Content Include="Testimonialsfooter.aspx" />
     <Content Include="Textarea.aspx" />
@@ -790,6 +791,8 @@
     <Content Include="Viewblog.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="Withdraw.html" />
+    <Content Include="Withdrawpage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accountsetting.aspx.cs">
@@ -805,6 +808,13 @@
     </Compile>
     <Compile Include="Adminlogin.aspx.designer.cs">
       <DependentUpon>Adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affliateprogram.aspx.cs">
+      <DependentUpon>Affliateprogram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affliateprogram.aspx.designer.cs">
+      <DependentUpon>Affliateprogram.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ai chat.aspx.cs">
       <DependentUpon>Ai chat.aspx</DependentUpon>
@@ -848,26 +858,12 @@
     <Compile Include="Billingdetails.aspx.designer.cs">
       <DependentUpon>Billingdetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="carusolefooter.aspx.cs">
-      <DependentUpon>carusolefooter.aspx</DependentUpon>
+    <Compile Include="Account setting.aspx.cs">
+      <DependentUpon>Account setting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="carusolefooter.aspx.designer.cs">
-      <DependentUpon>carusolefooter.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="contant.aspx.cs">
-      <DependentUpon>contant.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="contant.aspx.designer.cs">
-      <DependentUpon>contant.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="Account setting.aspx.designer.cs">
+      <DependentUpon>Account setting.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard1.aspx.cs">
       <DependentUpon>Dashboard1.aspx</DependentUpon>
@@ -889,6 +885,27 @@
     </Compile>
     <Compile Include="Demo.aspx.designer.cs">
       <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback1.aspx.cs">
+      <DependentUpon>Feedback1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback1.aspx.designer.cs">
+      <DependentUpon>Feedback1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -985,13 +1002,6 @@
     <Compile Include="Template.aspx.designer.cs">
       <DependentUpon>Template.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Templates.aspx.cs">
-      <DependentUpon>Templates.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Templates.aspx.designer.cs">
-      <DependentUpon>Templates.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Testimonials.aspx.cs">
       <DependentUpon>Testimonials.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1047,6 +1057,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Withdrawpage.aspx.cs">
+      <DependentUpon>Withdrawpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Withdrawpage.aspx.designer.cs">
+      <DependentUpon>Withdrawpage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

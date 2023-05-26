@@ -541,7 +541,7 @@ a{
                                         <a href="#" title="">
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
-                                                    <span onclick="myFunction1()" class="dropbtn1" >
+                                                    <span onclick="myFunction3()" class="dropbtn1" >
                                                     <img src="images/default_user.png" />
                                                     </span>
                                                 </div>
@@ -573,7 +573,7 @@ a{
                          </select>
                     </div>
                  </div>
-              <div class="sidebar" style="font-size:20px">
+                             <div class="sidebar" style="font-size:20px">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -585,17 +585,15 @@ a{
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
-                             <li>
-                              <a href="#"">
-                                  <i class="fa-solid fa-file-lines"></i>
-                                   <div class="dropdown">
+                             <li> 
+                              <div class="dropdown">
+                                   <i class="fa-solid fa-file-lines" style="color:lightgrey"></i>
                         <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
                           <div id="myDropdown1" class="dropdown-content" >
                                    <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
                                    <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                          </div>
                               </div>
-                              </div>
-                              </a>
                            </li>                          
                          </ul>
 
@@ -606,17 +604,17 @@ a{
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Template.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-image"></i> <div>AI Imagesa</div>
+                              <a href="https://localhost:44364/AI%20images.aspx">
+                                  <i class="fa-solid fa-image"></i> <div>AI Imeage</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
@@ -634,14 +632,19 @@ a{
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; margin-top:100px">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
                               <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
+                           <div class="dropdown">
+                                    <i class="fa fa-th-large"></i>
+                                   <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate program</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">Affiliate Program</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">Withdraw</a>
+                              </div>
+                              </div>
                            </li>
                              <li>
                               <a href="https://localhost:44364/membershipplan.aspx">
@@ -686,9 +689,6 @@ a{
               <div>
             <input id="template-search" placeholder="Search..." type="text" class="with-border border-pilled"/>
         </div>
-     
-       
-
      <div class="section padding-top-65 padding-bottom-65">
         <div class="container margin-bottom-20">
             <div class="section-headline centered margin-top-0 margin-bottom-30">
@@ -1570,7 +1570,7 @@ a{
     <script>
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
-        function myFunction1() {
+        function myFunction3() {
             document.getElementById("login").classList.toggle("show");
         }
 
@@ -1609,6 +1609,27 @@ a{
                }
            }
      </script>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+
+                        }
+                    }
+                }
+            }
+        </script>
           <script type="text/javascript">
               $("#icon").on("click", function () {
                   $(".sidebar").toggle();

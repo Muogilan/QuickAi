@@ -139,29 +139,27 @@ option {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.sidebar ul li {
+  width: 98%;
+  list-style: none;
+}
 
-        .sidebar ul li {
-            width: 98%;
-            list-style: none;
-        }
+.sidebar ul li a {
+   width: 100%;
+   text-decoration: none;
+   color: #707070;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   font-size:13px;
+}
 
-            .sidebar ul li a {
-                width: 100%;
-                text-decoration: none;
-                color: #707070;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                font-size:13px;
-            }
-
-                .sidebar ul li a i {
-                    min-width: 60PX;
-                    font-size: 15PX;
-                    text-align: center;
-                }
-                .dropbtn {
-  background-color:white;
+.sidebar ul li a i {
+   min-width: 60PX;
+   font-size: 15PX;
+   text-align: center;
+}
+.dropbtn {
   color:#6c757d;
   padding: 16px;
   font-size: 16px;
@@ -313,14 +311,14 @@ body {
 </style>
 </head>
     <body>
-          <div class="topbar">
+          <div class="topbar"style="align-items: baseline;">
                     <div class="logo">
-                        <center> <img src="images/980385239.png" /></center>
+                        <a href="https://localhost:44364/homepage.aspx"><img src="images/980385239.png" /></a>
                     </div>
                <a href="javascript:void(0);"  class="header-icon">
                    <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
-                    </a>
-                 
+               </a>
+
           <div class="header-notifications user-menu">
                                     <div class="header-notifications-trigger">
                                         <a href="#" title="">
@@ -342,7 +340,7 @@ body {
                                             <li><a href="https://localhost:44364/Ai%20chat.aspx"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
                                             <li><a href="https://localhost:44364/Speech%20to%20text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
                                             <li><a href="https://localhost:44364/AI%20code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                                            <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
+                                            <li><a href="#"><i class="fa fa-fi  le-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
                                             <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
@@ -372,17 +370,15 @@ body {
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
-                             <li>
-                              <a href="#"">
-                                  <i class="fa-solid fa-file-lines"></i>
-                                   <div class="dropdown">
+                             <li> 
+                              <div class="dropdown">
+                                   <i class="fa-solid fa-file-lines" style="color:lightgrey"></i>
                         <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
                           <div id="myDropdown1" class="dropdown-content" >
                                    <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
                                    <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                          </div>
                               </div>
-                              </div>
-                              </a>
                            </li>                          
                          </ul>
 
@@ -393,7 +389,7 @@ body {
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Template.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
@@ -403,7 +399,7 @@ body {
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
@@ -427,8 +423,16 @@ body {
                              </li>
                               <li>
                               <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
+                                 <div>Affiliate Program</div>
                               </a>
+                           <div class="dropdown">
+                                    <i class="fa fa-th-large"></i>
+                                   <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                              </div>
+                              </div>
                            </li>
                              <li>
                               <a href="https://localhost:44364/membershipplan.aspx">

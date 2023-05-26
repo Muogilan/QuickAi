@@ -116,10 +116,10 @@ a{
             
         }
         .section2{
-            margin-top: 100px;
+            margin-top:100px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             width: 100%;
-            height: 750px;
+            height: 620px;
             display: flex;
             justify-content: space-between;
         }
@@ -1555,8 +1555,8 @@ span.blog-item-tag {
                                 <img src="images/logo-carousel-04.png" class="img-responsive"/>
                             </a>
                         </div>
-                    </div>
                     <div class="item">
+                    </div>
                         <div class="col-xs-2" style="padding-right: 80px">
                             <a href="#">
                                 <img src="images/logo-carousel-02.png"class="img-responsive" />
@@ -1577,8 +1577,6 @@ span.blog-item-tag {
                             </a>
                         </div>
                     </div>
-
-                </div>
                 <a class="left carousel-control" 
                     href="#myCarousel"
                     data-slide="prev">
@@ -1589,14 +1587,7 @@ span.blog-item-tag {
                     data-slide="next">
                    <i class="bi bi-chevron-right"></i>
                 </a>
-
             </div>
-        </div>
-
-
-
-    </div>
-
 
     </section>
     <!--TESTIMONIALS-->
@@ -1661,7 +1652,6 @@ span.blog-item-tag {
                inputField.disabled = true;
                inputField.value = "";
            }
-
      </script>
     <!--TEMPLATE-->
     <script>

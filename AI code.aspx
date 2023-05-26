@@ -269,7 +269,6 @@ body {
 
 
 </style>
-    <title>hype</title>
      <!--Bootstrap css-->
     <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
     <!--Datatables css-->
@@ -363,7 +362,7 @@ body {
                  </div>
         <div class="row">
             <div class="col-lg-3">
-                 <div class="sidebar" style="font-size:20px">
+                    <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;height: 84%;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -371,21 +370,19 @@ body {
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Dashboard1.aspx">
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#"">
-                                  <i class="fa-solid fa-file-lines"></i>
-                                   <div class="dropdown">
+                             <div class="dropdown">
+                                 <i class="fa-solid fa-file-lines"></i>
                         <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
                           <div id="myDropdown1" class="dropdown-content" >
                                    <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
                                    <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
                               </div>
                               </div>
-                              </a>
                            </li>                          
                          </ul>
 
@@ -396,31 +393,32 @@ body {
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Template.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
                              <li>
-                              <a href="https://localhost:44364/AI%20images.aspx">
-                                  <i class="fa-solid fa-image"></i> <div>AI Imeage</div>
+                              <a href="https://localhost:44364/images.aspx">
+                                  <i class="fa-solid fa-image"></i> <div>AI Imagesa</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              <a href="https://localhost:44364/Speech%20to%20text.aspx">
+                                  <i class="fa-solid fa-headphones"></i><div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/AI%20code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li>
                              </ul>
+
                              <ul>
                                  <li>
                                  <div style="color:darkblue;font-weight:600;">
@@ -428,9 +426,15 @@ body {
                                  </div>
                              </li>
                               <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
+                              <div class="dropdown">
+                                 <i class="fa fa-th-large"></i>
+                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
+                                   <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
+                              </div>
+                              </div>   
+
                            </li>
                              <li>
                               <a href="https://localhost:44364/membershipplan.aspx">
@@ -449,7 +453,7 @@ body {
                               </a>
                            </li>
                               <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Login1.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>
@@ -459,14 +463,13 @@ body {
             <div class="col-lg-9" style="width:75%">
                 <div style="padding-top:80px;" class="row">
                                     <div class="col-6">
-                                      <h3 style="float:right;">Dashboard</h3>
-                                      
+                                      <h3 style="float:right;">AI Code</h3>
                                     </div>
                              <div style="padding-right:40px;" class="col-6">
                                      <div style="float:right;" class="subcontainer">
                                           <span class="suhome"><a href="homepage.aspx">Home</a></span>
                                           <span class="icon"></span>
-                                          <span style="color:white;">Dashboard</span>
+                                          <span style="color:white;">AI code</span>
                                        </div> 
                                </div>
                          </div>
@@ -502,8 +505,11 @@ body {
                </div>
             </div>
           </div>
+         
         </div>
+
 </div>
+
 </body>
         <script>
           /* When the user clicks on the button,

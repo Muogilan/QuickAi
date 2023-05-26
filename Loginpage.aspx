@@ -2,6 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        .form-control{
+            margin-bottom:20px;
+        }
+        .card{
+            border:none;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
     <div id="titlebar" class="gradiant">
         <br />
         <br />
@@ -21,9 +32,7 @@
                      </div>
                   </div>                 
                   <div class="row">
-                     <div class="col">
-                        <hr>
-                     </div>
+                     <div class="col"></div>
                   </div>
                   <div class="row">
                      <div class="col">                       

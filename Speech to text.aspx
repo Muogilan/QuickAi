@@ -555,8 +555,23 @@ body {
                          </select>
                     </div>
                  </div>
-    <form id="form1" runat="server">
-        <div class="row"style="position:static;margin-top: 10%;width: 100%;">
+             <div class="row">
+                 <div class="col-3"></div>
+             </div>
+             <div style="padding-top:80px;" class="row">
+                                    <div class="col-6">
+                                      <h3 style="float:right;">Dashboard</h3>
+                                      
+                                    </div>
+                             <div style="padding-right:40px;" class="col-6">
+                                     <div style="float:right;" class="subcontainer">
+                                          <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                                          <span class="icon"></span>
+                                          <span style="color:white;">Dashboard</span>
+                                       </div> 
+                               </div>
+                         </div>
+        <div class="row"style="position:static;margin-top: 4%;width: 100%;">
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <%-- <div class="dashboard-box margin-top-0 margin-bottom-30">--%>
                 <!-- Headline -->

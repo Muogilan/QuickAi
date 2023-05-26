@@ -254,26 +254,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.topbar {
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
-    width: 100%;
-    height: 85px;
-    display: grid;
-    grid-template-columns: 2.5fr 8fr 1fr 1fr;
-    align-items: center;
-    z-index: 1;
-}
 
-.logo {
-   
-    border-right: 1px solid #e0e0e0;
-    justify-content: center;
-    height: 80px;
-    padding-top: 10px;
-/*    width: 260px;
-*/}
+     .logo {
+         border-right: 1px solid #e0e0e0;
+         justify-content: center;
+         height: 80px;
+         padding-top: 10px;
+         /*    width: 260px;
+*/
+     }
 
 .user {
     position: relative;
@@ -405,7 +394,6 @@ option {
     border-radius: 4px 4px;
     color: white;
 }
-
 option {
     background-color: white;
     box-sizing: border-box;
@@ -457,20 +445,6 @@ option {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.topbar {
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
-    width: 100%;
-    height: 85px;
-    display: grid;
-    grid-template-columns: 2.5fr 8fr 1fr 1fr;
-    align-items: center;
-    z-index: 1;
-
-}
-
 .logo {
    
     border-right: 1px solid #e0e0e0;
@@ -655,7 +629,6 @@ body {
      }    
 .col-xl-12{
     padding:30PX;
-    margin-left: 262px;
     position:relative;
     width:100%;
     min-height:1px;
@@ -1070,6 +1043,13 @@ body{
 .content-with padding{
     padding:30px;
 }
+.suhome{
+    color: white;
+    background: black;
+    padding:5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
 </style>
 </head>
     <body>
@@ -1078,9 +1058,8 @@ body{
                         <center> <img src="images/980385239.png" /></center>
                     </div>
                <a href="javascript:void(0);"  class="header-icon">
-                       
                    <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
-                    </a>
+               </a>
                  
           <div class="header-notifications user-menu">
                                     <div class="header-notifications-trigger">
@@ -1118,22 +1097,9 @@ body{
                          </select>
                     </div>
                  </div>
-        <div classs="row">
-            <div class="col">
-<div style="padding-top:80px;" class="row">
-                                    <div class="col-6">
-                                      <h3 style="padding:15px;">Dashboard</h3>
-                                    </div>
-                             <div style="padding-right:40px;" class="col-6">
-                                     <div style="float:right;" class="subcontainer">
-                                          <span class="suhome"><a href="homepage.aspx">Home</a></span>
-                                          <span class="icon"></span>
-                                          <span style="color:white;">Dashboard</span>
-                                       </div>  
-                                  
-                               </div>
-                         </div>
-                <div class="sidebar" style="font-size:20px;height:82%;">
+                <div class="row">
+                    <div class="col-3">
+                                         <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -1141,18 +1107,19 @@ body{
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Dashboard1.aspx">
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-file-lines"></i> <div> <select name="ctl13" class="dropdown-item-text">
-	<option selected="selected" value="MY Documents">My Documents</option>
-	<option value="All AI Images">All AI Images</option>
-
-</select></div>
-                              </a>
+                             <div class="dropdown">
+                                 <i class="fa-solid fa-file-lines"></i>
+                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                          <div id="myDropdown1" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                              </div>
+                              </div>
                            </li>                          
                          </ul>
 
@@ -1163,27 +1130,27 @@ body{
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Template.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/images.aspx">
                                   <i class="fa-solid fa-image"></i> <div>AI Imagesa</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              <a href="https://localhost:44364/Speech%20to%20text.aspx">
+                                  <i class="fa-solid fa-headphones"></i><div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/AI%20code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li>
@@ -1191,14 +1158,20 @@ body{
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; margin-top:100px">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
                               <li>
-                              <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
-                              </a>
+                              <div class="dropdown">
+                                 <i class="fa fa-th-large"></i>
+                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
+                                   <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
+                              </div>
+                              </div>   
+
                            </li>
                              <li>
                               <a href="https://localhost:44364/membershipplan.aspx">
@@ -1207,24 +1180,36 @@ body{
                            </li>
                             
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/transaction.aspx">
                                   <i class="fa-solid fa-file"></i> <div>Transaction</div>
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44364/Accountsetting.aspx#">
+                              <a href="https://localhost:44364/Accountsetting.aspx">
                                   <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
                               </a>
                            </li>
                               <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Login1.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>
                          </ul>
                      </div>
-     
-                <div class="col">
+                    </div>
+                    <div class="col-9">
+                         <div style="padding-top:80px;" class="row">
+                                    <div class="col-6">
+                                      <h3 style="float:right;">Dashboard</h3>
+                                      
+                                    </div>
+                             <div style="padding-right:40px;" class="col-6">
+                                     <div style="float:right;" class="subcontainer">
+                                          <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                                          <span class="icon"></span>
+                                          <span style="color:white;">Dashboard</span>
+                      </div> 
+                           </div>    
                     <div class="row">
                     <!-- Dashboard Box -->
                     <div class="col-xl-12">
@@ -1253,7 +1238,7 @@ body{
                                                     <i class="la la-user"></i>
                                                     <input type="text" class="with-border" id="username" name="username" value="" onblur="checkAvailabilityUsername()"/>
                                                 </div>
-                                                <span id="user-availability-status"><span class="status-available">Success</span></span>
+                                                <%--<span id="user-availability-status"><span class="status-available">Success</span></span>--%>
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-md-12">
@@ -1263,7 +1248,7 @@ body{
                                                     <i class="la la-envelope"></i>
                                                     <input type="text" class="with-border" id="email" name="email" value="mugilanmech1@gmail.com" onblur="checkAvailabilityEmail()"/>
                                                 </div>
-                                                <span id="email-availability-status"><span class="status-available">Success</span></span>
+                                                <%--<span id="email-availability-status"><span class="status-available">Success</span></span>--%>
                                             </div>
                                         </div>
                                     </div>
@@ -1604,9 +1589,24 @@ body{
                     </div>
                 </div>
                 </div>
-            </div>
+                </div>
+                </div>
+          <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">2023 Socius IGB Pvt Ltd, All right reserved</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"> <i class="fa-brands fa-facebook-f" style="color: #b2b8c2;"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: #aaadb1;"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i></a></li>
+    </ul>
+  </footer>
         </div>
-    
      
     </body>
     <script>

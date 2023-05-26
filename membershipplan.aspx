@@ -385,11 +385,6 @@ option {
     height: 100%
 }
 
-.sidebar ul {
-    margin-top: -30px;
-    margin-bottom: 145px;
-}
-
 .sidebar ul li {
             width: 75%;
             list-style: none;
@@ -628,10 +623,10 @@ body {
                                        </div>
                                </div>
                          </div>
-      <div class="sidebar" style="font-size: 16px;margin-left: 0px; margin-top: -16px;height: 80%;">
+      <div class="sidebar" style="font-size:20px">
                          <ul>
-                             <li "">
-                                 <div style="color:darkblue;font-weight:600;margin-bottom:-8px;">
+                             <li "="">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9> My Account</h9>
                                  </div>
                              </li>
@@ -640,14 +635,15 @@ body {
                                   <i class="fa fa-th-large"></i> <div>Dashboard</div>
                               </a>
                            </li>
-                             <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-file-lines"></i> <div> <select name="ctl13" class="dropdown-item-text">
-	<option selected="selected" value="MY Documents">My Documents</option>
-	<option value="All AI Images">All AI Images</option>
-
-</select></div>
-                              </a>
+                             <li> 
+                              <div class="dropdown">
+                                   <i class="fa-solid fa-file-lines" style="color:lightgrey"></i>
+                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                          <div id="myDropdown1" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                          </div>
+                              </div>
                            </li>                          
                          </ul>
 
@@ -658,17 +654,17 @@ body {
                                  </div>
                              </li>
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Template.aspx">
                                  <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
-                                  <i class="fa-solid fa-image"></i> <div>AI Imagesa</div>
+                              <a href="https://localhost:44364/AI%20images.aspx">
+                                  <i class="fa-solid fa-image"></i> <div>AI Imeage</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
                                   <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
                               </a>
                            </li>                    
@@ -686,14 +682,22 @@ body {
 
                              <ul>
                                  <li>
-                                 <div style="color:darkblue;font-weight:600; margin-top:100px">
+                                 <div style="color:darkblue;font-weight:600;">
                                     <h9>  Account</h9>
                                  </div>
                              </li>
                               <li>
                               <a href="#">
-                                  <i class="fa fa-th-large"></i> <div>Affiliate Program</div>
+                                 <div>Affiliate Program</div>
                               </a>
+                           <div class="dropdown">
+                                    <i class="fa fa-th-large"></i>
+                                   <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate program</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">Affiliate Program</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">Withdraw</a>
+                              </div>
+                              </div>
                            </li>
                              <li>
                               <a href="https://localhost:44364/membershipplan.aspx">
