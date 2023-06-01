@@ -305,7 +305,9 @@ body {
 .row{
     margin:0;
 }
-
+h6{
+    color:white;
+}
 </style>
 </head>
 <body>
@@ -323,7 +325,7 @@ body {
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;" />
                                                     </span>
                                                 </div>
                                             </div>

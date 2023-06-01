@@ -108,7 +108,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
+    height: 80%
 }
 
 .sidebar ul {
@@ -1047,8 +1047,7 @@ table{
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" style="    height: 42px;
-    border-radius: 22px;"/>
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;" />
                                                     </span>
                                                 </div>
                                             </div>

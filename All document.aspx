@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
     <!--fontswesome link>-->
        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-       <style>
+<style>
        * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing:border-box;
@@ -435,8 +435,8 @@ table .basic-table{
                                         <a href="#" title="">
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
-                                                    <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <span onclick="myFunction3()" class="dropbtn1">
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;" />
                                                     </span>
                                                 </div>
                                             </div>
@@ -534,7 +534,7 @@ table .basic-table{
                               <li>
                               <div class="dropdown">
                                  <i class="fa fa-th-large"></i>
-                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                                    <span onclick="myFunction2()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
                               <div id="myDropdown2" class="dropdown-content" >
                                    <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
                                    <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
@@ -631,7 +631,7 @@ table .basic-table{
 <script>
           /* When the user clicks on the button, 
           toggle between hiding and showing the dropdown content */
-          function myFunction1() {
+          function myFunction3() {
               document.getElementById("login").classList.toggle("show");
           }
 
@@ -712,7 +712,7 @@ table .basic-table{
                <script>
                    /* When the user clicks on the button, 
                    toggle between hiding and showing the dropdown content */
-                   function myFunction1() {
+                   function myFunction2() {
                        document.getElementById("myDropdown2").classList.toggle("show");
                    }
 

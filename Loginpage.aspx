@@ -12,12 +12,38 @@
         a{
             text-decoration:none;
         }
+        .subcontainer {
+            float: right;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            padding: 5px 15px;
+            background: #343232;
+            color: white;
+        }
+        .btn{
+            width: 100%;
+            background: #184698;
+            border: none;
+        }
     </style>
     <div id="titlebar" class="gradiant">
         <br />
         <br />
         <br />
         <br />
+          <div class="row">
+                                    <div class="col-6">
+                                      <h3 style="font-weight:400;">Register</h3>
+                                      
+                                    </div>
+                             <div style="padding-right:40px;" class="col-6">
+                                     <div style="float:right;" class="subcontainer">
+                                          <span class="suhome"><a href="homepage.aspx">Home</a></span>
+                                          <span class="icon"></span>
+                                          <span style="color:white;">Register </span>
+                                       </div> 
+                               </div>
+                         </div>
       <div class="container">
       <div class="row">
          <div class="col-md-6 mx-auto">
@@ -54,13 +80,12 @@
 
                         <div class="form-group">
                         
-                            <asp:Button Class="btn btn-success btn-block btn-lg" ID="Button2" runat="server" Text="REGISTER" OnClick="Buttonsignup_Click" Width="112px" />
+                            <asp:Button Class="btn btn-success btn-block btn-lg" ID="Button2" runat="server" Text="REGISTER" OnClick="Buttonsignup_Click" Width="100%" />
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-           <a href="homepage.aspx"><< Back to Home</a><br><br>   
          </div>
       </div>
    </div>

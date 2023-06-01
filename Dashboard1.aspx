@@ -255,7 +255,6 @@ body {
     font-size: 14px;
     margin-right: 12px;
 }
-
 .subcontainer {
     background-color: #444444;
     padding: 12px 22px;
@@ -324,8 +323,8 @@ body {
                                         <a href="#" title="">
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
-                                                    <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <span onclick="myFunction3()" class="dropbtn1" >
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;"/>
                                                     </span>
                                                 </div>
                                             </div>
@@ -404,12 +403,12 @@ body {
                               </a>
                            </li>                    
                             <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Speech%20to%20text.aspx">
                                   <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
                               </a>
                            </li>
                              <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/AI%20code.aspx">
                                  <i class="fa-solid fa-code"></i><div>AI Code</div>
                               </a>
                            </li>
@@ -422,15 +421,12 @@ body {
                                  </div>
                              </li>
                               <li>
-                              <a href="#">
-                                 <div>Affiliate Program</div>
-                              </a>
                            <div class="dropdown">
                                     <i class="fa fa-th-large"></i>
-                                   <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                                   <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
                               <div id="myDropdown2" class="dropdown-content" >
-                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
-                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                                   <a href="https://localhost:44364/All%20document.aspx">Affiliate Programs</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">Affiliate Program</a>
                               </div>
                               </div>
                            </li>
@@ -541,7 +537,7 @@ body {
 <script>
           /* When the user clicks on the button, 
           toggle between hiding and showing the dropdown content */
-          function myFunction1() {
+          function myFunction3() {
               document.getElementById("login").classList.toggle("show");
           }
 
@@ -590,7 +586,7 @@ body {
         }
     });
      </script>
-         <script type="text/javascript">
+    <script type="text/javascript">
              $("#icon").on("click", function () {
                  $(".sidebar").toggle();
                  $(".col-6").toggleClass('col-lg-12 full-width');
@@ -619,6 +615,27 @@ body {
                  }
              }
          </script>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction1() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+
+                        }
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
 

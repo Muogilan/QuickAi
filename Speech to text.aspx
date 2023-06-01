@@ -19,7 +19,7 @@
 }
 
 .topbar {
-    position:page;
+    position:fixed;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgb(0,0,0,0.08);
     width: 100%;
@@ -91,7 +91,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
+    height: 80%
 }
 
 .sidebar ul {
@@ -267,8 +267,9 @@ body {
     margin-bottom: 10px;
     display:inline-flex;
 }
-
-
+.option-button{
+    border:none;
+}
 </style>
     <!--Bootstrap css-->
     <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
@@ -311,32 +312,35 @@ body {
             padding: 20px;
         }
 
-            .dashboard-box .headline {
+            .headline {
                 display: block;
                 background-color: #fff;
                 border-bottom: 1px solid;
                 position: relative;
             }
 
-                .dashboard-box .headline i {
+                .headline i {
                     font-size: 16px;
                     line-height: 0;
                     position: relative;
                     margin-right: 4px;
                 }
 
-                .dashboard-box .headline h3 {
+                .headline h3 {
                     font-size: 14px;
-                    font-weight: 600;
+                    font-weight: 400;
                     color: #333;
                     line-height: 26px;
                 }
 
         .notification {
-            background-color: #a5cbe8;
-            color: #427fde;
+            background-color:#e9f7fe;
+            color:#3184ae;
             margin-top: 15px;
             border-radius: 4px;
+            margin: auto;
+            width: 100%;
+            padding: 10px;
         }
 
             .notification .small-notification {
@@ -351,6 +355,7 @@ body {
             line-height: 36px;
             padding: 5px;
             font-size: 12px;
+            width:100%;
         }
 
         .the-count {
@@ -407,20 +412,21 @@ body {
                 padding: 10px 18px;
                 cursor: pointer;
                 border-radius: 4px;
-                color: #66676b;
+                color: #184698;
                 background-color: transparent;
-                border: 1px solid #66676b;
+                border: 1px solid #184698;
                 flex-direction: row;
                 transition: .3s;
                 margin: 0;
                 outline: none;
-                box-shadow: 0 3px 10px rgba(102, 103, 107, .1)
+                box-shadow: 0 3px 10px rgba(102, 103, 107, .1);
+                width:100%
             }
 
                 .uploadButton .uploadButton-button:hover {
                     background-color: #66676b;
                     box-shadow: 0 4px 12px rgba(102, 103, 107, .15);
-                    color: #544d4d
+                    color: #184698;
                 }
 
             .uploadButton .uploadButton-file-name {
@@ -471,6 +477,61 @@ body {
                 width:auto;
             }
         }
+        .speech-left-cont{
+            display: block;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+            padding:15px;
+            position: relative
+        }
+        .container7{
+             display: block;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+            margin-top: 30px;
+            position: relative
+        }
+        .text-editor{
+            border: 2px solid #eee;
+            border-radius: 10px;
+            box-shadow: none;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+            overflow: hidden;
+            position: relative;
+            visibility: inherit!important;
+        }
+        body{
+            background-color:#ffffff;
+        }
+        .fas{
+            padding:2px 10px;
+        }
+        .col-lg-8{
+             display: block;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+            margin-top: 30px;
+            position: relative
+        }
+        .bi-headphones{
+                color: #1f1fdf;
+        }
+        .option-button{
+            background-color:white;
+        }
+        .col-6 h4{
+            font-size:14px;
+            font-weight:400;
+        }
+        .col-4{
+            font-size:10px;
+        }
     </style>
     <link rel="stylesheet" href="StyleSheet1.css" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" />
@@ -497,27 +558,28 @@ body {
     <!--poppers Js-->
     <script src="Bootstarp/Css/JS/popper.min.js"></script>
     <!--Bootstrap css-->
-    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet"/>
     <!--Datatables css-->
-    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet"/>
     <!--Fontawesome css-->
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet"/>
+    <link href="Bootstarp/Css/flags.min.css" rel="stylesheet"/>
     <!--bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!--fontswesome link>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
-    <link href="font%20all%20min/all.min.css" rel="stylesheet" />
+    <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet"/>
+    <link href="font%20all%20min/all.min.css" rel="stylesheet"/>
+
 </head>
 <body>
      <div class="topbar">
                     <div class="logo">
-                        <center> <img src="images/980385239.png" /></center>
+                        <center><img src="images/980385239.png" /></center>
                     </div>
                <a href="javascript:void(0);"  class="header-icon">
                    <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
-                    </a>
+               </a>
                  
           <div class="header-notifications user-menu">
                                     <div class="header-notifications-trigger">
@@ -525,7 +587,7 @@ body {
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <img src="images/default_user.png"style="height:42px; border-radius:94px;width: 42px;"/>
                                                     </span>
                                                 </div>
                                             </div>
@@ -534,12 +596,12 @@ body {
                                    <div id="login" class="dropdown-content"style="height: 465px;">
                                         <ul class="user-menu-small-nav">
                                             <li><a href="https://localhost:44364/Dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
-                                            <li><a href="3"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                                            <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
+                                            <li><a href="https://localhost:44364/Template.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                            <li><a href="https://localhost:44364/images.aspx"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="https://localhost:44364/Ai%20chat.aspx"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                            <li><a href="https://localhost:44364/Speech%20to%20text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                            <li><a href="https://localhost:44364/AI%20code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                            <li><a href="https://localhost:44364/All%20document.aspx"><i class="fa fa-file-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
                                             <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
@@ -555,27 +617,125 @@ body {
                          </select>
                     </div>
                  </div>
-             <div class="row">
-                 <div class="col-3"></div>
-             </div>
-             <div style="padding-top:80px;" class="row">
-                                    <div class="col-6">
-                                      <h3 style="float:right;">Dashboard</h3>
-                                      
+          <div class="row">
+                 <div class="col-3">
+                        <div class="sidebar" style="font-size:20px">
+                         <ul>
+                             <li "="">
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9> My Account</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="#">
+                                  <i class="fa fa-th-large"></i> <div>Dashboard</div>
+                              </a>
+                           </li>
+                             <li> 
+                              <div class="dropdown">
+                                   <i class="fa-solid fa-file-lines" style="color:lightgrey"></i>
+                        <span onclick="myFunction()" class="dropbtn" style="font-size:13px;">My Documents</span>
+                          <div id="myDropdown1" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">All Documents</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">All AI Images</a>
+                          </div>
+                              </div>
+                           </li>                          
+                         </ul>
+
+                         <ul>
+                             <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Organize And Manage</h9>
+                                 </div>
+                             </li>
+                            <li>
+                              <a href="https://localhost:44364/Template.aspx">
+                                 <i class="fa-solid fa-layer-group"></i> <div>Templates</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="https://localhost:44364/AI%20images.aspx">
+                                  <i class="fa-solid fa-image"></i> <div>AI Imeage</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="https://localhost:44364/Ai%20chat.aspx">
+                                  <i class="fa-solid fa-comment-dots"></i> <div>AI Chats</div>
+                              </a>
+                           </li>                    
+                            <li>
+                              <a href="https://localhost:44364/Speech%20to%20text.aspx">
+                                  <i class="fa-solid fa-headphones"></i> <div>Speech To Text</div>
+                              </a>
+                           </li>
+                             <li>
+                              <a href="https://localhost:44364/AI%20code.aspx">
+                                 <i class="fa-solid fa-code"></i><div>AI Code</div>
+                              </a>
+                           </li>
+                             </ul>
+
+                             <ul>
+                                 <li>
+                                 <div style="color:darkblue;font-weight:600;">
+                                    <h9>  Account</h9>
+                                 </div>
+                             </li>
+                              <li>
+                           <div class="dropdown">
+                                    <i class="fa fa-th-large"></i>
+                                   <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                              <div id="myDropdown2" class="dropdown-content" >
+                                   <a href="https://localhost:44364/All%20document.aspx">Affiliate Programs</a>
+                                   <a href="https://localhost:44364/Allimages.aspx">Affiliate Program</a>
+                              </div>
+                              </div>
+                           </li>
+                             <li>
+                              <a href="https://localhost:44364/membershipplan.aspx">
+                                 <i class="fa-solid fa-gift"></i> <div>Membership</div>
+                              </a>
+                           </li>
+                            
+                             <li>
+                              <a href="https://localhost:44364/transaction.aspx">
+                                  <i class="fa-solid fa-file"></i> <div>Transaction</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="https://localhost:44364/Accountsetting.aspx">
+                                  <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
+                              </a>
+                           </li>
+                              <li>
+                              <a href="#">
+                                  <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
+                              </a>
+                           </li>
+                         </ul>
+                     </div>
+                 </div>
+       
+             <div class="col-9">
+                              <div style="padding-top:80px;" class="row">
+                                     <div class="col-6">
+                                      <h3>Speech to text</h3>
                                     </div>
                              <div style="padding-right:40px;" class="col-6">
                                      <div style="float:right;" class="subcontainer">
                                           <span class="suhome"><a href="homepage.aspx">Home</a></span>
                                           <span class="icon"></span>
-                                          <span style="color:white;">Dashboard</span>
-                                       </div> 
-                               </div>
-                         </div>
-        <div class="row"style="position:static;margin-top: 4%;width: 100%;">
+                                          <span style="color:white;">Speech to text</span>
+                                     </div> 
+                             </div>
+             </div>
+             <div class="row"style="position:static;margin-top:20px;margin-bottom:20px;width:100%;">
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <%-- <div class="dashboard-box margin-top-0 margin-bottom-30">--%>
                 <!-- Headline -->
-                <div class="speech-left-cont" style="width:100%; border:1px solid lightgrey;">
+                <form id="speech_to_text" name="speech_to_text" method="post" action="#">
+               <div class="speech-left-cont" style="width:100%; border:1px solid lightgrey;line-height:27px;">
                 <div class="headline">
                     <h3><i class="bi bi-headphones"></i>Speech to Text</h3>
                 </div>
@@ -585,7 +745,7 @@ body {
                         <div class="submit-field margin-bottom-20">
                             <h6>Title</h6>
                             <textarea name="the-textarea" id="the-textarea" maxlength="300" placeholder="Start Typin..." autofocus></textarea>
-                            <div id="the-count" style="float: right;">
+                            <div id="count" style="float: right;">
                                 <span id="current">0</span>
                                 <span id="maximum">/ 300</span>
                                 <%--<input name="title" type="text" class="with-border small-input quick-text-counter" data-maxlength="100"><div class="form-text" id="simple-txt-counter-0">0 / 100</div>--%>
@@ -596,41 +756,50 @@ body {
                                     <input class="uploadButton-input" name="file" type="file" id="upload" />
                                     <label class="uploadButton-button ripple-effect" for="upload">Upload Media</label>
                                 </div>
-                                <small>.mp3, .mp4, .mpeg, .mpga, .m4a, .wav, .webm allowed.&nbsp;Max file size: 0 MB</small>
+                                <small style="font-size:12px;">.mp3, .mp4, .mpeg, .mpga, .m4a, .wav, .webm allowed.&nbsp;Max file size: 0 MB</small>
                             </div>
                             <div class="submit-field margin-bottom-20">
                                 <h6>Audio Description</h6>
-                                <h3>Title Pargraph</h3>
-                                <textarea name="paragraphTextArea" id="textarea" maxlength="300" placeholder="Start Typin..." autofocus></textarea>
-                                <div id="count" style="float: right;">
+                                <textarea name="paragraphTextArea" id="textarea1" maxlength="300" placeholder="Start Typin..." autofocus></textarea>
+                                <div id="the-count" style="float: right;">
                                     <span id="the-current">0</span>
                                     <span id="the-maximum">/ 300</span>
                                 </div>
                                 <small class="form-error"></small>
-                               
-                                
                             </div>
-                             <button type="submit" name="submit" class="button ripple-effect " style="background-color: blue; border: 1px solid cornflowerblue; border-radius: 4px; padding: 4px; width:100%; color: white; }">Generate →</button>
+                            <div>
+
+                            </div>
+                             <button type="submit" name="submit" class="button ripple-effect " style="background-color: #184698; border: 1px solid cornflowerblue; border-radius: 4px; padding: 4px; width:100%; color: white;margin:auto }">Generate →</button>
                             <div class="notification small-notification notice margin-top-5">Audio transcription may takes time due to the file size.</div>
                         </div>
                     </div>
                 </div>
                     </div>
+                </form>
+   
             </div>
-            <div class="col-lg-8 col-md-12 col-sm-12"style="border: 1px solid grey;">
+            <div class="col-lg-8 col-md-12 col-sm-12"<%--style="border: 1px solid grey;"--%>>
                 <div class="container7">
-                    <div style="padding: 1px 1px; margin: 1px 1px; display: flex">
-                        <i class='fas fa-align-left fa-2x' style='color: #0769e9'></i>
-                        <h4>Generated Result<br />
+                    <div class="row" style="padding: 1px 1px; margin: 1px 1px; display: flex">
+
+                        <div class="col-2" style="font-size:10px;">
+                             <i class='fas fa-align-left fa-2x' style='color: #0769e9'></i>
+                        </div>
+                       <div class="col-6">
+                           <h4>Generated Result<br />
                         </h4>
-                        <div style="float: right;">
+                       </div>
+                        
+                        <div class="col-4"  style ="float: right;display:flex;   ">
                             <i class='fas fa-file-word fa-2x' style='color: #007bff'></i><i class='fas fa-file-alt fa-2x' style='color: #0a18e6'></i><i class='far fa-copy fa-2x' style='color: #1708e2'></i>
                         </div>
                     </div>
                     <hr />
-                    <div class="options">
+                    <div class="text-editor">
+                           <div class="options">
                         <!-- Headings -->
-                        <select id="formatBlock" class="adv-option-button">
+                        <select id="formatBlock" class="adv-option-button" style="width:auto; height:100%;">
                             <option value="H1">Paragraph</option>
                             <option value="H1">Heading 1</option>
                             <option value="H2">Heading 2</option>
@@ -695,82 +864,29 @@ body {
                             <i class="fa-solid fa-indent"></i>
                         </button>
                     </div>
-                    <div id="text-input" contenteditable="true" style="border: 1px solid lightgrey;height: 230px;width:100%;}"></div>
+                    <div id="text-input" contenteditable="true" style="border: 1px solid lightgrey;height:500px;width:100%;}"></div>
+                    </div>
+                 
                 </div>
             </div>
         </div>
-        <div style="background-color: #303030">
-                <div class="container-foot">
-                    <footer style="background-color: #303030; box-sizing: border-box;">
-                        <div class="row">
+             </div>
+          </div>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">2023 Socius IGB Pvt Ltd, All right reserved</span>
+    </div>
 
-                            <div class="col-md-6">
-                                <div class="logofoot">
-                                    <img src="images/980385239.png" />
-                                    <p style="color: silver">
-                                        Aenean sodales mattis augue. Morbi euismod, felis at volutpat volutpat, quam lectus porttitor massa, tur ex a neque pulvinar pulvinar.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="foot">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class=" footer-col1">
-                                                <h6>My Account</h6>
-                                                <ul style="list-style: none;">
-                                                    <li><a href="#">Login</a></li>
-                                                    <li><a href="#">Register</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="footer-col2">
-                                                <h6>Helpful Links</h6>
-                                                <ul style="list-style: none;">
-                                                    <li><a href="#">Blog</a></li>
-                                                    <li><a href="#">Feedback</a></li>
-                                                    <li><a href="#">Contact</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="footer-col3">
-                                                <h6>Information</h6>
-                                                <ul style="list-style: none;">
-                                                    <li><a href="#">FAQ</a></li>
-                                                    <li><a href="#">Testinomials</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-                <div style="border-top: 1px solid #484848; margin: 40px 2px; margin-bottom: 0px;" class="row" id="footmedia">
-                    <div style="background-color: #303030;">
-                        <div class="row">
-                            <div class="col-md-8 footcopy" id="border-right-line">
-                                <div class="copyfoot">
-                                    <p style="color: silver">2023 Socius IGB Pvt Ltd, All right reserved</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 footcopy" >
-                                <div class="icons">
-                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"> <i class="fa-brands fa-facebook-f" style="color: #b2b8c2;"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: #aaadb1;"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i></a></li>
+    </ul>
+  </footer>
+
     </form>
     <!--word count-->
     <script>
@@ -792,7 +908,25 @@ body {
             }
         });
     </script>
-          
+     <script>
+         $("textarea1").keyup(function () {
+             var characterCount = $(this).val().length,
+                 the-current = $("#the-current"),
+                 the-maximum = $("#the-maximum"),
+                 the-Count = $("#the-count");
+
+             the-current.text(characterCount);
+
+             if (characterCount >= 140) {
+                 the-maximum.css("color", "#8f0001");
+                 the-current.css("color", "#8f0001");
+                 the-theCount.css("font-weight", "bold");
+             } else {
+                 the-maximum.css("color", "#666");
+                 the-Count.css("font-weight", "normal");
+             }
+         });
+     </script>
     <script>
             let optionsButtons = document.querySelectorAll(".option-button");
             let advancedOptionButton = document.querySelectorAll(".adv-option-button");
@@ -913,9 +1047,28 @@ body {
                     button.classList.remove("active");
                 });
         };
-
             window.onload = initializer();
+    </script>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction1() {
+            document.getElementById("login").classList.toggle("show");
+        }
 
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn1')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+
+                    }
+                }
+            }
+        }
     </script>
 </body>
 </html>

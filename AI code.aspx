@@ -90,7 +90,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
+    height: 80%;
 }
 
 .sidebar ul {
@@ -328,8 +328,8 @@ body {
                                         <a href="#" title="">
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
-                                                    <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <span onclick="myFunction3()" class="dropbtn1" >
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;" />
                                                     </span>
                                                 </div>
                                             </div>
@@ -337,14 +337,14 @@ body {
                                     </div>
                              
                                    <div id="login" class="dropdown-content"style="height: 465px;">
-                                        <ul class="user-menu-small-nav">
+                                         <ul class="user-menu-small-nav">
                                             <li><a href="https://localhost:44364/Dashboard1.aspx"><i class="fa fa-th-large"></i>Dashboard</a></li>
-                                            <li><a href="3"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
-                                            <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
+                                            <li><a href="https://localhost:44364/Template.aspx"><i class="fa-solid fa-layer-group"></i>Templates</a></li>
+                                            <li><a href="https://localhost:44364/images.aspx"><i class="fa-solid fa-image"></i>AI Images</a></li>
+                                            <li><a href="https://localhost:44364/Ai%20chat.aspx"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
+                                            <li><a href="https://localhost:44364/Speech%20to%20text.aspx"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
+                                            <li><a href="https://localhost:44364/AI%20code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                            <li><a href="https://localhost:44364/All%20document.aspx"><i class="fa fa-file-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
                                             <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
@@ -362,7 +362,7 @@ body {
                  </div>
         <div class="row">
             <div class="col-lg-3">
-                    <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;height: 84%;">
+                  <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -428,7 +428,7 @@ body {
                               <li>
                               <div class="dropdown">
                                  <i class="fa fa-th-large"></i>
-                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                                    <span onclick="myFunction2()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
                               <div id="myDropdown2" class="dropdown-content" >
                                    <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
                                    <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
@@ -514,7 +514,7 @@ body {
         <script>
           /* When the user clicks on the button,
             toggle between hiding and showing the dropdown content */
-            function myFunction1() {
+            function myFunction3() {
                 document.getElementById("login").classList.toggle("show");
           }
 
@@ -561,6 +561,27 @@ body {
                      }
                  }
              </script>
+                          <script>
+                              /* When the user clicks on the button, 
+                              toggle between hiding and showing the dropdown content */
+                              function myFunction2() {
+                                  document.getElementById("myDropdown2").classList.toggle("show");
+                              }
+
+                              // Close the dropdown if the user clicks outside of it
+                              window.onclick = function (event) {
+                                  if (!event.target.matches('.dropbtn')) {
+                                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                                      var i;
+                                      for (i = 0; i < dropdowns.length; i++) {
+                                          var openDropdown = dropdowns[i];
+                                          if (openDropdown.classList.contains('show')) {
+
+                                          }
+                                      }
+                                  }
+                              }
+                          </script>
              <script>
                  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
                  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {

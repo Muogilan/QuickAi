@@ -643,7 +643,7 @@ a i:hover {
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;"/>
                                                     </span>
                                                 </div>
                                             </div>
@@ -657,7 +657,7 @@ a i:hover {
                                             <li><a href="#"><i class="fa-solid fa-image"></i>AI Images</a></li>
                                             <li><a href="#"><i class="fa-solid fa-comment-dots"></i>AI Chat</a></li>
                                             <li><a href="#"><i class="fa-solid fa-headphones"></i>Speech to Text</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-code"></i>AI Code</a></li>
+                                            <li><a href="https://localhost:44364/AI%20code.aspx"><i class="fa-solid fa-code"></i>AI Code</a></li>
                                             <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
@@ -718,7 +718,7 @@ a i:hover {
                     </div>
                     <div class="submit-field"></div>
 
-                    <input type="submit" name="Submit" class="button" value="Submit"/>
+                    <input type="submit" name="Submit" class="button" value="Submit" style="    background: #184698;color: white;border-radius: 5px;padding: 0px 20px;}"/>
                 </form>
             </div>
         </div>

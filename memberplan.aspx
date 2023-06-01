@@ -13,12 +13,6 @@
     <script src="fontawesome/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 <style>
-.main{
-            margin-left: 160px;
-            margin-right: 160px;
-            margin-top:100px;
-            
-        }
         .section{
            display: flex;
            

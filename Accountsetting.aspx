@@ -2,6 +2,10 @@
 
 <!DOCTYPE html>
 
+
+
+
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>hype</title>
@@ -18,7 +22,7 @@
     <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
     <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
     <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
     <!--fontswesome link>-->
        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!--jquery-->
@@ -1067,7 +1071,7 @@ body{
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;" />
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;" />
                                                     </span>
                                                 </div>
                                             </div>

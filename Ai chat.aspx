@@ -40,6 +40,47 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing:border-box;
 }
+            .user-inimg{
+                height:42px;
+                width:42px;
+                float:right;
+            }
+            .user-txt{
+                float:right;
+                padding-top:10px;
+            }
+            .bot-chat-tex{
+                display:flex;
+
+
+            }
+            .bot-inimg{
+                height:42px;
+                width:42px;
+            }
+            .bot-txt{
+                padding-top:10px;
+            }
+            .AI-chat-placeholder{
+                min-height:300px;
+                overflow-y:scroll;
+                border:1px solid #e0e0e0;
+                border-radius:5px;
+                margin-bottom:20px;
+                width:100%;
+            }
+        .AI-chat-send-btn {
+            padding: 5px 10px;
+            background: :#184698;
+            background: #184698;
+            color: white;
+            border-radius: 5px;
+        }
+        .AI-chat_iput-box{
+            width:100%;
+            border-radius:5px;
+            padding:5px;
+        }
 
 .container {
     padding: 0px;
@@ -120,7 +161,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px -1px 02px rgb(0,0,0,0.5);
-    height: 80%
+    height: 88%;
 }
 
 .sidebar ul {
@@ -299,7 +340,6 @@ body {
 .dashboard-headline{
     display:block;
     position:relative;
-    margin-bottom:50px;
 }
 .word-used-wrapper{
     font-size: 14px;
@@ -567,13 +607,12 @@ a.button{
     font-weight: bold;
     cursor: pointer;
 }
-
 .chat-output {
     padding: 10px;
     background: #ccc;
     border-radius: 5px;
     margin-top: 10px;
-    font-weight: bold
+    font-weight: bold;
 }
   </style>
 </head>
@@ -586,15 +625,14 @@ a.button{
                     </div>
                <a href="javascript:void(0);"  class="header-icon">
                    <i class="fa fa-bars" id="icon" style="margin-top: 32px;" onclick="myMine"></i>
-                    </a>
-                 
+               </a>
           <div class="header-notifications user-menu">
                                     <div class="header-notifications-trigger">
                                         <a href="#" title="">
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <img src="images/default_user.png"style="height:42px; border-radius:94px;width: 42px;" />
                                                     </span>
                                                 </div>
                                             </div>
@@ -693,7 +731,7 @@ a.button{
                               <li>
                               <div class="dropdown">
                                  <i class="fa fa-th-large"></i>
-                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                                    <span onclick="myFunction3()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
                               <div id="myDropdown2" class="dropdown-content" >
                                    <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
                                    <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
@@ -726,7 +764,7 @@ a.button{
                      </div>
                  </div>
                  <div class="col-9">
-                        <div class="dashboard-headline"style="margin-bottom:40px;padding:40px;">
+                        <div class="dashboard-headline"style="padding:40px;">
                     <h3 class="d-flex align-items-center">
                         AI chat
                         <div class="word-used-wrapper margin-left-10">
@@ -738,7 +776,7 @@ a.button{
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="http://hype.sociusus.com/" style="color:white;">Home</a></li>
+                            <li><a href="#" style="color:white;">Home</a></li>
                             <li>AI chat</li>
                         </ul>
                     </nav>
@@ -746,8 +784,8 @@ a.button{
                <div class="dashboard-content-inner" style="min-height: 625.023px;padding:50px;padding-bottom:0; position:relative;">
             <div class="notification small-notification error"style="width: 91%;padding: 10px; border-radius: 8px;">
                         You can not use the chat feature with your OpenAI model. Upgrade your membership plan to use this feature.
-        </div>
-              <div class="container">
+            </div>
+<%--            <div class="container">
   <div class="row">
     <div class="col msg-window-container">
       <div class="card" id="msgWindow">
@@ -755,9 +793,8 @@ a.button{
             <div class="col-md-6"></div>
             <div class="message-action">
                     <a href="#" class="button ripple-effect btn-sm" id="export-chats" title="Export Conversation" data-tippy-placement="top" onclick="DownloadFile('Sample.pdf')" style="    background-color: #0d6efd;">
-                                       <i class="fa-solid fa-download"></i></a>
+                             <i class="fa-solid fa-download"></i></a>
                     <a href="C:\Users\sociusRD\Desktop\Quick AI\Download file" class="button ripple-effect btn-sm red" id="delete-chats" data-tippy-placement="top" data-tippy="" onclick="remove()" data-original-title="Delete Conversation"   "><i class="bi bi-trash"></i></a>
-                   
             </div>
         </div>
         <div class="card-body" id="msgs"></div>
@@ -773,7 +810,8 @@ a.button{
       </div>
     </div>
   </div>
-</div>
+</div>--%>
+                   <div class="AI-chat-2nd-div">                                        <div class="AI-chat-placeholder" id="AI-chat-input-holderid">                                        </div>                                        <div class="AI-chat-input-area">                                            <div class="AI-chat-input-holder" >                                                  <div class="row">                                                    <div class="col-lg-11 col-md-10 col-sm-10">                                                        <asp:TextBox placeholder="Type your message here" CssClass="AI-chat_iput-box" id="TextBox1" runat="server" Required=""></asp:TextBox>                                                    </div>                                                    <div class="col-lg-1 col-md-1 col-sm-1">                                                        <button class="AI-chat-send-btn ripple-effect" <%--onclick="click1()"--%> id="ai-chat-sndbtn" text="Send">Send</button>                                                    </div>                                                </div>                                            </div>                                        </div>                                    </div>
         </div>
                  </div>
              </div>
@@ -1022,5 +1060,51 @@ a.button{
                }
            }
          </script>
+            <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown1").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+
+                            }
+                        }
+                    }
+                }
+            </script>
+      <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction3() {
+              document.getElementById("myDropdown2").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function (event) {
+              if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+
+                      }
+                  }
+              }
+          }
+      </script>
+    <script>
+        $(document).ready(function () {            $("#ai-chat-sndbtn").on("click", function (e) {                e.preventDefault();                if ($("#TextBox1").val() == "") {                    return;                }                sendMessage();            });        });        //        async function sendMessage() {            //creating a div            const message = document.getElementById('TextBox1').value;            const chatUser = $("<div>");            chatUser.addClass("user-chat-tex");            const cD1 = $("<div>");            cD1.addClass("user-img");            const imgTag = $("<img>");            imgTag.addClass("user-inimg");            imgTag.attr("src", "images/images.png");            cD1.append(imgTag);            const cD2 = $("<div>");            cD2.addClass("user-txt");            const pCd1 = $("<p>").text(message);            cD2.append(pCd1);            chatUser.append(cD1);            chatUser.append(cD2);            $(".AI-chat-placeholder").append(chatUser);            //create div and asign that messge to that div row            const url = `https://ai-chatbot.p.rapidapi.com/chat/free?message=${encodeURIComponent(message)}&uid=user1`;            const options = {                method: 'GET',                headers: {                    'X-RapidAPI-Key': '970d4b7c06mshfc7289775416079p128371jsnab0dde58705a',
+                    'X-RapidAPI-Host': 'ai-chatbot.p.rapidapi.com'                }            };            try {                const response = await fetch(url, options);                const result = await response.json();                //const result = response.chatbot.response;                //output div and assigned value that div                 //document.getElementById('output').innerText = result.chatbot.response;                const botChat = $("<div>");                botChat.addClass("bot-chat-tex");                const cD3 = $("<div>");                cD3.addClass("bot-img");                const imgTag1 = $("<img>");                imgTag1.addClass("bot-inimg");                imgTag1.attr("src", "images/images.png");                cD3.append(imgTag1);                const cD4 = $("<div>");                cD4.addClass("bot-txt");                const pCd2 = $("<p>").text(result.chatbot.response);                cD4.append(pCd2);                botChat.append(cD3);                botChat.append(cD4);                $(".AI-chat-placeholder").append(botChat);                $("#TextBox1").val("");            } catch (error) {                console.error(error);            }        }
+    </script>
 </body>
 </html>

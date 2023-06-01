@@ -442,7 +442,7 @@ table .basic-table{
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <img src="images/default_user.png"style="height:42px; border-radius:94px;width: 42px;"/>
                                                     </span>
                                                 </div>
                                             </div>
@@ -475,7 +475,8 @@ table .basic-table{
                  </div>
             <div class="row">
             <div class="col-3">
-                               <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
+                            <div class="col-lg-3">
+                  <div class="sidebar" style="font-size:20px; display:inline-block;z-index: 1;">
                          <ul>
                              <li "="">
                                  <div style="color:darkblue;font-weight:600;">
@@ -541,7 +542,7 @@ table .basic-table{
                               <li>
                               <div class="dropdown">
                                  <i class="fa fa-th-large"></i>
-                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
+                                    <span onclick="myFunction2()" class="dropbtn" style="font-size:13px;">Affiliate Program</span>
                               <div id="myDropdown2" class="dropdown-content" >
                                    <a href="https://localhost:44364/Affliateprogram.aspx">Affiliate program</a>
                                    <a href="https://localhost:44364/Withdrawpage.aspx">Withdraw</a>
@@ -572,6 +573,7 @@ table .basic-table{
                            </li>
                          </ul>
                      </div>
+            </div>
             </div>
             <div class="col-9">
                 <div style="padding-top:80px;" class="row">
@@ -751,5 +753,26 @@ table .basic-table{
            }
        }
    </script>
+       <script>
+           /* When the user clicks on the button, 
+           toggle between hiding and showing the dropdown content */
+           function myFunction2() {
+               document.getElementById("myDropdown2").classList.toggle("show");
+           }
+
+           // Close the dropdown if the user clicks outside of it
+           window.onclick = function (event) {
+               if (!event.target.matches('.dropbtn')) {
+                   var dropdowns = document.getElementsByClassName("dropdown-content");
+                   var i;
+                   for (i = 0; i < dropdowns.length; i++) {
+                       var openDropdown = dropdowns[i];
+                       if (openDropdown.classList.contains('show')) {
+
+                       }
+                   }
+               }
+           }
+       </script>
 </body>
 </html>

@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="homepage.aspx.cs" Inherits="Quick_AI.homepage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup ="true" CodeBehind="homepage.aspx.cs" Inherits="Quick_AI.homepage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -437,6 +437,10 @@ span.blog-item-tag {
   transform: translate(0, -3px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+select{
+    height:40px;
+}
+
 </style>
     <section href="https://localhost:44364/homepage.aspx">
         <br />
@@ -444,7 +448,7 @@ span.blog-item-tag {
         <br />
         <br />
    <center>
-        <img width="300px" src="images/home-hero-icon.png"/>
+        <img  src="images/home-hero-icon.png" style="max-width:100%"/>
    <center>
     </section>
     <section>
@@ -452,7 +456,7 @@ span.blog-item-tag {
             <div class="row">
                 <div class="col-md-12">
                     <center>
-                    <h1 class="margin-bottom-10 text_gradient animation">
+                    <h1 class="margin-bottom-10 text_gradient animation" style="font-size:66px;">
                        <strong>Best AI Content Writer</strong>
                     </h1>
                     <p>Create SEO-optimized and unique content for your blogs, ads, emails, and website 10X faster & save hours of work.</p>

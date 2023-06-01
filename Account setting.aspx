@@ -2,10 +2,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
 <head runat="server">
     <title>hype</title>
-    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="StyleSheet1.css"/>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"/>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
     <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
@@ -13,23 +13,23 @@
       <!--Bootstrap css-->
     <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
     <!--Datatables css-->
-    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
-    <!--Fontawesome css-->
+    <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet"/>
+   <%-- Fontawesome css--%>
     <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
     <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
     <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
     <!--fontswesome link>-->
-       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!--jquery-->
     <script src="Bootstarp/Css/JS/jquery.min.js"></script>
-      <!--Jquery Js-->
+    <!--Jquery Js-->
     <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
-      <!--bootstrapmin Js-->
+    <!--bootstrapmin Js-->
     <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
-      <!--poppers Js-->
+    <!--poppers Js-->
     <script src="Bootstarp/Css/JS/popper.min.js"></script>
-       <!--Bootstrap css-->
+    <!--Bootstrap css-->
     <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
     <!--Datatables css-->
     <link href="Data%20Tables/Css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -37,22 +37,22 @@
     <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
     <link href="Bootstarp/Css/flags.min.css" rel="stylesheet" />
     <!--bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
     <!--fontswesome link>-->
-       <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link href="Font%20awesome/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet" />
     <link href="font%20all%20min/all.min.css" rel="stylesheet" />
     <!--jquery-->
     <script src="Bootstarp/Css/JS/jquery-3.3.1.slim.min.js"></script>
     <script src="Bootstarp/Css/JS/jquery-3.6.4.min.js"></script>
     <script src="Bootstarp/Css/JS/jquery.min.js"></script>
-      <!--Jquery Js-->
+    <!--Jquery Js-->
     <script src="Bootstarp/Css/JS/bootstrap.bundle.min.js"></script>
-      <!--bootstrapmin Js-->
+    <!--bootstrapmin Js-->
     <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
-      <!--poppers Js-->
+    <!--poppers Js-->
     <script src="Bootstarp/Css/JS/popper.min.js"></script>   
-      <style>
+    <style>
        * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -137,7 +137,7 @@ option {
     margin-right: 0px;
     margin-bottom: 0px;
     box-shadow: 0px 0px 8px 02px rgb(0,0,0,0.5);
-    height: 100%
+    height: 80%
 }
 
 .sidebar ul {
@@ -486,7 +486,7 @@ option {
     justify-content: center;
     height: 80px;
     padding-top: 10px;
-    width: 260px;
+    width: 166px;
 }
 
 .user {
@@ -718,7 +718,7 @@ button.button{
 }
 .uploadButton{
     display:flex;
-    flex-wrap;
+   /* flex-wrap:;*/
     justify-content:flex-start;
     margin-bottom:10px;
     width:100%;
@@ -1096,8 +1096,8 @@ body{
                                         <a href="#" title="">
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
-                                                    <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;" />
+                                                    <span onclick="myFunction1()" class="dropbtn1">
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;"/>
                                                     </span>
                                                 </div>
                                             </div>
@@ -1192,11 +1192,8 @@ body{
                                     <h9>  Account</h9>
                                  </div>
                              </li>
-                              <li>
-                              <a href="#">
-                                 <div>Affiliate Program</div>
-                              </a>
-                           <div class="dropdown">
+                           <li>
+                            <div class="dropdown">
                                     <i class="fa fa-th-large"></i>
                                    <span onclick="myFunction1()" class="dropbtn" style="font-size:13px;">Affiliate program</span>
                               <div id="myDropdown2" class="dropdown-content" >

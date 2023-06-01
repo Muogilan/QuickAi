@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboardtemplate.aspx.cs" Inherits="Quick_AI.Dashboardtemplate" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Codefile="Dashboardtemplate.aspx.cs" Inherits="Quick_AI.Dashboardtemplate" %>
 
 <!DOCTYPE html>
 
@@ -322,6 +322,7 @@ body{
     padding:10px;
     border-radius:50vh;
     font-size:14px;
+    margin-bottom: 30px;
 }
 .template-categories ul{
     padding:0;
@@ -542,7 +543,7 @@ a{
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction3()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;"/>
                                                     </span>
                                                 </div>
                                             </div>

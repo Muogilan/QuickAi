@@ -94,10 +94,8 @@
                           <div class=" footer-col1">			
 				             <h6 style="color:whitesmoke;"> My Account</h6>
 				              <ul style="list-style:none;">
-					           <li><a href="#">Dashboard</a></li>
-					           <li><a href="https://localhost:44364/Testimonialsfooter.aspx">Templates</a></li>
-                                  <li><a href="#">AI images</a></li>
-                                  <li><a href="#">Logout</a></li>
+					           <li><a href="https://localhost:44364/Login1.aspx">login</a></li>
+					           <li><a href="#">Register</a></li>
 				                </ul>
                           </div>
 			              </div>
@@ -105,8 +103,8 @@
 			                   <div class="footer-col2">
 				                 <h6 style="color:whitesmoke;">Helpful Links</h6>
 				                  <ul style="list-style:none;">
-					                <li><a href="#">Blog</a></li>
-					                 <li><a href="#">Feedback</a></li>
+					                <li><a href="https://localhost:44364/Blogfooter.aspx">Blog</a></li>
+					                 <li><a href="https://localhost:44364/Feedback1.aspx">Feedback</a></li>
 					                      <li><a href="#">Contact</a></li>
 				                      </ul>
 			                       </div>
