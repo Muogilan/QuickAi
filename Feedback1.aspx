@@ -579,6 +579,10 @@ a i:hover {
         padding-bottom: 20px;
     }
 }
+input{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
    </style>
     <!--Bootstrap css-->
     <link href="Bootstarp/Css/bootstrap.min.css" rel="stylesheet" />
@@ -693,7 +697,7 @@ a i:hover {
                         <div class="col-md-8">
             <div class="col-xl-8 margin-0-auto" style="width:auto; line-height:40px;margin-left:150px;">
             <h2 class="margin-bottom-20">Tell us what you think of us</h2>
-            <span>We would like to hear your opinions about the website. We would be grateful if you could take the time to fill out this form</span>
+            <span style="color:#b5b3b3;">We would like to hear your opinions about the website. We would be grateful if you could take the time to fill out this form</span>
             <div class="feed-back-form margin-top-20">
                 <form method="post">
                     <div class="submit-field">

@@ -20,7 +20,7 @@
  
                                 <span>
                                     "Dont have an account"
-                                    <a href="https://localhost:44364/Loginpage.aspx" dir="ltr">Sign up now!</a>
+                                    <a href="https://localhost:44364/Loginpage.aspx" dir="ltr" style="text-decoration:none;">Sign up now!</a>
                                 </span>
                                 </center>
                                 <br />
@@ -47,7 +47,7 @@
                             </div>
                             <br />
                                      <!-- Simple link -->
-                                 <a href="https://localhost:44364/password.aspx">Forgot password?</a>
+                                 <a href="https://localhost:44364/password.aspx" style="text-decoration:none;">Forgot password?</a>
                              </div>
                              <br />
                              <div class="form-group">

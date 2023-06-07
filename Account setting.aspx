@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>hype</title>
     <link rel="stylesheet" href="StyleSheet1.css"/>
@@ -1641,7 +1641,7 @@ body{
          <script type="text/javascript">
              $("#icon").on("click", function () {
                  $(".sidebar").toggle();
-                 $(".col-6").toggleClass('col-lg-12 full-width');
+                 $(".col-9").toggleClass('col-lg-12 full-width');
 
              });
          </script>

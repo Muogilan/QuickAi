@@ -49,7 +49,7 @@
     <script src="Bootstarp/Css/JS/bootstrap.min.js"></script>
       <!--poppers Js-->
     <script src="Bootstarp/Css/JS/popper.min.js"></script>
-      <style>
+<style>
        * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -342,7 +342,7 @@ body {
                                             <li><a href="#"><i class="fa fa-fi  le-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                            <li><a href="https://localhost:44364/Adminlogin.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -447,7 +447,7 @@ body {
                               </a>
                            </li>
                               <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Adminlogin.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>

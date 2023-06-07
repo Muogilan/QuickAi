@@ -650,7 +650,7 @@ a.button{
                                             <li><a href="#"><i class="fa fa-file-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                            <li><a href="https://localhost:44364/Adminlogin.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -751,12 +751,12 @@ a.button{
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44364/Accountsetting.aspx">
+                              <a href="https://localhost:44364/Account%20setting.aspx">
                                   <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44364/Login1.aspx">
+                              <a href="https://localhost:44364/Adminlogin.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>
@@ -918,7 +918,7 @@ a.button{
     <script type="text/javascript">
         $("#icon").on("click", function () {
             $(".sidebar").toggle();
-            $(".col-6").toggleClass('col-lg-12 full-width');
+            $(".col-9").toggleClass('col-lg-12 full-width');
 
         });
 

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Codefile="AI code.aspx.cs" Inherits="Quick_AI.AI_code" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AI code.aspx.cs" Inherits="Quick_AI.AI_code" %>
 
 <!DOCTYPE html>
 
@@ -347,7 +347,7 @@ body {
                                             <li><a href="https://localhost:44364/All%20document.aspx"><i class="fa fa-file-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                            <li><a href="https://localhost:44364/Adminlogin.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -448,19 +448,19 @@ body {
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44364/Accountsetting.aspx">
+                              <a href="https://localhost:44364/Account%20setting.aspx">
                                   <i class="fa-solid fa-right-from-bracket"></i><div>Account Setting</div>
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44364/Login1.aspx">
+                              <a href="https://localhost:44364/Adminlogin.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>
                          </ul>
                      </div>
             </div>
-            <div class="col-lg-9" style="width:75%">
+            <div class="col-lg-9">
                 <div style="padding-top:80px;" class="row">
                                     <div class="col-6">
                                       <h3 style="float:right;">AI Code</h3>
@@ -473,38 +473,44 @@ body {
                                        </div> 
                                </div>
                          </div>
-                  <div class="card" style="width:35%;margin-left:0;">
-        <div class="card-body">
-            <div class="headline" >
+                <div class="code-body" style="display:flex;margin-top:30px;">
+          <div class="col-6" style="padding:5px 20px;width:30%;">
+                     <div class="card">
+                  <div class="card-body">
+                  <div class="headline" >
                             <span><i class="fa fa-chevron-left" aria-hidden="true"style="color:darkblue"></i><i class="fa fa-chevron-right" aria-hidden="true" style="color:darkblue"></i>
                                 &nbsp;AI Code
                             </span>
-            </div><hr />
-                    <p style="color:white;background-color:cornflowerblue;padding:2px 2px;font-size:12px">Use this code generator to create code in any programming language.</p>
+                   </div><hr />
+                    <p style="color:#3184ae;background-color:#e9f7fe;padding:2px 2px;font-size:12px">Use this code generator to create code in any programming language.</p>
                     <span>Title</span><br />
-                    <input type="text" style="width:275px;" min-length="100" value="New Code"/><br />
+                    <input type="text" style="max-width: 100%; border: 1px solid lightgrey;border-radius: 5px;color: #808080;" value="New Code"/><br />
             <br /><label for="text" > Description *</label>
-            <textarea style="width:250px" placeholder="Generate a Javascript function to generate a random string"></textarea>
+            <textarea  placeholder="Generate a Javascript function to generate a random string" style="border: 1px solid lightgrey; border-radius: 5px;color: lightgrey;}"></textarea>
                     <div>
-                        <span class="alert alert-danger" role="alert" id="error-msg" style="display:none;background-color:white;border:none;font-size:10px">
-                          Upgrade your membership plan to use this feature
-                        </span>
-                        <button type="button" id="submit-btn" style="color:white;background-color:darkblue;width:100%;">
+                        <button type="button" id="submit-btn" style="color:white;background-color:#184698;width:100%; border-radius:5px;padding:3px 10px;">
                             <span>Generate &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></span>
                         </button>
                     </div>
-    </div>
+                   </div>
         </div>
-    <div class="card" style="border: 1px solid gray;margin-top: -319px;;display:flex;margin-left: 380px;">
-        <div class="card-body">
-            <div class="container8">
-            <div style="padding:1px 1px;margin:1px 1px;display:flex">
-            <span style='font-size:15px'><i class='fas fa-align-left fa-2x' style='color:#0769e9;font-size:15px'></i>Generated Result</span>
-            </div><hr />
-                <label style="height:50px;background-color:#3184ae;opacity:0.7;width:100%;padding:7px 7px;color:darkblue">Generated code will appear here.</label>
-               </div>
-            </div>
-          </div>
+                </div>
+                 
+                <div class="col-6" style="width:70%">
+                    <div class="card" style="border: 1px solid gray;display:flex;">
+                        <div class="card-body">
+                            <div class="container8">
+                                <div style="padding:1px 1px;margin:1px 1px;display:flex">
+                                    <span style='font-size:15px'><i class='fas fa-align-left fa-2x' style='color:#0769e9;font-size:15px'></i>Generated Result</span>
+                                </div><hr />
+                                <label style="height:50px;background-color:#e9f7fe;opacity:0.7;width:100%;padding:7px 7px;color:#3184ae">Generated code will appear here.</label>
+                            </div> 
+                    </div>
+                     </div>
+                </div>
+                </div>
+
+               
          
         </div>
 
@@ -535,7 +541,7 @@ body {
              <script type="text/javascript">
                  $("#icon").on("click", function () {
                      $(".sidebar").toggle();
-                     $(".col-6").toggleClass('col-lg-12 full-width');
+                     $(".col-lg-9").toggleClass('col-lg-12 full-width');
 
                  });
 

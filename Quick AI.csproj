@@ -165,6 +165,7 @@
     <Content Include="code.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Dashboard1.aspx" />
+    <Content Include="Dashboarddemo.aspx" />
     <Content Include="Dashboardtemplate.aspx" />
     <Content Include="Data Tables\Css\jquery.dataTables.min.css" />
     <Content Include="Data Tables\Js\jquery.dataTables.min.js" />
@@ -840,6 +841,7 @@
     <Content Include="images\logo-carousel-04.png" />
     <Content Include="images\logo-carousel-05.png" />
     <Content Include="images\logo-carousel-06.png" />
+    <Content Include="images\logo.png" />
     <Content Include="images\Screenshot 2023-04-18 102209.png" />
     <Content Include="images\Screenshot 2023-04-18 102226.png" />
     <Content Include="images\Screenshot 2023-04-18 102238.png" />
@@ -864,6 +866,7 @@
     <Content Include="Textarea.aspx" />
     <Content Include="transaction.aspx" />
     <Content Include="Travellove.aspx" />
+    <Content Include="Upgrademembership.aspx" />
     <Content Include="Viewblog.aspx" />
     <Content Include="Views\TestMvcWebForm.aspx" />
     <Content Include="Web.config" />
@@ -974,6 +977,13 @@
     </Compile>
     <Compile Include="Dashboard1.aspx.designer.cs">
       <DependentUpon>Dashboard1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboarddemo.aspx.cs">
+      <DependentUpon>Dashboarddemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboarddemo.aspx.designer.cs">
+      <DependentUpon>Dashboarddemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboardtemplate.aspx.cs">
       <DependentUpon>Dashboardtemplate.aspx</DependentUpon>
@@ -1140,6 +1150,13 @@
     </Compile>
     <Compile Include="Travellove.aspx.designer.cs">
       <DependentUpon>Travellove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upgrademembership.aspx.cs">
+      <DependentUpon>Upgrademembership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upgrademembership.aspx.designer.cs">
+      <DependentUpon>Upgrademembership.aspx</DependentUpon>
     </Compile>
     <Compile Include="Viewblog.aspx.cs">
       <DependentUpon>Viewblog.aspx</DependentUpon>

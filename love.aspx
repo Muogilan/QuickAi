@@ -626,7 +626,7 @@ a i:hover {
    </style>
 
 </head>
-<body>\-=9 
+<body>
        <div class="topbar">
                     <div class="logo">
                         <center> <img src="images/980385239.png" /></center>
@@ -641,7 +641,7 @@ a i:hover {
                                             <div class="user-avatar status-online">
                                                 <div class="dropdown">
                                                     <span onclick="myFunction1()" class="dropbtn1" >
-                                                    <img src="images/default_user.png" />
+                                                    <img src="images/default_user.png" style="height:42px; border-radius:94px;width: 42px;"/>
                                                     </span>
                                                 </div>
                                             </div>

@@ -50,7 +50,7 @@
 }
 
 .slide-box img {
-  max-width: 60px;
+  max-width: 200px;
   border-radius: 50%;
 }
 .slide-box .name {

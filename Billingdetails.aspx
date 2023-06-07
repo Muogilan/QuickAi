@@ -514,7 +514,7 @@ button{
                                             <li><a href="#"><i class="fa fa-fi  le-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                            <li><a href="https://localhost:44364/Adminlogin.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -619,7 +619,7 @@ button{
                               </a>
                            </li>
                               <li>
-                              <a href="#">
+                              <a href="https://localhost:44364/Adminlogin.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>
@@ -627,7 +627,7 @@ button{
                      </div>
             </div>
                 <div class="col-lg-9">
-                                <div class="container" style="margin-top:100px;">
+        <div class="container" style="margin-top:100px;">
         <div style="overflow: hidden">
                 <div class="notification notice">These details will be used in invoice and tax handling.</div>
                 <form method="post" accept-charset="UTF-8">
@@ -934,9 +934,7 @@ button{
                 </form>
         </div>
     </div>
-                </div>
-            </div>
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
@@ -950,17 +948,20 @@ button{
       <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: #c2c4c7;"></i></a></li>
     </ul>
   </footer>
+                </div>
+            </div>
+
 
 
 </body>
        <script type="text/javascript">
              $("#icon").on("click", function () {
                  $(".sidebar").toggle();
-                 $(".col-6").toggleClass('col-lg-12 full-width');
+                 $(".col-lg-9").toggleClass('col-lg-12 full-width');
 
              });
 
-         </script>
+       </script>
              <script>
                  /* When the user clicks on the button, 
                  toggle between hiding and showing the dropdown content */

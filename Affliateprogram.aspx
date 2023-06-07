@@ -424,6 +424,9 @@ table .basic-table{
     float:right;
     padding: 10px;
 }
+h9{
+    color:#184698
+}
 </style>
 </head>
 <body>
@@ -460,7 +463,7 @@ table .basic-table{
                                             <li><a href="#"><i class="fa fa-fi  le-text"></i>All Documents</a></li>
                                             <li><a href="https://localhost:44364/membershipplan.aspx"><i class="fa-solid fa-gift"></i>Membership</a></li>
                                             <li><a href="https://localhost:44364/Accountsetting.aspx"><i class="fa-solid fa-right-from-bracket"></i>Account Setting</a></li>
-                                            <li><a href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                                            <li><a href="https://localhost:44364/Adminlogin.aspx"><i class="fa-solid fa-power-off"></i>Logout</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -567,7 +570,7 @@ table .basic-table{
                               </a>
                            </li>
                               <li>
-                              <a href="https://localhost:44364/Login1.aspx">
+                              <a href="https://localhost:44364/Adminlogin.aspx">
                                   <i class="fa-solid fa-power-off"></i> <div>Log Out</div>
                               </a>
                            </li>
@@ -684,10 +687,7 @@ table .basic-table{
         </div>
     </div>
         </div>
-            </div>
-
-        </div>
-                 <div class="container">
+                <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -703,6 +703,9 @@ table .basic-table{
     </ul>
   </footer>
         </div>
+            </div>
+           </div>
+
     </form>
     <script>
           /* When the user clicks on the button, 
@@ -728,7 +731,7 @@ table .basic-table{
     <script type="text/javascript">
           $("#icon").on("click", function () {
                $(".sidebar").toggle();
-                  $(".col-6").toggleClass('col-lg-12 full-width');
+                  $(".col-9").toggleClass('col-lg-12 full-width');
 
           });
     </script>

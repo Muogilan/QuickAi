@@ -325,7 +325,7 @@ body {
 }
 .dashboard-box .headline h3 i{
     font-size:16px;
-    color:blue;
+    color:#184698;
 }
 .notification {
     background: #8fd3e9;
@@ -365,6 +365,22 @@ select{
 }
 .container7 button{
     border:none;
+}
+.fas{
+    padding:3px 8px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #184698;
+    background: #184698;
+    border-radius:5px;
+}
+.far{
+    padding:3px 8px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #184698;
+    background: #184698;
+    border-radius:5px;
 }
 </style>
 </head>
@@ -516,7 +532,7 @@ select{
                      </div>
               </div>
                     <!-- Dashboard Box -->
-              <div class="col-lg-9"">
+              <div class="col-lg-9">
                    <div style="padding-top:80px;padding-bottom: 30px;" class="row">
                                     <div class="col-6">
                                       <h3 style="float:right;">Blog Ideas</h3>
@@ -615,11 +631,11 @@ select{
                                         <h6>Max Results Length
                                             <i class="fa fa-question-circle" data-tippy-placement="top" title="Maximum words for each result."></i>
                                         </h6>
-                                        <input name="max_results" type="number" class="with-border small-input" value="200" min="50"/>
+                                        <input name="max_results" type="number" class="with-border small-input" value="200" min="50" style="max-width:100%; "/>
                                     </div>
                                     <div>
                                         <small class="form-error"></small>
-                                        <button type="submit" name="submit" class="button ripple-effect full-width" style="color: white;background: blue;border-radius: 4px;padding: 5px;border: 1px solid blue;">Generateor →</button>
+                                        <button type="submit" name="submit" class="button ripple-effect full-width" style="color: white;background: #184698;border-radius: 4px;padding: 5px;border: 1px solid blue;">Generateor →</button>
                                     </div>
                                 </div>
                             <input type="hidden" name="ai_template" value="blog-ideas"/>
@@ -629,12 +645,24 @@ select{
                       <div class="col-lg-8 col-md-12 col-sm-12"style="border: 1px solid lightgrey;width: 100%;height: 100%;">
                 <div class="container7">
                     <div style="padding: 1px 1px; margin: 1px 1px; display: flex">
-                        <i class='fas fa-align-left fa-2x' style='color: #0769e9'></i>
-                        <h4>Generated Result<br />
-                        </h4>
-                        <div style="float: right;">
-                            <i class='fas fa-file-word fa-2x' style='color: #007bff'></i><i class='fas fa-file-alt fa-2x' style='color: #0a18e6'></i><i class='far fa-copy fa-2x' style='color: #1708e2'></i>
+                        <div class="row" style="width:100%">
+                            <div class="col-2">
+                                <i class='fas fa-align-left fa-2x' style='color: #0769e9'></i>
+                            </div>
+                            <div class="col-4">
+                                  <h4>Generated Result</h4>
+                            </div>
+                            <div class="col-6">
+                        <div class="document" style="float: right;">
+                            <i class='fas fa-file-word fa-2x'></i>
+                            <i class='fas fa-file-alt fa-2x'></i>
+                            <i class='far fa-copy fa-2x'></i>
                         </div>
+                            </div>
+                        </div>
+                        
+                      
+                    
                     </div>
                     <hr />
                     <div class="options">
@@ -731,7 +759,7 @@ select{
         <script type="text/javascript">
              $("#icon").on("click", function () {
                  $(".sidebar").toggle();
-                 $(".col-6").toggleClass('col-lg-12 full-width');
+                 $(".col-lg-9").toggleClass('col-lg-12 full-width');
 
              });
 
